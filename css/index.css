@@ -1,0 +1,31 @@
+
+
+.regnow , .carouse {
+	width: 1300px;
+	margin:  0 auto;
+}
+.regnow_Topimg {
+	height: 150px;
+	background: navajowhite;
+	margin-bottom: 20px;
+}
+.carouse {
+	/*height: 350px;*/
+}
+.carouse_sow {
+	width: 230px;
+	height: 350px;
+	background: aquamarine;
+	margin-right: 10px;
+}
+.carouse_main {
+	height: 350px;
+	width: 726px;
+	background: aqua;
+	margin-right: 10px;
+}
+.carouse_r {
+	width: 324px;
+	height: 350px;
+	background: olivedrab;
+}
