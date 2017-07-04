@@ -1,3 +1,9 @@
+.wrapper {
+	min-width: 900px;
+	max-width: 1300px;
+	
+	margin: 0 auto;
+}
 
 .fl {
 	float: left;
@@ -10,7 +16,6 @@
 	border-bottom: 1px solid #CCCCCC;
 }
 .top_main {
-	height: 30px;
 	line-height: 30px;
 }
 .txtLeft {
@@ -26,15 +31,17 @@
 .top_main a {
 	text-decoration: none;
 } 
-.nav , .top_main{
-	width: 1300px;
-	margin: 0 auto;
-}
 .nav {
 	display:flex;
     justify-content:center;
     align-items:center;
 }
+
+.flex-wrapper {
+	display: -webkit-flex;
+	display: flex;
+}
+
 .logo {
 	width: 220px;
 	background: cornflowerblue;
