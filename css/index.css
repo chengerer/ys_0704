@@ -1,7 +1,5 @@
-
-
 .regnow , .carouse {
-	width: 1300px;
+	/*width: 1300px;*/
 	margin:  0 auto;
 }
 .regnow_Topimg {
@@ -9,23 +7,99 @@
 	background: navajowhite;
 	margin-bottom: 20px;
 }
+.container {
+	max-width: 1300px;
+	margin-bottom: 40px;
+	width: 100%;
+	min-width: 900px;
+}
+.box1 , .box2 , .box3 {
+	height: 350px;
+}
+.box1 {
+	background: orange;
+}
+.box2 {
+	background: lavender;
+}
+.box3 {
+	background: cadetblue;
+}
 .carouse {
-	/*height: 350px;*/
+	box-sizing: border-box;
 }
 .carouse_sow {
-	width: 230px;
+	width: 20%;
 	height: 350px;
 	background: aquamarine;
 	margin-right: 10px;
 }
 .carouse_main {
 	height: 350px;
-	width: 726px;
+	width: 50%;
 	background: aqua;
 	margin-right: 10px;
 }
 .carouse_r {
-	width: 324px;
+	width: 27%;
 	height: 350px;
 	background: olivedrab;
+}
+.main_txt {
+	box-sizing: border-box;
+}
+.hot ,.news {
+	line-height: 40px;
+	flex: 1;
+	list-style: none;
+}
+.bac {
+	background: url(../imgs/hot.png);
+	margin-bottom: 20px;
+}
+.news {
+	margin-left: 40px;
+}
+.hot_txt, .packagea, .servicea{
+	font-weight: bold;
+	margin-left: 20px;
+	color: #242e3b;
+	font-size: 18px;
+	padding-left: 5px;
+	border-left: 3px solid rgb(0,172,226);
+}
+.main_txt li {
+	height: 110px;
+}
+li dl {
+	max-width: 70%;
+}
+.decript1 {
+	font-weight: bold;
+	font-size: 16px;
+}
+.decript2 {
+	display: block;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	text-align: justify;
+	color: #61656b;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 14px;
+}
+.background_package ,.background_service {
+	background: url(../imgs/chanpintaocan.png);
+	height: 40px;
+	line-height: 40px;
+}
+.packageimg {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	flex: 0 0 21%;
+}
+
+.service-wrapper, .product-wrapper {
+	justify-content: space-between;
 }
