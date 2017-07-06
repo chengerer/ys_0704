@@ -1,26 +1,43 @@
-
-
 .regnow , .carouse {
-	width: 1300px;
 	margin:  0 auto;
 }
 .regnow_Topimg {
-	height: 150px;
-	background: navajowhite;
 	margin-bottom: 20px;
 }
 .container {
-	width: 1300px;
+	max-width: 1300px;
 	margin-bottom: 40px;
+	width: 100%;
+	min-width: 900px;
+}
+.enery {
+	margin-left: 10px;
+	color: #61656b;
+	font-size: 18px;
+}
+.box1 ul {
+	width: 100%;
+	padding-left: 0;
+}
+.list {
+	overflow: hidden;
+	display: block;
+	white-space: nowrap;
+	line-height: 113px;
+	border: 1px solid #ddd;
+}
+.list a {
+	
+}
+.list img {
+	margin-left: 10px;
 }
 .box1 , .box2 , .box3 {
 	height: 350px;
 }
 .box1 {
-	background: orange;
-}
-.box2 {
-	background: lavender;
+	padding-left: 0;
+	padding-right: 0;
 }
 .box3 {
 	background: cadetblue;
@@ -48,6 +65,9 @@
 .main_txt {
 	box-sizing: border-box;
 }
+.hot-list, .news-list {
+	margin-bottom: 15px;
+}
 .hot ,.news {
 	line-height: 40px;
 	flex: 1;
@@ -60,12 +80,12 @@
 .news {
 	margin-left: 40px;
 }
-.hot_txt,.packagea ,.searvesa{
+.hot_txt, .packagea, .servicea{
 	font-weight: bold;
 	margin-left: 20px;
 	color: #242e3b;
 	font-size: 18px;
-	padding-left: 5px;
+	padding-left: 10px;
 	border-left: 3px solid rgb(0,172,226);
 }
 .main_txt li {
@@ -89,16 +109,28 @@ li dl {
 	text-overflow: ellipsis;
 	font-size: 14px;
 }
-.background_package ,.background_searves {
+.background_package ,.background_service {
 	background: url(../imgs/chanpintaocan.png);
 	height: 40px;
 	line-height: 40px;
 }
-.packageimg {
-	margin-top: 20px;
-	margin-bottom: 40px;
-	flex: 1;
+.package {
+	margin-top: 25px;
 }
-.packageimg img {
-	/*height: auto;*/
+.packageimg {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	flex: 0 0 22%;
+}
+.service-wrapper, .product-wrapper {
+	justify-content: space-between;
+}
+.meal {
+	margin-top: 10px;
+	font-size: 20px;
+}
+.money {
+	font-size: 20px;
+	color: #f66f45;
 }

@@ -6,13 +6,14 @@
 		<meta name="renderer" content="webkit">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="lib/swiper/3.4.2/css/swiper.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
 
 	<body>
 		<div class="top">
-			<div class="top_main clearfix">
+			<div class="wrapper clearfix">
 				<span class="txtLeft fl">您好，欢迎光临晟能售电网上营业厅！</span>
 				<span class="txtRight fr"><a href="#" class="register">登录</a><span> | </span>
 				<a href="#" class="freecolor">免费注册</a>
@@ -24,7 +25,7 @@
 
 			<!--描述：头部导航条 -->
 			<div class="nav clearfix">
-				<div class="logo">logo</div>
+				<div class="logo"><img src="imgs/logo.png" /></div>
 				<div class="nav_link">
 					<ul>
 						<li class="fl">
@@ -49,15 +50,36 @@
 				</div>
 			</div>
 			<!--描述：中间部分-->
-			<div class="regnow_Topimg"></div>
+			<div class="regnow_Topimg"><img src="imgs/regnow_Topimg.png"/></div>
 			<!--描述：轮播-->
 			<div class="container">
 				<div class="row">
 					<div class="carouse clearfix">
-						<div class="box1 col-lg-2 col-xs-2">
+						<div class="box1 col-xs-2">
+							<ul>
+								<li class="list">
+									<img src="imgs/eney3.png"/>
+									<a class="enery" href="#">售电咨询(推荐)</a>
+								</li>
+								<li class="list">
+									<img src="imgs/eney2.png"/>
+									<a class="enery" href="#">售电要闻(推荐)</a>
+								</li>
+								<li class="list">
+									<img src="imgs/eney1.png"/>
+									<a class="enery" href="#">售电动态(推荐)</a>
+								</li>
+							</ul>
 						</div>
-						<div class="box2 col-lg-7 col-xs-7"></div>
-						<div class="box3 col-lg-3 col-xs-3"></div>
+						<div class="box2 col-xs-7">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="imgs/sow1.png"/></div>
+									<div class="swiper-slide"><img src="imgs/sow2.png"/></div>
+								</div>
+							</div>
+						</div>
+						<div class="box3 col-xs-3"></div>
 					</div>
 				</div>
 			</div>
@@ -66,22 +88,22 @@
 					<div class="bac">
 						<span class="hot_txt">热门资讯</span>
 					</div>
-					<li>
-						<img style="max-width: 30%;" src="imgs/hotimg.png" />
+					<li class="hot-list">
+						<img style="max-width: 30%;" src="imgs/hot1.png" />
 						<dl class="fr">
 							<dt class="decript1">财经 | 前五月电力行业投资降幅逐渐收窄</dt>
 							<dd class="decript2">中国电力报 中国新闻网讯记者刘世民报道 近日，国家统计局发布1-5月份固定资产投资情况，全国固定资产投资888888亿元，同比增长8.6%其中占比例为61%……</dd>
 						</dl>
 					</li>
-					<li>
-						<img style="max-width: 30%;" src="imgs/hotimg.png" />
+					<li class="hot-list">
+						<img style="max-width: 30%;" src="imgs/hot2.png" />
 						<dl class="fr">
 							<dt class="decript1">财经 | 前五月电力行业投资降幅逐渐收窄</dt>
 							<dd class="decript2">中国电力报 中国新闻网讯记者刘世民报道 近日，国家统计局发布1-5月份固定资产投资情况，全国固定资产投资888888亿元，同比增长8.6%其中占比例为61%……</dd>
 						</dl>
 					</li>
-					<li>
-						<img style="max-width: 30%;" src="imgs/hotimg.png" />
+					<li class="hot-list">
+						<img style="max-width: 30%;" src="imgs/hot3.png" />
 						<dl class="fr">
 							<dt class="decript1">财经 | 前五月电力行业投资降幅逐渐收窄</dt>
 							<dd class="decript2">中国电力报 中国新闻网讯记者刘世民报道 近日，国家统计局发布1-5月份固定资产投资情况，全国固定资产投资888888亿元，同比增长8.6%其中占比例为61%</dd>
@@ -92,22 +114,22 @@
 					<div class="bac">
 						<span class="hot_txt">行业新闻</span>
 					</div>
-					<li>
-						<img style="max-width: 30%;" src="imgs/hotimg.png" />
+					<li class="news-list">
+						<img style="max-width: 30%;" src="imgs/news1.png" />
 						<dl class="fr">
 							<dt class="decript1">财经 | 前五月电力行业投资降幅逐渐收窄</dt>
 							<dd class="decript2">中国电力报 中国新闻网讯记者刘世民报道 近日，国家统计局发布1-5月份固定资产投资情况，全国固定资产投资888888亿元，同比增长8.6%其中占比例为61%</dd>
 						</dl>
 					</li>
-					<li>
-						<img style="max-width: 30%;" src="imgs/hotimg.png" />
+					<li class="news-list">
+						<img style="max-width: 30%;" src="imgs/news2.png" />
 						<dl class="fr">
 							<dt class="decript1">财经 | 前五月电力行业投资降幅逐渐收窄</dt>
 							<dd class="decript2">中国电力报 中国新闻网讯记者刘世民报道 近日，国家统计局发布1-5月份固定资产投资情况，全国固定资产投资888888亿元，同比增长8.6%其中占比例为61%</dd>
 						</dl>
 					</li>
-					<li>
-						<img style="max-width: 30%;" src="imgs/hotimg.png" />
+					<li class="news-list">
+						<img style="max-width: 30%;" src="imgs/news3.png" />
 						<dl class="fr">
 							<dt class="decript1">财经 | 前五月电力行业投资降幅逐渐收窄</dt>
 							<dd class="decript2">中国电力报 中国新闻网讯记者刘世民报道 近日，国家统计局发布1-5月份固定资产投资情况，全国固定资产投资888888亿元，同比增长8.6%其中占比例为61%</dd>
@@ -120,38 +142,59 @@
 				<div class="background_package">
 					<span class="packagea">产品套餐</span>
 				</div>
-				<div class="packageimg flex-wrapper">
-					<img src="imgs/package.png" alt="" />
-					<img src="imgs/package.png" alt="" />
-					<img src="imgs/package.png" alt="" />
-					<img src="imgs/package.png" alt="" />
+				<div class="flex-wrapper product-wrapper">
+					<div class="packageimg"><img src="imgs/package.png" alt="">
+						<p class="meal">套餐一</p>
+						<p class="money">￥1000000</p>
+					</div>
+					<div class="packageimg"><img src="imgs/package.png" alt="">
+						<p class="meal">套餐二</p>
+						<p class="money">￥1200000</p>
+					</div>
+					<div class="packageimg"><img src="imgs/package.png" alt="">
+						<p class="meal">套餐三</p>
+						<p class="money">￥1600000</p>
+					</div>
+					<div class="packageimg"><img src="imgs/package.png" alt="">
+						<p class="meal">套餐四</p>
+						<p class="money">￥2500000</p>
+					</div>
 				</div>
 			</div>
 
 			<!--服务中心-->
-			<div class="searves">
-				<div class="background_searves">
-					<span class="searvesa">服务中心</span>
+			<div class="service">
+				<div class="background_service">
+					<span class="servicea">服务中心</span>
 				</div>
-				<div class="packageimg flex-wrapper">
-					<img src="imgs/package.png" alt="" />
-					<img src="imgs/package.png" alt="" />
-					<img src="imgs/package.png" alt="" />
-					<img src="imgs/package.png" alt="" />
+				<div class="flex-wrapper service-wrapper">
+					<div class="packageimg"><img src="imgs/service1.png" alt=""></div>
+					<div class="packageimg"><img src="imgs/service2.png" alt=""></div>
+					<div class="packageimg"><img src="imgs/service3.png" alt=""></div>
+					<div class="packageimg"><img src="imgs/service4.png" alt=""></div>
 				</div>
 			</div>
 			<div class="footer"></div>
 		</div>
 
 		<script src="lib/jquery/2.2.4/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="lib/swiper/3.4.2/js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="lib/swiper/3.4.2/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function() {
 				$(".nav_link li").not(':last').css({
 					'border-right': '2px solid #fff'
 				});
-				$(".packageimg img").not(':last').css({
+				/*$(".packageimg img").not(':last').css({
 					'margin-right': '33px'
-				})
+				})*/
+				var mySwiper = new Swiper('.swiper-container',{
+					autoplay:1000,
+					grabCursor:true,
+					parallax:true,
+					watchSlidesProgress : true,
+					loop:true
+				});
 			});
 		</script>
 	</body>
