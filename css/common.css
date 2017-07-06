@@ -25,6 +25,7 @@ li {
 }
 
 .top {
+	line-height: 30px;
 	background: rgb(250, 250, 250);
 	border-bottom: 1px solid #CCCCCC;
 }

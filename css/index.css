@@ -35,12 +35,38 @@
 .box1 , .box2 , .box3 {
 	height: 350px;
 }
-.box1 {
+.box1, .box3 {
 	padding-left: 0;
 	padding-right: 0;
 }
+.list3 {
+	line-height: 50px;
+	background: #ececec;
+	text-align: center;
+	display: block;
+	width: 50%;
+}
+.list3 a {
+	color: #61656B;
+	font-size: 16px;
+}
 .box3 {
-	background: cadetblue;
+	border: 1px solid #ddd;
+}
+.box3-ul1 {
+	padding-left: 0;
+}
+.box3-ul2 {
+	padding-left: 20px;
+}
+.box3-ul2 li {
+	line-height: 30px;
+}
+.box3-ul2 a {
+	color: #242e3b;
+}
+.big {
+	margin-right: 20px;
 }
 .carouse {
 	box-sizing: border-box;
