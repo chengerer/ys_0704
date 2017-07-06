@@ -10,6 +10,10 @@
 	width: 100%;
 	min-width: 900px;
 }
+.row {
+	max-height: 350px;
+	height: 100%;
+}
 .enery {
 	margin-left: 10px;
 	color: #61656b;
@@ -93,6 +97,11 @@
 }
 .hot-list, .news-list {
 	margin-bottom: 15px;
+}
+.big1 {
+	font-size: 16px;
+	color: #61656b;
+	margin-right: 20px;
 }
 .hot ,.news {
 	line-height: 40px;
