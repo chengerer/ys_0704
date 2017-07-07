@@ -57,6 +57,7 @@ ul {
 }
 
 .box3 {
+	height: 346px;
 	flex: 0 0 25%;
 }
 
@@ -68,6 +69,7 @@ ul {
 	background: #ececec;
 }
 .list3 a {
+	display: block;
 	font-size: 16px;
 	color: #61656b;
 }
@@ -96,7 +98,7 @@ ul {
 	width: 20%;
 	height: 350px;
 	margin-right: 10px;
-	background: aquamarine;
+	/*background: aquamarine;*/
 }
 .carouse_main {
 	width: 50%;
@@ -107,7 +109,7 @@ ul {
 .carouse_r {
 	width: 27%;
 	height: 350px;
-	background: olivedrab;
+	/*background: olivedrab;*/
 }
 .main_txt {
 	box-sizing: border-box;

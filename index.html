@@ -27,8 +27,8 @@
 			<div class="nav clearfix">
 				<div class="logo"><img src="imgs/logo.png" /></div>
 				<div class="nav_link">
-					<ul>
-						<li class="fl">
+					<ul class="nav-ul">
+						<li class="fl nav-fr">
 							<a href="#">首页</a>
 						</li>
 						<li class="fl">
@@ -194,7 +194,6 @@
 		</div>
 
 		<script src="lib/jquery/2.2.4/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
-		<!--<script src="lib/swiper/3.4.2/js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>-->
 		<script src="lib/swiper/3.4.2/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function() {
@@ -205,6 +204,17 @@
 				$(".list3").hover(function(){
 					$(this).css({'background':'#fff'});
 					$(".list3").not($(this)).css({'background':'#ececec'})
+				});
+				$(".nav-fr").css({'border-top':'5px solid #00ace2'});
+				$(".nav-ul > li").on('mouseenter',function(){
+					$(this).css({
+						'border-top':'5px solid #00ace2'
+					});
+				});
+				$(".nav-ul > li").on("mouseout",function(){
+					$(this).css({
+						'border-top':'0'
+					})
 				});
 				/*$(".packageimg img").not(':last').css({
 					'margin-right': '33px'

@@ -1,0 +1,37 @@
+
+.date {
+	font-size: 14px;
+}
+.title {
+	text-align: center;
+}
+.date {
+	margin-left: 15px;
+}
+dl, .pading {
+	padding: 0 100px;
+}
+dt {
+	font-weight: bold;
+	font-size: 16px;
+}
+dd {
+	font-size: 16px;
+	text-align: justify;
+	margin-top: 20px;
+}
+.mar-20 {
+	margin-top: 20px;
+}
+.pa {
+	font-size: 16px;
+	margin-top: 100px;
+}
+.pa a {
+	color: #61656B;
+	text-decoration: none;
+}
+.ll {
+	font-size: 18px;
+	color: rgb(44,186,231);
+}

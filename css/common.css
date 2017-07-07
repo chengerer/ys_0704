@@ -75,7 +75,9 @@ li {
 	text-align: center;
 	background: rgb(226, 233, 235);
 }
-
+/*.nav-fr {
+	border-top: 5px solid #00ace2;
+}*/
 .nav {
 	height: 70px;
 	margin-top: 10px;
@@ -87,11 +89,13 @@ li {
 
 .nav ul li {
 	display: block;
-	width: 16.5%;
+	width: 16.6%;
 	cursor: pointer;
 }
 
 .nav a {
+	display: block;
+	font-size: 16px;
 	text-decoration: none;
-	color: black;
+	color: #61656B;
 }
