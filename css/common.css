@@ -73,11 +73,10 @@ li {
 	width: 1080px;
 	height: 45px;
 	text-align: center;
-	background: rgb(226, 233, 235);
 }
-/*.nav-fr {
+.nav-fr {
 	border-top: 5px solid #00ace2;
-}*/
+}
 .nav {
 	height: 70px;
 	margin-top: 10px;
@@ -87,15 +86,25 @@ li {
 	padding-left: 0;
 }
 
-.nav ul li {
+.nav-item {
 	display: block;
-	width: 16.6%;
 	cursor: pointer;
+	line-height: 40px;
+	-webkit-flex: 1;
+	flex: 1;
+	border-top: 5px solid transparent;
+	margin-left: 2px;
+	background: rgb(226, 233, 235);
+	transition: border .3s;
+}
+
+.nav-item.current, .nav-item:hover {
+	border-top-color: #00ace2;
 }
 
 .nav a {
 	display: block;
 	font-size: 16px;
 	text-decoration: none;
-	color: #61656B;
+	color: #61656b;
 }

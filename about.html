@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="renderer" content="webkit">
-		<title></title>
+		<title>关于我们</title>
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/3.3.7/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="lib/swiper/3.4.2/css/swiper.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
@@ -28,10 +28,10 @@
 				<div class="logo"><img src="imgs/logo.png" /></div>
 				<div class="nav_link">
 					<ul class="nav-ul flex-wrapper">
-						<li class="nav-item current">
+						<li class="nav-item">
 							<a href="index.html">首页</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item current">
 							<a href="about.html">关于我们</a>
 						</li>
 						<li class="nav-item">
@@ -198,10 +198,27 @@
 		<script type="text/javascript">
 			$(function() {
 				$(".list3").first().css({'background':"#fff"})
+				// $(".nav_link li").not(':last').css({
+				// 	'border-right': '2px solid #fff'
+				// });
 				$(".list3").hover(function(){
 					$(this).css({'background':'#fff'});
 					$(".list3").not($(this)).css({'background':'#ececec'})
 				});
+				/*$(".nav-fr").css({'border-top':'5px solid #00ace2'});
+				$(".nav-ul > li").on('mouseenter',function(){
+					$(this).css({
+						'border-top':'5px solid #00ace2'
+					});
+				});
+				$(".nav-ul > li").on("mouseout",function(){
+					$(this).css({
+						'border-top':'0'
+					})
+				});*/
+				/*$(".packageimg img").not(':last').css({
+					'margin-right': '33px'
+				})*/
 				var mySwiper = new Swiper('.swiper-container',{
 					autoplay:1000,
 					grabCursor:true,
