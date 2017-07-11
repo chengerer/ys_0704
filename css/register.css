@@ -22,3 +22,14 @@
 	font-size: 18px;
 	background: rgb(0,172,222) !important;
 }
+.register-lf {
+	width: 60%;
+}
+.registerimg {
+	/*width: 15%;*/
+}
+.pass {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	/*width: 50%;*/
+}

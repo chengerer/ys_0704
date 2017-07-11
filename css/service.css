@@ -1,4 +1,4 @@
-.nav-item a {
+a {
 	text-decoration: none !important;
 }
 .enery-main {
@@ -23,6 +23,7 @@
 	background: rgb(236,236,236);
 }
 .more {
+	margin-top: 40px;
 	margin-bottom: 20px;
 }
 .more p{
@@ -71,8 +72,8 @@
 .corlor2 {
 	background: #00ace2;
 }
-.corlor2.more-li :hover {
-	/*background: #00ace2;*/
+.more-li:hover {
+	background: #00ace2;
 }
 .more-ol {
 	font-size: 18px;
@@ -101,4 +102,102 @@
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+}
+
+
+/*产品套餐页面01*/
+
+.enery-l {
+	width: 40%;
+}
+.enery-r {
+	/*margin-left: 20px;*/
+	width: 55%;
+}
+.enery-span {
+	border: 1px solid #ddd;
+	padding: 10px;
+	margin-left: 5px;
+}
+.enery-p {
+	margin-top: 40px;
+}
+.enery-btn {
+	border: 0;
+	color: #FFFFFF;
+	font-size: 18px;
+	background: #F66F45;
+	margin-top: 40px;
+	width: 220px;
+	height: 44px;
+}
+.enery-r p {
+	font-size: 16px;
+}
+.enery-p1 {
+	text-align: left;
+}
+.enery-m {
+	font-size: 18px;
+	color: #F66F45;
+	font-weight: bold;
+}
+.opation {
+	display: inline-block;
+}
+.abs_clip {
+	position: absolute;
+	clip: rect(0 0 0 0);
+}
+.pack-name {
+	position: relative;
+	border: 1px solid #ddd;
+	padding: 10px 25px;
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+}
+.abs_clip:checked + .pack-name {
+	border: 1px solid #F66F45;
+}
+.abs_clip:checked  + .pack-name:after {
+	background: #F66F45;
+	content: "√";
+	padding: 10px 1px 0 15px;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	-webkit-clip-path: polygon(100% 0,100% 100%,0 100%);
+	clip-path: polygon(100% 0,100% 100%,0 100%);
+}
+
+
+
+/*产品套餐*/
+
+.enery-01 {
+	font-size: 16px;
+	line-height: 60px;
+	background: rgb(236,236,236);
+}
+.enery-01 a {
+	color: #61656B;
+}
+.enery-a, .enery-b {
+	flex: 1;
+}
+.enery-02 {
+	margin-top: 30px;
+}
+.pp1 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.pp2 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #F66F45;
 }

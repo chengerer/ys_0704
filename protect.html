@@ -6,7 +6,8 @@
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/service.css" />
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/3.3.7/css/bootstrap.min.css" />
-		<title>服务中心</title>
+		<link rel="stylesheet" type="text/css" href="lib/swiper/3.4.2/css/swiper.min.css" />
+		<title>产品详情</title>
 	</head>
 
 	<body>
@@ -26,7 +27,7 @@
 				<div class="logo"><img src="imgs/logo.png" /></div>
 				<div class="nav_link">
 					<ul class="nav-ul flex-wrapper">
-						<li class="nav-item current">
+						<li class="nav-item">
 							<a href="index.html">首页</a>
 						</li>
 						<li class="nav-item">
@@ -35,7 +36,7 @@
 						<li class="nav-item">
 							<a href="#">资讯中心</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item current">
 							<a href="#">产品套餐</a>
 						</li>
 						<li class="nav-item">
@@ -50,14 +51,44 @@
 
 			<p>首页>服务中心>详情</p>
 			<div class="enery-left col-xs-8">
-				<div class="enery-main">
-					<div class="enery-top">
-						<img src="imgs/local.png" />
+				<div class="enery-main clearfix">
+					<div class="enery-l fl">
+						<div class="enery-top">
+							<img src="imgs/prodect.png" />
+						</div>
+						<div class="enery-bott">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="imgs/prodect01.png" /></div>
+									<div class="swiper-slide"><img src="imgs/prodect02.png" /></div>
+									<div class="swiper-slide"><img src="imgs/prodect03.png" /></div>
+									<div class="swiper-slide"><img src="imgs/prodect03.png" /></div>
+									<div class="swiper-slide"><img src="imgs/prodect03.png" /></div>
+								</div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+
+						</div>
 					</div>
-					<div class="enery-bott">
-						<img src="imgs/local1.png" />
-						<img class="oo" src="imgs/local2.png" />
-						<img class="oo" src="imgs/local3.png" />
+					<div class="enery-r fr">
+						<h3>1000元包2000度套餐</h3>
+						<p class="enery-p1">2017年年中优惠套餐，1000元包2000度套餐，相当于每度电0.5元，限时抢购！</p>
+						<p class="enery-p1">价格：<span class="enery-m">￥1000元/年</span></p>
+						<p class="enery-p1">套餐：</p>
+
+						<p class="enery-p">
+							<span class="opation">
+								<input type="radio" name="page" class="abs_clip" id="pageA" value="A" checked />
+								<label for="pageA" class="pack-name" style="font-weight: 500;">1000元包2000度</label>
+							</span>
+							<span class="opation">
+								<input type="radio" name="page" class="abs_clip" id="pageB" value="B" />
+								<label for="pageB" class="pack-name" style="font-weight: 500;">3000元包5000度</label>
+							</span>
+						</p>
+						<button class="enery-btn">立即办理</button>
+
 					</div>
 				</div>
 				<div class="more more-border">
@@ -70,13 +101,38 @@
 				<h4>热门服务</h4>
 				<div class="comboimg">
 					<ul>
-					<li class="recommon"><a href="#"><img src="imgs/hot2.png" alt="" /><p>推荐服务一</p></a></li>
-					<li class="recommon"><a href="#"><img src="imgs/hot2.png" alt="" /><p>推荐服务一</p></a></li>
-					<li class="recommon"><a href="#"><img src="imgs/hot2.png" alt="" /><p>推荐服务一</p></a></li>
-				</ul>
+						<li class="recommon">
+							<a href="#"><img src="imgs/hot2.png" alt="" />
+								<p>推荐服务一</p>
+							</a>
+						</li>
+						<li class="recommon">
+							<a href="#"><img src="imgs/hot2.png" alt="" />
+								<p>推荐服务一</p>
+							</a>
+						</li>
+						<li class="recommon">
+							<a href="#"><img src="imgs/hot2.png" alt="" />
+								<p>推荐服务一</p>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
+
+		<script src="lib/jquery/2.2.4/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/swiper/3.4.2/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				var mySwiper = new Swiper('.swiper-container', {
+					prevButton: '.swiper-button-prev',
+					nextButton: '.swiper-button-next',
+					normalizeSlideIndex:false,
+					slidesPerView : 3,
+				})
+			});
+		</script>
 	</body>
 
 </html>
