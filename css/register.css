@@ -7,13 +7,9 @@
 }
 .degistertxt {
 	width: 750px;
-	height: 450px;
 	border: 1px solid #ddd;
 	margin: 0 auto;
 	box-shadow: 0 0 5px 1px #ddd;
-}
-.addclass {
-	margin-top: 50px;
 }
 .just {
 	width: 180px;
@@ -22,11 +18,13 @@
 	font-size: 18px;
 	background: rgb(0,172,222) !important;
 }
-.register-lf {
+.form-group {
 	width: 60%;
 }
-.registerimg {
-	/*width: 15%;*/
+.register-lf {
+	margin: 50px 0;
+	background: url(../imgs/register.png) no-repeat;
+	background-position: right 2em center; 
 }
 .pass {
 	margin-left: 0 !important;

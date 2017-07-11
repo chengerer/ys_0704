@@ -16,9 +16,7 @@
 
 ---
 
-Git提交403错误解决方案：
+**常用链接：**
 
-1. 打开当前仓库。
-2. 选择命令行模式。
-3. 输入命令 `vim .git/config`。
-4. ​
+1. 按钮组  http://v3.bootcss.com/components/#btn-groups
+2. 折叠菜单 http://v3.bootcss.com/javascript/#collapse
