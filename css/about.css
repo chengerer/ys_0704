@@ -1,0 +1,64 @@
+
+
+.main-h3 {
+	line-height: 150px;
+	text-align: center;
+}
+.main-p {
+	text-align: justify;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-indent: 2em;
+}
+.main-img {
+	width: 40%;
+}
+.main-txt {
+	width: 59%;
+}
+.main-h4, .main-h3, .main-p, .main-h3a, .main-txt h3 {
+	color: #878787;
+}
+.main-h3a {
+	line-height: 100px;
+}
+.main-h4 {
+	text-indent: 2em;
+}
+.txtindent {
+	margin-left: 2em;
+}
+.about-us {
+	width: 40%;
+}
+.about-intro {
+	width: 58%;
+}
+.main-p1 {
+	color: #39ae9c;
+	font-size: 16px;
+}
+.about-p {
+	font-size: 16px;
+	font-weight: bold;
+}
+.about-weixin {
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+.intro-p {
+	font-size: 16px;
+}
+.mar-20 {
+	margin-top: 40px;
+}
+.footer {
+	margin-top: 40px;
+	line-height: 100px;
+}
+.intro-p1 {
+	font-size: 12px;
+}
+.intro-a {
+	color: #58d68d;
+}
