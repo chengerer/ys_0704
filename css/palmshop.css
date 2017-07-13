@@ -62,7 +62,16 @@ body {
 	background: rgb(91,204,231);
 	border: 0;
 	border-radius: 20px;
-	margin: 0 auto;
+	margin: 50px 40%;
 	color: white;
 	font-weight: bold;
+}
+.collapsed {
+	display: block;
+}
+.panel-span {
+	font-size: 24px;
+}
+.item01 {
+	flex: 1;
 }

@@ -1,0 +1,76 @@
+
+body, html, .all {
+	height: 100%;
+}
+.all {
+	min-width: 900px;
+	background: url(../imgs/register-l.png) no-repeat;
+	background-size: 100% 100%;
+}
+.all-box, .all-bott {
+	width: 25%;
+	left: 62%;
+	position: absolute;
+}
+.all-box {
+	height: 50%;
+	top: 19%;
+	background: rgb(238,238,238);
+	border-radius: 10px;
+}
+.all-p {
+	text-align: center;
+	letter-spacing: 5px;
+	font-size: 16px;
+	line-height: 60px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: white;
+	font-weight: bold;
+	background: rgb(34,48,67);
+}
+.boxs {
+	overflow: hidden;
+	margin-top: 50px !important;
+	margin: 0 auto;
+	width: 80%;
+	height: 39%;
+	background: white;
+}
+.boxs-txt, .boxs-pass {
+	padding-left: 10px;
+	border: 0;
+}
+.boxs-txt {
+	margin-top: 18px;
+}
+.glyphicon {
+	padding-left: 30px;
+}
+.all-btn {
+	color: white;
+	letter-spacing: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 10px;
+	margin: 30px 0 20px 0;
+	background: rgb(32,175,241);
+	border: 0;
+	width: 200px;
+	height: 50px;
+}
+.all-p1 {
+	text-align: center;
+}
+.all-bott {
+	height: 20%;
+	top: 70%;
+	text-align: center;
+}
+.sp-btn {
+	width: 140px;
+	height: 40px;
+	background: rgb(102,223,244);
+	border: 0;
+	border-radius: 20px;
+}
