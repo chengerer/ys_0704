@@ -192,16 +192,23 @@ a {
 .enery-02 {
 	margin-top: 30px;
 }
-.pp1 {
+.ys-a {
+	color: #61656B;
+	font-size: 14px;
+}
+.item-a1, .item-a2, .item-a3 {
+	padding-left: 10px;
+}
+.pp1 a {
 	font-size: 18px;
 	font-weight: bold;
+	color: black;
 }
-.pp2 {
+.pp2 a {
 	font-size: 20px;
 	font-weight: bold;
 	color: #F66F45;
 }
-.ys-a {
-	color: #61656B;
-	font-size: 14px;
+.pp2 a {
+	color: #F66F45 !important;
 }

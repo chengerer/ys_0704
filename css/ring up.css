@@ -2,6 +2,9 @@
 body, html, .all {
 	height: 100%;
 }
+img {
+	max-width: 100%;
+}
 .all {
 	min-width: 900px;
 	background: url(../imgs/register-l.png) no-repeat;
@@ -33,8 +36,9 @@ body, html, .all {
 	overflow: hidden;
 	margin-top: 50px !important;
 	margin: 0 auto;
-	width: 80%;
-	height: 39%;
+	max-width: 80%;
+	min-width: 50%;
+	height: 200px;
 	background: white;
 }
 .boxs-txt, .boxs-pass {

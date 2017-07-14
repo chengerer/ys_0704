@@ -52,19 +52,19 @@
 			<div class="enery-left col-xs-8">
 				<div class="enery-main clearfix">
 					<div class="enery-01 flex-wrapper">
-						<div class="enery-a"><img src="imgs/proctor02.png"/><a href="#">能源套餐</a></div>
-						<div class="enery-a"><img src="imgs/proctor03.png"/><a href="#">售电套餐</a></div>
-						<div class="enery-a"><img src="imgs/proctor01.png"/><a href="#">用电套餐</a></div>
+						<div class="enery-a"><img src="imgs/proctor02.png"/><a class="item-a1" href="#">能源套餐</a></div>
+						<div class="enery-a"><img src="imgs/proctor03.png"/><a class="item-a2" href="#">售电套餐</a></div>
+						<div class="enery-a"><img src="imgs/proctor01.png"/><a class="item-a3" href="#">用电套餐</a></div>
 					</div>
 					<div class="enery-02 flex-wrapper">
-						<div class="enery-b"><p class="pp1">套餐一</p><p class="pp2">￥1000000</p><img src="imgs/enery-f.png"/></div>
-						<div class="enery-b"><p class="pp1">套餐一</p><p class="pp2">￥1000000</p><img src="imgs/enery-f.png"/></div>
-						<div class="enery-b"><p class="pp1">套餐一</p><p class="pp2">￥1000000</p><img src="imgs/enery-f.png"/></div>
+						<div class="enery-b"><p class="pp1"><a href="protect.html">套餐一</p><p class="pp2">￥1000000</p><img src="imgs/enery-f.png"/></a></div>
+						<div class="enery-b"><p class="pp1"><a href="protect.html">套餐一</p><p class="pp2">￥1000000</p><img src="imgs/enery-f.png"/></a></div>
+						<div class="enery-b"><p class="pp1"><a href="protect.html">套餐一</p><p class="pp2">￥1000000</p><img src="imgs/enery-f.png"/></a></div>
 					</div>
 					<div class="enery-02 flex-wrapper">
-						<div class="enery-b"><p class="pp1">套餐一</p><p class="pp2">￥1000000</p><img src="imgs/enery-f.png"/></div>
-						<div class="enery-b"><p class="pp1">套餐一</p><p class="pp2">￥1000000</p><img src="imgs/enery-f.png"/></div>
-						<div class="enery-b"><p class="pp1">套餐一</p><p class="pp2">￥1000000</p><img src="imgs/enery-f.png"/></div>
+						<div class="enery-b"><p class="pp1"><a href="protect.html">套餐一</p><p class="pp2">￥1000000</p><img src="imgs/enery-f.png"/></a></div>
+						<div class="enery-b"><p class="pp1"><a href="protect.html">套餐一</p><p class="pp2">￥1000000</p><img src="imgs/enery-f.png"/></a></div>
+						<div class="enery-b"><p class="pp1"><a href="protect.html">套餐一</p><p class="pp2">￥1000000</p><img src="imgs/enery-f.png"/></a></div>
 					</div>
 				</div>
 			</div>
@@ -99,7 +99,22 @@
 		<script src="lib/jquery/2.2.4/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function(){
-				
+//				默认效果
+				$(".item-a1").siblings('img').prop('src','imgs/proctor022.png');
+				$(".item-a1").css({'color':'rgb(0,172,226)'});
+//				切换效果
+//				$(".item-a1").on('click',function(){
+//					$(this).siblings('img').prop('src','imgs/proctor022.png').parent().siblings();
+//					$(this).css({'color':'rgb(0,172,226)'});
+//				});
+//				$(".item-a2").on('click',function(){
+//					$(this).siblings('img').prop('src','imgs/proctor033.png').parent().siblings();
+//					$(this).css({'color':'rgb(0,172,226)'});
+//				});
+//				$(".item-a3").on('click',function(){
+//					$(this).siblings('img').prop('src','imgs/proctor011.png').parent().siblings();
+//					$(this).css({'color':'rgb(0,172,226)'});
+//				});
 			});
 		</script>
 	</body>

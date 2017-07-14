@@ -3,6 +3,9 @@
 body {
 	font-size: 16px;
 }
+.shop-main {
+	margin-top: 30px;
+}
 .shop-bac, .shop-left {
 	background: rgb(249,249,249);
 }
@@ -38,20 +41,26 @@ body {
 	padding-left: 0;
 }
 .shop-li {
-	padding-left: 50px;
+	padding-left: 15%;
 	line-height: 60px;
 	font-size: 18px;
 	border: 1px solid #CCCCCC;
 	margin-top: -1px;
 }
 .shop-li a {
+	padding-left: 10px;
 	color: #242E3B;
 }
-.shop-right {
-	padding: 20px;
+.shop-right, .shop-right1 {
 	border: 1px solid #CCCCCC;
 	background: rgb(249,249,249);
 	width: 75%;
+}
+.shop-right {
+	padding: 20px;
+}
+.shop-right1 {
+	margin-bottom: 20px;
 }
 .panel-heading {
 	background: rgb(214,244,249) !important;
@@ -74,4 +83,72 @@ body {
 }
 .item01 {
 	flex: 1;
+}
+.btn-col1 {
+	background: rgb(0,172,226);
+}
+.btn-col2 {
+	background: rgb(91,204,231);
+	color: white;
+	font-weight: bold;
+}
+.btn-col2:hover {
+	color: white;
+	font-weight: bold;
+}
+.btn-col1.btn-col2, .btn-col1:hover {
+	background: rgb(0,172,226);
+}
+.btn {
+	margin-bottom: 20px;
+}
+.btn:hover {
+	background: rgb(0,172,226);
+}
+.news-p {
+	margin-bottom: 0;
+	background: rgb(214,244,249);
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 5px;
+	line-height: 50px;
+}
+.news-ul {
+	padding-bottom: 15px;
+}
+.news-li {
+	list-style: disc;
+}
+.news-h4 {
+	font-weight: bold;
+}
+.news-span {
+	font-weight: 400;
+	margin-left: 20px;
+	font-size: 14px;
+	color: #61656B;
+}
+.col-xs-3 {
+	width: 22%;
+}
+
+
+/*电量申报*/
+
+.declar-form {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+.declar-btn {
+	border: 0;
+	width: 80px;
+	border-radius: 5px;
+	height: 30px;
+}
+.table {
+	text-align: center;
+}
+thead > tr > th {
+	text-align: center !important;
 }

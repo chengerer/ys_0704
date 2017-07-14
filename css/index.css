@@ -61,14 +61,14 @@ ul {
 	flex: 0 0 25%;
 }
 
-.list3 {
+.list3, .list3a {
 	line-height: 50px;
 	display: block;
 	width: 50%;
 	text-align: center;
 	background: #ececec;
 }
-.list3 a {
+.list3 a, .list3a a {
 	display: block;
 	font-size: 16px;
 	color: #61656b;
@@ -79,13 +79,13 @@ ul {
 .box3-ul1 {
 	padding-left: 0;
 }
-.box3-ul2 {
+.box3-ul2, .box3-ul2a {
 	padding-left: 20px;
 }
-.box3-ul2 li {
+.box3-ul2 li, .box3-ul2a li {
 	line-height: 30px;
 }
-.box3-ul2 a {
+.box3-ul2 a , .box3-ul2a a {
 	color: #242e3b;
 }
 .big {
@@ -185,4 +185,7 @@ li dl {
 .money {
 	font-size: 20px;
 	color: #f66f45;
+}
+.box3-ul2a {
+	
 }

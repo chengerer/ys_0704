@@ -1,7 +1,9 @@
 body {
 	font-family: "微软雅黑";
 }
-
+a:hover {
+	/*color: rgb(0,172,226) !important;*/
+}
 img {
 	max-width: 100%;
 }
@@ -37,10 +39,11 @@ li {
 }
 
 .txtLeft {
-	font-size: 12px;
 	color: rgb(195, 198, 202);
 }
-
+.txtLeft, .txtRight {
+	font-size: 12px;
+}
 .register {
 	color: rgb(203, 204, 205);
 }

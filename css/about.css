@@ -1,7 +1,7 @@
 
 
 .main-h3 {
-	line-height: 150px;
+	line-height: 100px;
 	text-align: center;
 }
 .main-p {
@@ -47,7 +47,7 @@
 	letter-spacing: 2px;
 }
 .intro-p {
-	font-size: 16px;
+	font-size: 14px;
 }
 .mar-20 {
 	margin-top: 40px;

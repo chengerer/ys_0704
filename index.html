@@ -82,9 +82,10 @@
 						</div>
 						<div class="box3 col-xs-3">
 							<ul class="box3-ul1 clearfix">
-								<li class="list3 fl"><a href="notice-l.html">公告</a></li>
-								<li class="list3 fl"><a href="member.html">新入住会员</a></li>
+								<li class="list3 fl"><a href="javascript:;">公告</a></li>
+								<li class="list3a fl"><a href="javascript:;">新入住会员</a></li>
 							</ul>
+							<!--公告-->
 							<ul class="box3-ul2">
 								<li><a href="#">关于售电调整公告</a><span class="big fr">06-21</span></li>
 								<li><a href="#">关于售电调整公告</a><span class="big fr">06-21</span></li>
@@ -95,6 +96,18 @@
 								<li><a href="#">关于售电调整公告</a><span class="big fr">06-21</span></li>
 								<li><a href="#">关于售电调整公告</a><span class="big fr">06-21</span></li>
 								<li class="fr"><a style="color: #61656b;" href="notice-l.html">更多 <span class="big" style="font-size: 18px;">></span></a></li>
+							</ul>
+							<!--新入住会员-->
+							<ul class="box3-ul2a">
+								<li><a href="#">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li><a href="#">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li><a href="#">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li><a href="#">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li><a href="#">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li><a href="#">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li><a href="#">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li><a href="#">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li class="fr"><a style="color: #61656b;" href="member.html">更多 <span class="big" style="font-size: 18px;">></span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -234,6 +247,18 @@
 					mousewheelControl:true,
 					paginationClickable: true,  
 					loop:true
+				});
+				
+				$(".box3-ul2a").hide();
+				$(".list3a").hover(function(){
+					$(this).css({'background':'#fff'}).siblings().css({'background':'#ececec'});
+					$(".box3-ul2").hide();
+					$(".box3-ul2a").show();
+				});
+				$(".list3").hover(function(){
+					$(this).css({'background':'#fff'}).siblings().css({'background':'#ececec'});
+					$(".box3-ul2a").hide()
+					$(".box3-ul2").show();
 				});
 			});
 		</script>
