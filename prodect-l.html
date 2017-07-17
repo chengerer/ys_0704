@@ -39,7 +39,7 @@
 							<a href="service-l.html">服务中心</a>
 						</li>
 						<li class="nav-item">
-							<a href="#">网上营业厅</a>
+							<a href="shop-news.html">网上营业厅</a>
 						</li>
 						<li class="nav-item">
 							<a href="about.html">关于我们</a>
@@ -99,22 +99,6 @@
 		<script src="lib/jquery/2.2.4/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function(){
-//				默认效果
-//				$(".item-a1").siblings('img').prop('src','imgs/proctor022.png');
-//				$(".item-a1").css({'color':'rgb(0,172,226)'});
-//				切换效果
-//				$(".item-a1").on('click',function(){
-//					$(this).siblings('img').prop('src','imgs/proctor022.png').parent().siblings();
-//					$(this).css({'color':'rgb(0,172,226)'});
-//				});
-//				$(".item-a2").on('click',function(){
-//					$(this).siblings('img').prop('src','imgs/proctor033.png').parent().siblings();
-//					$(this).css({'color':'rgb(0,172,226)'});
-//				});
-//				$(".item-a3").on('click',function(){
-//					$(this).siblings('img').prop('src','imgs/proctor011.png').parent().siblings();
-//					$(this).css({'color':'rgb(0,172,226)'});
-//				});
 				$(".enery-01").on("click", "a[class^=item-a]", function () {
 					$(this).addClass("current").parent().siblings().children('a').removeClass('current');
 				});

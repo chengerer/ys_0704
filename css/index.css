@@ -88,6 +88,9 @@ ul {
 .box3-ul2 a , .box3-ul2a a {
 	color: #242e3b;
 }
+.box3-ul2a {
+	display: none;
+}
 .big {
 	margin-right: 20px;
 }

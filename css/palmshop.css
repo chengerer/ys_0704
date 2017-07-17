@@ -46,6 +46,8 @@ body {
 	font-size: 18px;
 	border: 1px solid #CCCCCC;
 	margin-top: -1px;
+	padding-right: 10px;
+	cursor: pointer;
 }
 .shop-li a {
 	padding-left: 10px;
@@ -84,9 +86,9 @@ body {
 .item01 {
 	flex: 1;
 }
-.btn-col1 {
+/*.btn-col1 {
 	background: rgb(0,172,226);
-}
+}*/
 .btn-col2 {
 	background: rgb(91,204,231);
 	color: white;
@@ -96,9 +98,9 @@ body {
 	color: white;
 	font-weight: bold;
 }
-.btn-col1.btn-col2, .btn-col1:hover {
+/*.btn-col1.btn-col2, .btn-col1:hover {
 	background: rgb(0,172,226);
-}
+}*/
 .btn {
 	margin-bottom: 20px;
 }
@@ -151,4 +153,17 @@ body {
 }
 thead > tr > th {
 	text-align: center !important;
+}
+.commons {
+	width: 75%
+}
+.scroll {
+	display: block;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+.shop-dis {
+	/*display: block;*/
+	/*padding-right: 10px;*/
 }

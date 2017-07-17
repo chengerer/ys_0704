@@ -113,3 +113,9 @@ li {
 	text-decoration: none;
 	color: #61656b;
 }
+.paging-cen {
+	text-align: center;
+}
+.paging-padd {
+	padding: 6px 20px !important;
+}
