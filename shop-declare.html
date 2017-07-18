@@ -38,7 +38,7 @@
 							<a href="service-l.html">服务中心</a>
 						</li>
 						<li class="nav-item current">
-							<a href="shop-news.html">网上营业厅</a>
+							<a href="#">网上营业厅</a>
 						</li>
 						<li class="nav-item">
 							<a href="about.html">关于我们</a>
@@ -57,53 +57,55 @@
 					<div class="shop-left">
 						<ul class="shop-ul">
 							<li class="shop-li">
-								<img src="imgs/shop7.png" />
-								<a href="shop-news.html">消息中心</a>
+								<a href="shop-news.html"><img class="shop-dis" src="imgs/shop7.png" />消息中心</a>
+							</li>
+							<li class="shop-li dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="collapse">
+									<img class="shop-dis" src="imgs/shop2.png" />负荷监测<b class="caret"></b>
+								</a>
+								<ul class="collapse coll-font">
+									<li class="shop-li2">
+										<a href="#">分离的链接</a>
+									</li>
+									<li class="shop-li2">
+										<a href="#">分离的链接</a>
+									</li>
+								</ul>
 							</li>
 							<li class="shop-li">
-								<img src="imgs/shop2.png" />
-								<a href="#">负荷检测</a>
+								<a href="#"><img class="shop-dis" src="imgs/shop4.png" />交易管理</a>
 							</li>
 							<li class="shop-li">
-								<img src="imgs/shop4.png" />
-								<a href="#">交易管理</a>
+								<a href="#"><img class="shop-dis" src="imgs/shop8.png" />业务管理</a>
 							</li>
 							<li class="shop-li">
-								<img src="imgs/shop8.png" />
-								<a href="#">业务管理</a>
+								<a href="#"><img class="shop-dis" src="imgs/shop5.png" />结算信息</a>
 							</li>
 							<li class="shop-li">
-								<img src="imgs/shop5.png" />
-								<a href="#">结算信息</a>
+								<a href="palm-shopa.html"><img class="shop-dis" src="imgs/shop3.png" />合同信息</a>
 							</li>
 							<li class="shop-li">
-								<img src="imgs/shop3.png" />
-								<a href="palm-shopa.html">合同信息</a>
-							</li>
-							<li class="shop-li">
-								<img src="imgs/shop1.png" />
-								<a href="shop-message.html">档案信息</a>
+								<a href="shop-message.html"><img class="shop-dis" src="imgs/shop1.png" />档案信息</a>
 							</li>
 						</ul>
+
 					</div>
 				</div>
-				<div class="col-sx-9">
-					<div class="commons fr">
-						<button class="btn btn-default btn-col2 btna" type="submit">电量申报新增</button>
-						<button class="btn btn-default btn-col2 btnb" type="submit">月度电量调整</button>
-						<button class="btn btn-default btn-col2 btnc" type="submit">修改</button>
-					</div>
-					<div class="shop-right1 fr">
+				<div class="col-sx-9 shop-width fr">
+
+					<button class="btn btn-default btn-col2" type="submit">电量申报新增</button>
+					<button class="btn btn-default btn-col2" type="submit">月度电量调整</button>
+					<button class="btn btn-default btn-col2" type="submit">修改</button>
+
+					<div class="shop-right1">
 						<p class="news-p">交易消息</p>
 						<form class="declar-form" action="" method="post">
-							<!--日期：<input size="16" type="text" id="datetimeStart" readonly class="form_datetime"> --
-							<input size="16" type="text" id="datetimeEnd" readonly class="form_datetime">-->
 							日期：<input class="declar-txt" type="text" />
 							<input class="btn-col2 declar-btn" type="submit" value="查询" />
 						</form>
 					</div>
 					<!--电量申报记录-->
-					<div class="shop-right1 fr">
+					<div class="shop-right1">
 						<p class="news-p">电量申报记录</p>
 						<table class="table table-bordered">
 							<thead>
@@ -136,9 +138,9 @@
 							</tbody>
 						</table>
 					</div>
-
+					
 					<!--月度电量调整-->
-					<div class="shop-right1 fr">
+					<div class="shop-right1">
 						<p class="news-p">月度电量调整</p>
 						<table class="table table-bordered">
 							<thead>
@@ -177,9 +179,13 @@
 
 		</div>
 		<script src="lib/jquery/2.2.4/jquery-2.2.4.js" type="text/javascript" charset="utf-8"></script>
-		<script src="Js/bootstrap-datetimepicker.zh-CN.js"></script>
 		<script src="lib/bootstrap/3.3.7/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			$(function() {
+				$(".dropdown").on('click', function() {
+					$(".collapse").toggle();
+				});
+			});
 			$(function() {
 				$('#collapseTwo').collapse('show')
 			});
@@ -191,12 +197,6 @@
 			});
 			$(function() {
 				$('#collapseFour').collapse('show')
-			});
-			
-			$(function(){
-				$(".btna").on('click',function(){
-					$(this).css({'background':'rbg(0,172,226)'})
-				});
 			});
 		</script>
 	</body>

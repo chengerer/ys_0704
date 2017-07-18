@@ -57,40 +57,44 @@
 					<div class="shop-left">
 						<ul class="shop-ul">
 							<li class="shop-li">
-								<img src="imgs/shop7.png" />
-								<a href="shop-news.html">消息中心</a>
+								<a href="shop-news.html"><img class="shop-dis" src="imgs/shop7.png" />消息中心</a>
+							</li>
+							<li class="shop-li dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="collapse">
+									<img class="shop-dis" src="imgs/shop2.png" />负荷监测<b class="caret"></b>
+								</a>
+								<ul class="collapse coll-font">
+									<li class="shop-li2">
+										<a href="#">分离的链接</a>
+									</li>
+									<li class="shop-li2">
+										<a href="#">分离的链接</a>
+									</li>
+								</ul>
 							</li>
 							<li class="shop-li">
-								<img src="imgs/shop2.png" />
-								<a href="#">负荷检测</a>
+								<a href="#"><img class="shop-dis" src="imgs/shop4.png" />交易管理</a>
 							</li>
 							<li class="shop-li">
-								<img src="imgs/shop4.png" />
-								<a href="#">交易管理</a>
+								<a href="#"><img class="shop-dis" src="imgs/shop8.png" />业务管理</a>
 							</li>
 							<li class="shop-li">
-								<img src="imgs/shop8.png" />
-								<a href="#">业务管理</a>
+								<a href="#"><img class="shop-dis" src="imgs/shop5.png" />结算信息</a>
 							</li>
 							<li class="shop-li">
-								<img src="imgs/shop5.png" />
-								<a href="#">结算信息</a>
+								<a href="palm-shopa.html"><img class="shop-dis" src="imgs/shop3.png" />合同信息</a>
 							</li>
 							<li class="shop-li">
-								<img src="imgs/shop3.png" />
-								<a href="palm-shopa.html">合同信息</a>
-							</li>
-							<li class="shop-li">
-								<img src="imgs/shop1.png" />
-								<a href="shop-message.html">档案信息</a>
+								<a href="shop-message.html"><img class="shop-dis" src="imgs/shop1.png" />档案信息</a>
 							</li>
 						</ul>
+
 					</div>
 				</div>
-				<div class="col-sx-9">
+				<div class="col-sx-9 shop-width fr">
 
 
-					<div class="panel-group fr shop-right" id="accordion">
+					<div class="panel-group shop-right" id="accordion">
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
@@ -198,6 +202,11 @@
 		<script src="lib/jquery/2.2.4/jquery-2.2.4.js" type="text/javascript" charset="utf-8"></script>
 		<script src="lib/bootstrap/3.3.7/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			$(function() {
+				$(".dropdown").on('click', function() {
+					$(".collapse").toggle();
+				});
+			});
 			$(function() {
 				$('#collapseTwo').collapse('show')
 			});

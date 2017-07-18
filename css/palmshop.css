@@ -53,10 +53,13 @@ body {
 	padding-left: 10px;
 	color: #242E3B;
 }
+.shop-width {
+	width: 75%;
+}
 .shop-right, .shop-right1 {
+	width: 100%;
 	border: 1px solid #CCCCCC;
 	background: rgb(249,249,249);
-	width: 75%;
 }
 .shop-right {
 	padding: 20px;
@@ -155,7 +158,7 @@ thead > tr > th {
 	text-align: center !important;
 }
 .commons {
-	width: 75%
+	width: 100%
 }
 .scroll {
 	display: block;
@@ -164,6 +167,14 @@ thead > tr > th {
 	white-space: nowrap;
 }
 .shop-dis {
-	/*display: block;*/
-	/*padding-right: 10px;*/
+	padding-right: 10px;
+}
+.caret {
+	margin-left: 1em;
+}
+.coll-font {
+	font-size: 16px;
+}
+.shop-li2 {
+	line-height: 40px;
 }

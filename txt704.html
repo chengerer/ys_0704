@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/3.3.7/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="lib/swiper/3.4.2/css/swiper.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/palmshop.css" />
 		<title>用电明细</title>
@@ -61,7 +62,7 @@
 							</li>
 							<li class="shop-li dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="imgs/shop2.png" />负荷监测<b class="caret"></b>
+									<img class="shop-dis" src="imgs/shop2.png" />负荷检测<b class="caret"></b>
 								</a>
 								<ul class="collapse coll-font">
 									<li class="shop-li2">
@@ -94,10 +95,20 @@
 				<div class="col-sx-9 fr shop-width">
 					<div class="shop-right1">
 						<p class="news-p">用能查询</p>
-						<form class="declar-form" action="" method="post">
+						<label class="control-label">起止月份：</label>
+					<div class="input-append date form_datetime form-group">
+						<input type="text" value="" class="form-control">
+						<span class="add-on"><i class="icon-th"></i></span>
+					</div>
+					<label class="control-label">--</label>
+					<div class="input-append date form_datetime form-group">
+						<input type="text" value="" class="form-control">
+						<span class="add-on"><i class="icon-th"></i></span>
+					</div>
+						<!--<form class="declar-form" action="" method="post">
 							监测点：<input class="declar-txt" type="text" /> 日期： <input class="declar-txt" type="text" />
 							<input class="btn-col2 declar-btn" type="submit" value="查询" />
-						</form>
+						</form>-->
 					</div>
 					<!--电量申报记录-->
 					<div class="shop-right1">
@@ -476,6 +487,8 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-datetimepicker.zh-CN.js"></script>
 		<script src="lib/jquery/2.2.4/jquery-2.2.4.js" type="text/javascript" charset="utf-8"></script>
 		<script src="lib/bootstrap/3.3.7/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
