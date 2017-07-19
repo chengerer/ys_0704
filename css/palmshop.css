@@ -47,7 +47,7 @@ body {
 	border: 1px solid #CCCCCC;
 	margin-top: -1px;
 	padding-right: 10px;
-	cursor: pointer;
+	/*cursor: pointer;*/
 }
 .shop-li a {
 	padding-left: 10px;
@@ -110,13 +110,15 @@ body {
 .btn:hover {
 	background: rgb(0,172,226);
 }
-.news-p {
+.news-p, .summ-p {
 	margin-bottom: 0;
-	background: rgb(214,244,249);
 	text-align: center;
 	font-weight: bold;
 	letter-spacing: 5px;
 	line-height: 50px;
+}
+.news-p {
+	background: rgb(214,244,249);
 }
 .news-ul {
 	padding-bottom: 15px;
@@ -177,4 +179,22 @@ thead > tr > th {
 }
 .shop-li2 {
 	line-height: 40px;
+}
+.orange {
+	color: rgb(246,172,70);
+} 
+.blue {
+	color: rgb(62,189,231);
+}
+.padd {
+	padding-left: 1em;
+}
+.paddt {
+	padding-top: 1em;
+}
+.summ-p1 {
+	text-align: center;
+}
+.bott {
+	margin-bottom: 60px;
 }

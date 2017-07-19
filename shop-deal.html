@@ -78,7 +78,7 @@
 								</a>
 								<ul class="collapse coll-font">
 									<li class="shop-li2">
-										<a href="#">电量申报</a>
+										<a href="shop-declare.html">电量申报</a>
 									</li>
 									<li class="shop-li2">
 										<a href="#">交易结果</a>
@@ -89,13 +89,12 @@
 								<a href="#"><img class="shop-dis" src="imgs/shop8.png" />业务管理</a>
 							</li>
 							<li class="shop-li">
-								<a href="#"><img class="shop-dis" src="imgs/shop5.png" />结算信息</a>
+								<a href="shop-settlement.html"><img class="shop-dis" src="imgs/shop5.png" />结算信息</a>
 							</li>
 							<li class="shop-li">
 								<a href="palm-shopa.html"><img class="shop-dis" src="imgs/shop3.png" />合同信息</a>
 							</li>
-							
-							
+
 							<li class="shop-li dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="collapse">
 									<img class="shop-dis" src="imgs/shop2.png" />档案信息<b class="caret"></b>
@@ -105,10 +104,10 @@
 										<a href="shop-enery.html">生产用电</a>
 									</li>
 									<li class="shop-li2">
-										<a href="#">用电电价</a>
+										<a href="shop-electricity.html">用电电价</a>
 									</li>
 									<li class="shop-li2">
-										<a href="#">档案信息</a>
+										<a href="shop-message.html">档案信息</a>
 									</li>
 								</ul>
 							</li>
@@ -117,7 +116,7 @@
 					</div>
 				</div>
 				<div class="col-sx-9 shop-width fr">
-					
+
 					<!--2017年双边协商结果-->
 					<div class="shop-right1">
 						<p class="news-p">2017年双边协商结果</p>
@@ -133,18 +132,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="shop-right1">
-						<div class="panel-body flex-wrapper">
-							<div class="item01">
-								<p>代码：0101</p>
-								<p>公司地址：XXXX公司</p>
-								<p>单位地址：无锡市新吴区XXX路XX街道</p>
-							</div>
-							<div class="item01">
-								<p>单位门类：0101</p>
-								<p>法人代表：0101</p>
-							</div>
-						</div>
+					<div class="shop-right1 bott">
+						<p class="summ-p">月度竞价交易</p>
+						<div id="main" style="width: 900px;height:300px;"></div>
+						<p class="summ-p">日前交易</p>
+						<div id="main1" style="width: 900px;height:300px;"></div>
 					</div>
 
 				</div>
@@ -153,6 +145,7 @@
 		</div>
 		<script src="lib/jquery/2.2.4/jquery-2.2.4.js" type="text/javascript" charset="utf-8"></script>
 		<script src="lib/bootstrap/3.3.7/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/echarts/echarts.simple.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function() {
 				$(".dropdown").on('click', function() {
@@ -171,6 +164,164 @@
 			$(function() {
 				$('#collapseFour').collapse('show')
 			});
+
+
+//			echart柱状图
+			var myChart = echarts.init(document.getElementById('main'));
+			var option = {
+				tooltip: {
+					trigger: 'axis',
+					axisPointer: {
+						type: 'cross',
+						crossStyle: {
+							color: '#999'
+						}
+					}
+				},
+				toolbox: {
+					feature: {
+						dataView: {
+							show: true,
+							readOnly: false
+						},
+						magicType: {
+							show: true,
+							type: ['line', 'bar']
+						},
+						restore: {
+							show: true
+						},
+						saveAsImage: {
+							show: true
+						}
+					}
+				},
+				legend: {
+					data: ['蒸发量', '降水量', '平均温度']
+				},
+				xAxis: [{
+					type: 'category',
+					data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+					axisPointer: {
+						type: 'shadow'
+					}
+				}],
+				yAxis: [{
+						type: 'value',
+						min: 0,
+						max: 1600,
+						interval: 200,
+						axisLabel: {
+							formatter: '{value}'
+						}
+					},
+					{
+						type: 'value',
+						min: 0,
+						max: 25,
+						interval: 5,
+						axisLabel: {
+							formatter: '{value}'
+						}
+					}
+				],
+				series: [{
+						name: '蒸发量',
+						type: 'bar',
+						data: [800, 600, 700, 500, 800, 900, 1200, 1000, 900, 700, 900, 1000]
+					},
+					{
+						name: '降水量',
+						type: 'bar',
+						data: [800, 600, 700, 500, 800, 900, 1200, 1000, 900, 700, 900, 1000]
+					},
+					{
+						name: '平均温度',
+						type: 'line',
+						yAxisIndex: 1,
+						data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 18.3, 16.4, 12.0, 16.5, 12.0, 6.2]
+					}
+				]
+			};
+			myChart.setOption(option);
+			
+			var myChart = echarts.init(document.getElementById('main1'));
+			var option = {
+				tooltip: {
+					trigger: 'axis',
+					axisPointer: {
+						type: 'cross',
+						crossStyle: {
+							color: '#999'
+						}
+					}
+				},
+				toolbox: {
+					feature: {
+						dataView: {
+							show: true,
+							readOnly: false
+						},
+						magicType: {
+							show: true,
+							type: ['line', 'bar']
+						},
+						restore: {
+							show: true
+						},
+						saveAsImage: {
+							show: true
+						}
+					}
+				},
+				legend: {
+					data: ['蒸发量', '降水量', '平均温度']
+				},
+				xAxis: [{
+					type: 'category',
+					data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+					axisPointer: {
+						type: 'shadow'
+					}
+				}],
+				yAxis: [{
+						type: 'value',
+						min: 0,
+						max: 1600,
+						interval: 200,
+						axisLabel: {
+							formatter: '{value}'
+						}
+					},
+					{
+						type: 'value',
+						min: 0,
+						max: 25,
+						interval: 5,
+						axisLabel: {
+							formatter: '{value}'
+						}
+					}
+				],
+				series: [{
+						name: '蒸发量',
+						type: 'bar',
+						data: [800, 600, 700, 500, 800, 900, 1200, 1000, 900, 700, 900, 1000]
+					},
+					{
+						name: '降水量',
+						type: 'bar',
+						data: [800, 600, 700, 500, 800, 900, 1200, 1000, 900, 700, 900, 1000]
+					},
+					{
+						name: '平均温度',
+						type: 'line',
+						yAxisIndex: 1,
+						data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 18.3, 16.4, 12.0, 16.5, 12.0, 6.2]
+					}
+				]
+			};
+			myChart.setOption(option);
 		</script>
 	</body>
 

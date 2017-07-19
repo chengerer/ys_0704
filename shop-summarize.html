@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="lib/swiper/3.4.2/css/swiper.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/palmshop.css" />
-		<title>电量申报</title>
+		<title>用能概括</title>
 	</head>
 
 	<body>
@@ -116,86 +116,56 @@
 					</div>
 				</div>
 				<div class="col-sx-9 shop-width fr">
-
-					<button class="btn btn-default btn-col2" type="submit">电量申报新增</button>
-					<button class="btn btn-default btn-col2" type="submit">月度电量调整</button>
-					<button class="btn btn-default btn-col2" type="submit">修改</button>
-
-					<div class="shop-right1">
-						<p class="news-p">交易消息</p>
-						<form class="declar-form" action="" method="post">
-							日期：<input class="declar-txt" type="text" />
-							<input class="btn-col2 declar-btn" type="submit" value="查询" />
-						</form>
+					<!--2017年双边协商结果-->
+					<div class="flex-wrapper">
+						<div class="item01">
+							<p class="news-p">用能峰值</p>
+							<div class="shop-right1 flex-wrapper paddt">
+								<div class="item01 padd">
+									<p>公司地址：XXXX公司</p>
+									<p class="blue">18:00</p>
+									<p>公司地址：XXXX公司</p>
+									<p class="blue">2017-7-04</p>
+								</div>
+								<div class="item01">
+									<p>公司地址：XXXX公司</p>
+									<p class="orange">2188888Kwh</p>
+									<p>公司地址：XXXX公司</p>
+									<p class="orange">2188888Kwh</p>
+								</div>
+							</div>
+						</div>
+						<div class="item01">
+							<p class="news-p">用能环比</p>
+							<div class="shop-right1 flex-wrapper paddt">
+								<div class="item01 padd">
+									<p>公司地址：XXXX公司</p>
+									<p class="blue">888888</p>
+									<p>公司地址：XXXX公司</p>
+									<p class="blue">8888888</p>
+								</div>
+								<div class="item01">
+									<p>公司地址：XXXX公司</p>
+									<p class="orange">16231</p>
+									<p>公司地址：XXXX公司</p>
+									<p class="orange">16321</p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<!--电量申报记录-->
+
 					<div class="shop-right1">
-						<p class="news-p">电量申报记录</p>
-						<table class="table table-bordered">
-							<thead>
-								<tr>
-									<th>企业代码</th>
-									<th>时间段</th>
-									<th>长协申报电量(Mwh)</th>
-									<th>月度电量申报电量(Mwh)</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Tanmay</td>
-									<td>Bangalore</td>
-									<td>560001</td>
-									<td>560001</td>
-								</tr>
-								<tr>
-									<td>Sachin</td>
-									<td>Mumbai</td>
-									<td>560001</td>
-									<td>400003</td>
-								</tr>
-								<tr>
-									<td>Uma</td>
-									<td>Pune</td>
-									<td>560001</td>
-									<td>411027</td>
-								</tr>
-							</tbody>
-						</table>
+						<p class="summ-p">日负荷曲线</p>
+						<p class="summ-p1"><span class="orange">今日最大负荷量：4099Kw 时间：2017-07-04</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">昨日最大负荷量：4099Kw 时间：2017-07-04</span></p>
+						<div id="main" style="width: 900px;height:300px;"></div>
 					</div>
-					
-					<!--月度电量调整-->
-					<div class="shop-right1">
-						<p class="news-p">月度电量调整</p>
-						<table class="table table-bordered">
-							<thead>
-								<tr>
-									<th>企业代码</th>
-									<th>时间段</th>
-									<th>长协申报电量(Mwh)</th>
-									<th>月度电量申报电量(Mwh)</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Tanmay</td>
-									<td>Bangalore</td>
-									<td>560001</td>
-									<td>560001</td>
-								</tr>
-								<tr>
-									<td>Sachin</td>
-									<td>Mumbai</td>
-									<td>560001</td>
-									<td>400003</td>
-								</tr>
-								<tr>
-									<td>Uma</td>
-									<td>Pune</td>
-									<td>560001</td>
-									<td>411027</td>
-								</tr>
-							</tbody>
-						</table>
+
+					<div class="shop-right1 bott">
+						<p class="summ-p">历史电量</p>
+						<div id="main" style="width: 900px;height:250px;">
+							<div id="main-1" class="fl" style="width: 300px;height: 250px;"></div>
+							<div id="main-2" class="fr" style="width: 600px;height: 250px;"></div>
+						</div>
 					</div>
 
 				</div>
@@ -204,6 +174,7 @@
 		</div>
 		<script src="lib/jquery/2.2.4/jquery-2.2.4.js" type="text/javascript" charset="utf-8"></script>
 		<script src="lib/bootstrap/3.3.7/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/echarts/echarts.simple.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function() {
 				$(".dropdown").on('click', function() {
@@ -222,6 +193,105 @@
 			$(function() {
 				$('#collapseFour').collapse('show')
 			});
+
+			var myChart = echarts.init(document.getElementById('main'));
+			var option = {
+				title: {
+					text: '折线图堆叠'
+				},
+				tooltip: {
+					trigger: 'axis'
+				},
+				legend: {
+					data: ['邮件营销', '联盟广告']
+				},
+				grid: {
+					left: '3%',
+					right: '4%',
+					bottom: '3%',
+					containLabel: true
+				},
+				toolbox: {
+					feature: {
+						saveAsImage: {}
+					}
+				},
+				xAxis: {
+					type: 'category',
+					boundaryGap: false,
+					data: ['0:00', '1:30', '3:30', '4:30', '1:30', '1:30', '1:30', '1:30', '1:30', '1:30', '1:30']
+				},
+				yAxis: {
+					type: 'value'
+				},
+				series: [{
+						name: '邮件营销',
+						type: 'line',
+						stack: '总量',
+						data: [120, 132, 101, 134, 90, 110, 120, 132, 101, 134, 90, 230, 210]
+					},
+					{
+						name: '联盟广告',
+						type: 'line',
+						stack: '总量',
+						data: [130, 139, 121, 144, 98, 120, 120, 135, 111, 139, 100, 240, 219]
+					},
+				]
+			};
+			myChart.setOption(option);
+
+
+			var myChart = echarts.init(document.getElementById('main-2'));
+			var xAxisData = [];
+			var data1 = [];
+			var data2 = [];
+			for(var i = 20; i < 100; i++) {
+				xAxisData.push('2017-06-01' + i);
+				data1.push((Math.sin(i / 5) * (i / 5 - 10) + i / 6) * 5);
+			}
+			option = {
+				title: {
+					text: '柱状图动画延迟'
+				},
+				legend: {
+					data: ['bar'],
+					align: 'left'
+				},
+				toolbox: {
+					// y: 'bottom',
+					feature: {
+						magicType: {
+							type: ['stack', 'tiled']
+						},
+						dataView: {},
+						saveAsImage: {
+							pixelRatio: 2
+						}
+					}
+				},
+				tooltip: {},
+				xAxis: {
+					data: xAxisData,
+					silent: false,
+					splitLine: {
+						show: false
+					}
+				},
+				yAxis: {},
+				series: [{
+					name: 'bar',
+					type: 'bar',
+					data: data1,
+					animationDelay: function(idx) {
+						return idx * 10;
+					}
+				}],
+				animationEasing: 'elasticOut',
+				animationDelayUpdate: function(idx) {
+					return idx * 5;
+				}
+			};
+			myChart.setOption(option);
 		</script>
 	</body>
 

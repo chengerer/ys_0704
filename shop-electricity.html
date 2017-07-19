@@ -65,27 +65,51 @@
 								</a>
 								<ul class="collapse coll-font">
 									<li class="shop-li2">
-										<a href="#">分离的链接</a>
+										<a href="#">电能概览</a>
 									</li>
 									<li class="shop-li2">
-										<a href="#">分离的链接</a>
+										<a href="#">用能明细</a>
 									</li>
 								</ul>
 							</li>
-							<li class="shop-li">
-								<a href="#"><img class="shop-dis" src="imgs/shop4.png" />交易管理</a>
+							<li class="shop-li dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="collapse">
+									<img class="shop-dis" src="imgs/shop2.png" />交易管理<b class="caret"></b>
+								</a>
+								<ul class="collapse coll-font">
+									<li class="shop-li2">
+										<a href="shop-declare.html">电量申报</a>
+									</li>
+									<li class="shop-li2">
+										<a href="#">交易结果</a>
+									</li>
+								</ul>
 							</li>
 							<li class="shop-li">
 								<a href="#"><img class="shop-dis" src="imgs/shop8.png" />业务管理</a>
 							</li>
 							<li class="shop-li">
-								<a href="#"><img class="shop-dis" src="imgs/shop5.png" />结算信息</a>
+								<a href="shop-settlement.html"><img class="shop-dis" src="imgs/shop5.png" />结算信息</a>
 							</li>
 							<li class="shop-li">
 								<a href="palm-shopa.html"><img class="shop-dis" src="imgs/shop3.png" />合同信息</a>
 							</li>
-							<li class="shop-li">
-								<a href="shop-message.html"><img class="shop-dis" src="imgs/shop1.png" />档案信息</a>
+
+							<li class="shop-li dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="collapse">
+									<img class="shop-dis" src="imgs/shop2.png" />档案信息<b class="caret"></b>
+								</a>
+								<ul class="collapse coll-font">
+									<li class="shop-li2">
+										<a href="shop-enery.html">生产用电</a>
+									</li>
+									<li class="shop-li2">
+										<a href="shop-electricity.html">用电电价</a>
+									</li>
+									<li class="shop-li2">
+										<a href="shop-message.html">档案信息</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 
@@ -144,7 +168,7 @@
 		<script type="text/javascript">
 			$(function() {
 				$(".dropdown").on('click', function() {
-					$(".collapse").toggle();
+					$(this).find('.collapse').toggle();
 				});
 			});
 			$(function() {
