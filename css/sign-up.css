@@ -16,8 +16,8 @@ img {
 	position: absolute;
 }
 .all-box {
-	/*height: 48%;*/
-	top: 20.8%;
+	height: 48%;
+	top: 30.2%;
 	background: rgb(238,238,238);
 	border-radius: 10px;
 }
@@ -34,8 +34,7 @@ img {
 }
 .boxs {
 	overflow: hidden;
-	/*margin-top: 50px !important;*/
-	margin: 0 auto;
+	margin: 20px auto;
 	max-width: 80%;
 	min-width: 50%;
 	/*height: 200px;*/
@@ -57,17 +56,17 @@ img {
 	font-size: 16px;
 	font-weight: bold;
 	border-radius: .625em;
-	margin: .625em 0 0;
+	margin: .625em 0 .5em;
 	background: rgb(32,175,241);
 	border: 0;
 	width: 12.5em;
 	height: 3.125em;
 }
-.all-p1 {
+.all-p1, .all-bott {
 	text-align: center;
 }
 .all-bott {
-	text-align: center;
+	padding-top: 2em;
 }
 .sp-btn {
 	width: 140px;

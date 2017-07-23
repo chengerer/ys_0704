@@ -31,3 +31,12 @@
 	margin-right: 0 !important;
 	/*width: 50%;*/
 }
+.code {
+	border: 1px solid #ccc;	
+	line-height: 30px;
+	padding: 0 15px;
+	cursor: pointer;
+}
+.code:hover {
+	background: rgb(0,172,222);
+}
