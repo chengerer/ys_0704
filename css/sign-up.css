@@ -11,13 +11,12 @@ img {
 	background-size: cover;
 }
 .all-box {
-	width: 25%;
-	left: 62%;
+	width: 23%;
+	left: 61%;
 	position: absolute;
 }
 .all-box {
-	height: 48%;
-	top: 30.2%;
+	top: 38%;
 	background: rgb(238,238,238);
 	border-radius: 10px;
 }
@@ -34,7 +33,7 @@ img {
 }
 .boxs {
 	overflow: hidden;
-	margin: 20px auto;
+	margin: 30px auto 10px;
 	max-width: 80%;
 	min-width: 50%;
 	/*height: 200px;*/

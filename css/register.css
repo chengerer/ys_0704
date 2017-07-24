@@ -40,3 +40,16 @@
 .code:hover {
 	background: rgb(0,172,222);
 }
+.select {
+	width: 120px;
+	text-align: center;
+	padding: 8px 0;
+	color: #555;
+	border: 1px solid #CCCCCC;
+}
+.form-control {
+	display: inline !important;
+}
+#inputEmail5 {
+	margin-left: 5px;
+}
