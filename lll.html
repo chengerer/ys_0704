@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/palmshop.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min93e3.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/layer/skins/layer.css" />
+		<link rel="stylesheet" type="text/css" href="css/background.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/style.min862f.css"/>-->
+	</head>
+
+	<body class="fixed-sidebar full-height-layout gray-bg">
+
+			<div class="commons">
+				<p>客户信息报备</p>
+				<hr />
+				<button class="btn btn-col2" onclick="addInfo()">新增</button>
+				<button class="btn btn-col2">修改</button>
+				<button class="btn btn-col2">删除</button>
+			</div>
+
+			<div class="shop-right1">
+				<p class="news-p">客户信息报备查询</p>
+				<div class="row service-main">
+					<form class="form-horizontal">
+						<div class="col-xs-4 form-group">
+							<label class="col-xs-5 control-label">公司名称：</label>
+							<div class="col-xs-7">
+								<input type="text" class="form-control" value="" />
+							</div>
+						</div>
+						<div class="col-xs-4 form-group">
+							<label class="col-xs-5 control-label">电压等级：</label>
+							<div class="col-xs-7">
+								<select class="form-control">
+									<option value="">全部</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-xs-4 form-group">
+							<label class="col-xs-5 control-label">报备信息：</label>
+							<div class="col-xs-7">
+								<select class="form-control">
+									<option value="">全部</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-xs-11 form-group text-right">
+							<input class="btn btn-col2 declar-btn pull-right message1" type="button" value="查询" />
+						</div>
+					</form>
+				</div>
+				<p class="news-p">客户信息报备列表</p>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th><input type="checkbox" class="checkAll" value="" /></th>
+							<th>序号</th>
+							<th>代码</th>
+							<th>公司名称</th>
+							<th>单位地址</th>
+							<th>电压等级(kV)</th>
+							<th>电量规模(万Kwh)</th>
+							<th>状态</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="checkbox" name="" id="" value="" /></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="paging-cen">
+					<ul class="pagination">
+						<li>
+							<a class="paging-padd" href="#">&laquo;</a>
+						</li>
+						<li class="active">
+							<a class="paging-padd" href="#">1</a>
+						</li>
+						<li>
+							<a class="paging-padd" href="#">2</a>
+						</li>
+						<li>
+							<a class="paging-padd" href="#">3</a>
+						</li>
+						<li>
+							<a class="paging-padd" href="#">4</a>
+						</li>
+						<li>
+							<a class="paging-padd" href="#">5</a>
+						</li>
+						<li>
+							<a class="paging-padd" href="#">&raquo;</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<script src="lib/jquery/2.2.4/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="lib/layer/contabs.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="lib/layer/layer.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/layer/laydate.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".dropdown").on('click', function() {
+					$(this).find('.collapse').toggle();
+				});
+				$('#collapseTwo').collapse('show')
+				$('#collapseThree').collapse('toggle')
+				$('#collapseOne').collapse('show')
+				$('#collapseFour').collapse('show')
+			});
+		
+			function addInfo() {
+				layer.open({
+					type: 2,
+					title: '客户信息报备新增',
+					skin: 'demo-class',
+					maxmin: true,
+					shade: [0.3, '#393D49'],
+					shadeClose: false,
+					id: '1',
+					area: ['900px', '400px'],
+					content: 'channel_reportMask.html'
+				});
+			}
+		</script>
+	</body>
+
+</html>
