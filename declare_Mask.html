@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/background.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.min862f.css" />
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap-datepicker/bootstrap-datepicker.min.css" />
+		<title></title>
+	</head>
+
+	<body>
+		<div class="row service-main">
+			<form class="form-horizontal">
+				<div class="col-xs-6 form-group">
+					<label class="col-xs-4 control-label">公司名称：</label>
+					<div class="col-xs-8">
+						<input type="text" class="form-control" value="" />
+					</div>
+				</div>
+				<div class="col-xs-6 form-group">
+					<label class="col-xs-4 control-label">申报时间：</label>
+					<div class="col-xs-8">
+						<div class="input-group date" id="datetimepicker">
+							<input type="text" class="form-control">
+							<div class="input-group-addon">
+								<span class="glyphicon glyphicon-th"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 form-group">
+					<label class="col-xs-4 control-label">委托电量：</label>
+					<div class="col-xs-8">
+						<input type="text" class="form-control" value="" />
+					</div>
+				</div>
+				<div class="col-xs-6 form-group">
+					<label class="col-xs-4 control-label">长协申报电量：</label>
+					<div class="col-xs-8">
+						<input type="text" class="form-control" value="" />
+					</div>
+				</div>
+				<div class="col-xs-6 form-group">
+					<label class="col-xs-4 control-label">月度竞价申报电量：</label>
+					<div class="col-xs-8">
+						<input type="text" class="form-control" value="" />
+					</div>
+				</div>
+				<div class="col-xs-6 form-group">
+					<label class="col-xs-4 control-label">预计电量：</label>
+					<div class="col-xs-8">
+						<input type="text" class="form-control" value="" />
+					</div>
+				</div>
+
+			</form>
+		</div>
+		<div class="col-xs-12 text-center">
+			<input class="btn-col2 declar-btn1" type="button" value="提交" />
+		</div>
+
+		<script src="lib/jquery/2.2.4/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/plum/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/plum/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//			时间控件
+			$(function() {
+				$('#datetimepicker').datepicker({
+					format: "yyyy/mm/dd",
+					language: "zh-CN",
+					calendarWeeks: true,
+					autoclose: true,
+					todayHighlight: true
+				});
+			});
+		</script>
+
+	</body>
+
+</html>

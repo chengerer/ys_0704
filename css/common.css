@@ -119,3 +119,6 @@ li {
 .paging-padd {
 	padding: 6px 20px !important;
 }
+.init {
+	display: none;
+}
