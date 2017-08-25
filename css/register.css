@@ -8,7 +8,7 @@
 .degistertxt {
 	width: 800px;
 	border: 1px solid #ddd;
-	margin: 0 auto;
+	margin: 0 auto !important;
 	box-shadow: 0 0 5px 1px #ddd;
 	margin-bottom: 20px;
 }
