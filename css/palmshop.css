@@ -1,7 +1,7 @@
 
-
 body {
 	font-size: 16px;
+	color: #676a6c;
 }
 .shop-main {
 	margin-top: 30px;
@@ -42,14 +42,12 @@ body {
 	padding-left: 0;
 }
 .shop-li {
-	/* padding-left: 15%; */
 	text-align: center;
 	line-height: 60px;
 	font-size: 18px;
 	border: 1px solid #CCCCCC;
 	margin-top: -1px;
-	/* padding-right: 10px; */
-	/*cursor: pointer;*/
+	cursor: pointer;
 }
 .shop-li a {
 	/*padding-left: 10px;*/

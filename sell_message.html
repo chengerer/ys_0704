@@ -8,8 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/palmshop.css" />
 		<link rel="stylesheet" type="text/css" href="css/background.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.min862f.css" />
-		<title>售电公司交易信息</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/style.min862f.css" />-->
+		<title>售电公司消息中心</title>
 	</head>
 
 	<body>
@@ -59,7 +59,7 @@
 					<div class="shop-left">
 						<ul class="shop-ul">
 							<!--电力用户-->
-							<li class="shop-li dropdown">
+							<li class="shop-li dropdowns">
 								<a href="javascript:;" class="dropdown-toggle" data-toggle="collapse">
 									<img class="shop-dis" src="img/shop2.png" />档案管理<b class="caret"></b>
 								</a>
@@ -79,7 +79,7 @@
 								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同管理</a>
 							</li>
 
-							<li class="shop-li dropdown">
+							<li class="shop-li dropdowns">
 								<a href="javascript:;" class="dropdown-toggle" data-toggle="collapse">
 									<img class="shop-dis" src="img/shop2.png" />交易管理<b class="caret"></b>
 								</a>
@@ -96,7 +96,7 @@
 							<li class="shop-li">
 								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />结算管理</a>
 							</li>
-							<li class="shop-li dropdown">
+							<li class="shop-li dropdowns">
 								<a href="javascript:;" class="dropdown-toggle" data-toggle="collapse">
 									<img class="shop-dis" src="img/shop2.png" />负荷监测<b class="caret"></b>
 								</a>
@@ -109,7 +109,7 @@
 									</li>
 								</ul>
 							</li>
-							<li class="shop-li dropdown">
+							<li class="shop-li dropdowns">
 								<a href="javascript:;" class="dropdown-toggle" data-toggle="collapse">
 									<img class="shop-dis" src="img/shop2.png" />业务办理<b class="caret"></b>
 								</a>
@@ -170,67 +170,65 @@
 					</div>
 				</div>
 				<div class="col-xs-9">
-
-					<div class="shop-right1">
-						<div class="row service-main">
-							<form class="form-horizontal">
-								<div class="col-xs-4 form-group">
-									<label class="col-xs-4 control-label">年度：</label>
-									<div class="col-xs-6">
-										<select class="form-control">
-											<option value="">全部</option>
-											<option value="">2017</option>
-										</select>
-									</div>
-
-								</div>
-								<div class="col-xs-4 form-group">
-									<label class="col-xs-6 control-label">交易类型：</label>
-									<div class="col-xs-6">
-										<select class="form-control">
-											<option value="">全部</option>
-											<option value="">长协</option>
-											<option value="">月度竞价</option>
-											<option value="">电量转让</option>
-										</select>
-									</div>
-
-								</div>
-								<div class="col-xs-4 form-group">
-									<input class="btn btn-col2 declar-btn pull-right" type="button" value="导出" />
-									<input class="btn btn-col2 declar-btn pull-right" type="button" value="查询" />
-								</div>
-							</form>
-						</div>
+					<div class="commons">
+						<button class="btn btn-col2" type="submit">全部</button>
+						<button class="btn btn-col2" type="submit">交易消息</button>
+						<button class="btn btn-col2" type="submit">合同消息</button>
+						<button class="btn btn-col2" type="submit">结算消息</button>
+						<button class="btn btn-col2" type="submit">客户报备消息</button>
+						<button class="btn btn-col2" type="submit">其他</button>
 					</div>
 
-					<!--月度电量调整-->
 					<div class="shop-right1">
-						<p class="news-p">交易信息</p>
-						<table class="table table-bordered">
-							<thead>
-								<tr>
-									<th>序号</th>
-									<th>交易类型</th>
-									<th>申报电量（MW）</th>
-									<th>成交电量（MW）</th>
-									<th>申报电价（元）</th>
-									<th>成交电价（元）</th>
-									<th>交易时间</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>2017-8-25</td>
-								</tr>
-							</tbody>
-						</table>
+						<p class="news-p">交易消息</p>
+						<ul class="news-ul">
+							<li class="news-li">
+								<h4 class="news-h4">港媒称中企在非洲进军新领域：将西方同行甩开<span class="news-span">2017-7-1</span></h4>
+								<p>据香港《南华早报》6月30日报道，麦肯锡咨询公司30日发布的一份报告显示，在非洲经营的中国企业在未来十年中可能会出现快速增长，因为它们将制造业和资源的主导地位扩大到服务和物流等新的领域。</p>
+							</li>
+							<hr />
+							<li class="news-li">
+								<h4 class="news-h4">港媒称中企在非洲进军新领域：将西方同行甩开<span class="news-span">2017-7-1</span></h4>
+								<p>据香港《南华早报》6月30日报道，麦肯锡咨询公司30日发布的一份报告显示，在非洲经营的中国企业在未来十年中可能会出现快速增长，因为它们将制造业和资源的主导地位扩大到服务和物流等新的领域。</p>
+							</li>
+							<hr />
+							<li class="news-li">
+								<h4 class="news-h4">港媒称中企在非洲进军新领域：将西方同行甩开<span class="news-span">2017-7-1</span></h4>
+								<p>据香港《南华早报》6月30日报道，麦肯锡咨询公司30日发布的一份报告显示，在非洲经营的中国企业在未来十年中可能会出现快速增长，因为它们将制造业和资源的主导地位扩大到服务和物流等新的领域。</p>
+							</li>
+							<hr />
+							<li class="news-li">
+								<h4 class="news-h4">港媒称中企在非洲进军新领域：将西方同行甩开<span class="news-span">2017-7-1</span></h4>
+								<p>据香港《南华早报》6月30日报道，麦肯锡咨询公司30日发布的一份报告显示，在非洲经营的中国企业在未来十年中可能会出现快速增长，因为它们将制造业和资源的主导地位扩大到服务和物流等新的领域。</p>
+							</li>
+						</ul>
+					</div>
+
+					<!--翻页-->
+					<div class="paging-cen">
+						<ul class="pagination">
+							<li>
+								<a class="paging-padd" href="#">&laquo;</a>
+							</li>
+							<li class="active">
+								<a class="paging-padd" href="#">1</a>
+							</li>
+							<li>
+								<a class="paging-padd" href="#">2</a>
+							</li>
+							<li>
+								<a class="paging-padd" href="#">3</a>
+							</li>
+							<li>
+								<a class="paging-padd" href="#">4</a>
+							</li>
+							<li>
+								<a class="paging-padd" href="#">5</a>
+							</li>
+							<li>
+								<a class="paging-padd" href="#">&raquo;</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -240,22 +238,22 @@
 		<script src="lib/bootstrap/3.3.7/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function() {
-				$(".dropdown").on('click', function() {
-					$(this).find('.collapse').toggle();
+				$(".dropdowns").on('click', function() {
+					$(this).find('.collapse').show();
 				});
 			});
-			$(function() {
-				$('#collapseTwo').collapse('show')
-			});
-			$(function() {
-				$('#collapseThree').collapse('toggle')
-			});
-			$(function() {
-				$('#collapseOne').collapse('show')
-			});
-			$(function() {
-				$('#collapseFour').collapse('show')
-			});
+			//			$(function() {
+			//				$('#collapseTwo').collapse('show')
+			//			});
+			//			$(function() {
+			//				$('#collapseThree').collapse('toggle')
+			//			});
+			//			$(function() {
+			//				$('#collapseOne').collapse('show')
+			//			});
+			//			$(function() {
+			//				$('#collapseFour').collapse('show')
+			//			});
 		</script>
 	</body>
 

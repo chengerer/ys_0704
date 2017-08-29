@@ -39,3 +39,10 @@ dd {
 	color: #61656B;
 	font-size: 14px;
 }
+.icon-share, .icon-love {
+	cursor: pointer;
+	font-size: 22px;
+}
+.figure {
+	color: #61656B;
+}

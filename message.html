@@ -23,7 +23,7 @@
 
 			<!--描述：头部导航条 -->
 			<div class="nav clearfix">
-				<div class="logo"><img src="imgs/logo.png" /></div>
+				<div class="logo"><img src="img/logo.png" /></div>
 				<div class="nav_link">
 					<ul class="nav-ul flex-wrapper">
 						<li class="nav-item">
@@ -56,41 +56,26 @@
 						<li class="more-li fl corlor1"><a href="messagea.html">行业新闻</a></li>
 					</ul>
 					<ol class="more-ol">
-						<li>关于晟能售电价格调整 <span class="more-span fr">2017-6-28</span></li>
-						<li>电力设备行业：5月新能源汽车加速放量 6月商用车销量更值得期待 <span class="more-span fr">2017-6-28</span></li>
-						<li>行业研报精选：两大主线布局电力行业 <span class="more-span fr">2017-6-28</span></li>
-						<li>电力行业国企公司制改制定时间表 整体上市是重要的方向 <span class="more-span fr">2017-6-28</span></li>
-						<li>关于晟能售电价格调整 <span class="more-span fr">2017-6-28</span></li>
-						<li>电力行业国企公司制改制定时间表 整体上市是重要的方向 <span class="more-span fr">2017-6-28</span></li>
-						<li>电力供给侧重在提质增效 <span class="more-span fr">2017-6-28</span></li>
-						<li>关于晟能售电价格调整 <span class="more-span fr">2017-6-28</span></li>
-						<li>电力行业国企公司制改制定时间表 整体上市是重要的方向 <span class="more-span fr">2017-6-28</span></li>
-						<li>国家电力2016年年度权益分派实施公告 <span class="more-span fr">2017-6-28</span></li>
+						<li><a href="javascript:;">关于晟能售电价格调整 </a><span class="more-span fr">2017-6-28</span></li>
+						<li><a href="javascript:;">电力设备行业：5月新能源汽车加速放量 6月商用车销量更值得期待 </a><span class="more-span fr">2017-6-28</span></li>
+						<li><a href="javascript:;">行业研报精选：两大主线布局电力行业 </a><span class="more-span fr">2017-6-28</span></li>
+						<li><a href="javascript:;">电力行业国企公司制改制定时间表 整体上市是重要的方向 </a><span class="more-span fr">2017-6-28</span></li>
+						<li><a href="javascript:;">关于晟能售电价格调整</a> <span class="more-span fr">2017-6-28</span></li>
+						<li><a href="javascript:;">电力行业国企公司制改制定时间表 整体上市是重要的方向</a> <span class="more-span fr">2017-6-28</span></li>
+						<li><a href="javascript:;">电力供给侧重在提质增效</a> <span class="more-span fr">2017-6-28</span></li>
+						<li><a href="javascript:;">关于晟能售电价格调整</a> <span class="more-span fr">2017-6-28</span></li>
+						<li><a href="javascript:;">电力行业国企公司制改制定时间表 整体上市是重要的方向</a> <span class="more-span fr">2017-6-28</span></li>
+						<li><a href="javascript:;">国家电力2016年年度权益分派实施公告</a> <span class="more-span fr">2017-6-28</span></li>
 					</ol>
 				</div>
 					<!--翻页-->
 			<div class="paging-cen">
 				<ul class="pagination">
-					<li>
-						<a class="paging-padd" href="#">&laquo;</a>
-					</li>
 					<li class="active">
 						<a class="paging-padd" href="#">1</a>
 					</li>
 					<li>
 						<a class="paging-padd" href="#">2</a>
-					</li>
-					<li>
-						<a class="paging-padd" href="#">3</a>
-					</li>
-					<li>
-						<a class="paging-padd" href="#">4</a>
-					</li> 
-					<li>
-						<a class="paging-padd" href="#">5</a>
-					</li>
-					<li>
-						<a class="paging-padd" href="#">&raquo;</a>
 					</li>
 				</ul>
 			</div>
@@ -117,6 +102,12 @@
 		
 		<script src="lib/jquery/2.2.4/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			$(function(){
+				$(".pagination").on('click','li',function(){
+					console.log($(this).css('background'))
+					$(this).css({'background-color':'rgb(51,122,183)'}).siblings().css({'background-color':'rgb(238,238,238)'});
+				});
+			});
 			
 //			$(function(){
 //				$(".more-li").hover(function(){

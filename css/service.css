@@ -1,4 +1,5 @@
 a {
+	/*color: black !important;*/
 	text-decoration: none !important;
 }
 .enery-main {
@@ -205,31 +206,31 @@ a {
 }
 
 .item-a1 {
-	background-image: url(../imgs/proctor02.png);
+	background-image: url(../img/proctor02.png);
 	
 }
 
 .item-a2 {
-	background-image: url(../imgs/proctor03.png);
+	background-image: url(../img/proctor03.png);
 }
 
 .item-a3 {
-	background-image: url(../imgs/proctor01.png);
+	background-image: url(../img/proctor01.png);
 }
 
 .item-a1.current {
 	color: rgb(0, 172, 226);
-	background-image: url(../imgs/proctor022.png);
+	background-image: url(../img/proctor022.png);
 }
 
 .item-a2.current {
 	color: rgb(0, 172, 226);
-	background-image: url(../imgs/proctor033.png);
+	background-image: url(../img/proctor033.png);
 }
 
 .item-a3.current {
 	color: rgb(0, 172, 226);
-	background-image: url(../imgs/proctor011.png);
+	background-image: url(../img/proctor011.png);
 }
 
 .pp1 a {

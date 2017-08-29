@@ -7,7 +7,7 @@ img {
 }
 .all {
 	min-width: 900px;
-	background: url(../imgs/register-l.png) no-repeat;
+	background: url(../img/register-l.png) no-repeat;
 	background-size: cover;
 }
 .all-box {

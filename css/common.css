@@ -1,6 +1,9 @@
 body {
 	font-family: "微软雅黑";
 }
+a {
+	color: #61656b !important;
+}
 a:hover {
 	/*color: rgb(0,172,226) !important;*/
 }

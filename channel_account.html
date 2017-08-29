@@ -9,7 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="css/palmshop.css" />
 		<link rel="stylesheet" type="text/css" href="css/background.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.min862f.css" />
-		<title>售电公司交易信息</title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap-datepicker/bootstrap-datepicker.min.css" />
+		<title>渠道商结算信息</title>
 	</head>
 
 	<body>
@@ -174,30 +175,17 @@
 					<div class="shop-right1">
 						<div class="row service-main">
 							<form class="form-horizontal">
-								<div class="col-xs-4 form-group">
-									<label class="col-xs-4 control-label">年度：</label>
-									<div class="col-xs-6">
-										<select class="form-control">
-											<option value="">全部</option>
-											<option value="">2017</option>
-										</select>
+								<div class="col-xs-6 form-group">
+									<label class="col-xs-4 control-label">时间：</label>
+									<div class="col-xs-8">
+										<div class="input-daterange input-group" id="datetimepicker">
+											<input type="text" class="input-sm form-control" name="start" />
+											<span class="input-group-addon">--</span>
+											<input type="text" class="input-sm form-control" name="end" />
+										</div>
 									</div>
-
 								</div>
-								<div class="col-xs-4 form-group">
-									<label class="col-xs-6 control-label">交易类型：</label>
-									<div class="col-xs-6">
-										<select class="form-control">
-											<option value="">全部</option>
-											<option value="">长协</option>
-											<option value="">月度竞价</option>
-											<option value="">电量转让</option>
-										</select>
-									</div>
-
-								</div>
-								<div class="col-xs-4 form-group">
-									<input class="btn btn-col2 declar-btn pull-right" type="button" value="导出" />
+								<div class="col-xs-3 form-group">
 									<input class="btn btn-col2 declar-btn pull-right" type="button" value="查询" />
 								</div>
 							</form>
@@ -211,16 +199,32 @@
 							<thead>
 								<tr>
 									<th>序号</th>
-									<th>交易类型</th>
-									<th>申报电量（MW）</th>
-									<th>成交电量（MW）</th>
-									<th>申报电价（元）</th>
-									<th>成交电价（元）</th>
-									<th>交易时间</th>
+									<th>渠道代码</th>
+									<th>年合同电量</th>
+									<th>年委托电量</th>
+									<th>年用电量</th>
+									<th>长协成交电量</th>
+									<th>年竞价电量</th>
+									<th>甲方长协收益</th>
+									<th>乙方长协收益</th>
+									<th>用电量固定提成</th>
+									<th>长协提成</th>
+									<th>长协收益</th>
+									<th>乙方竞价收益</th>
+									<th>竞价提成</th>
+									<th>竞价收益</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
 									<td></td>
 									<td></td>
 									<td></td>
@@ -232,29 +236,58 @@
 							</tbody>
 						</table>
 					</div>
+					<!--翻页-->
+					<div class="paging-cen">
+						<ul class="pagination">
+							<li>
+								<a class="paging-padd" href="#">&laquo;</a>
+							</li>
+							<li class="active">
+								<a class="paging-padd" href="#">1</a>
+							</li>
+							<li>
+								<a class="paging-padd" href="#">2</a>
+							</li>
+							<li>
+								<a class="paging-padd" href="#">3</a>
+							</li>
+							<li>
+								<a class="paging-padd" href="#">4</a>
+							</li>
+							<li>
+								<a class="paging-padd" href="#">5</a>
+							</li>
+							<li>
+								<a class="paging-padd" href="#">&raquo;</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 
 		</div>
 		<script src="lib/jquery/2.2.4/jquery-2.2.4.js" type="text/javascript" charset="utf-8"></script>
 		<script src="lib/bootstrap/3.3.7/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/plum/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/plum/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function() {
 				$(".dropdown").on('click', function() {
 					$(this).find('.collapse').toggle();
 				});
 			});
+			//时间控件
 			$(function() {
-				$('#collapseTwo').collapse('show')
-			});
-			$(function() {
-				$('#collapseThree').collapse('toggle')
-			});
-			$(function() {
-				$('#collapseOne').collapse('show')
-			});
-			$(function() {
-				$('#collapseFour').collapse('show')
+				$('#datetimepicker').datepicker({
+					format: "yyyy-mm",
+					language: "zh-CN",
+					calendarWeeks: true,
+					minViewMode: 1,
+					autoclose: true,
+					todayHighlight: true,
+					orientation: "bottom left",
+					autoclose: true
+				});
 			});
 		</script>
 	</body>
