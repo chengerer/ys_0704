@@ -22,7 +22,7 @@
 		<div class="wrapper">
 			<!--描述：头部导航条 -->
 			<div class="nav clearfix">
-				<div class="logo"><img src="imgs/logo.png" /></div>
+				<div class="logo"><a href="index.html"><img src="img/logo.png" /></a></div>
 				<div class="nav_link">
 					<ul class="nav-ul flex-wrapper">
 						<li class="nav-item">
@@ -50,67 +50,103 @@
 			<div class="shop-main">
 				<div class="col-xs-3">
 					<div class="shop-bac">
-						<div class="shop-imga"><img src="imgs/shop.png" /></div>
+						<div class="shop-imga"><img src="img/shop.png" /></div>
 						<p class="shop-pa">XXXXX有限公司</p>
-						<p class="shop-p clearfix"><span class="shop-spana">企业代码 </span><span class="aa">|</span><span class="shop-spana"> 修改密码</span></p>
+						<p class="shop-p clearfix"><span class="shop-spana">企业代码 </span><span class="aa">|</span><span class="shop-spana"><a href="change_password.html"> 修改密码</a></span></p>
 					</div>
 					<div class="shop-left">
 						<ul class="shop-ul">
-							<li class="shop-li">
-								<a href="shop-news.html"><img class="shop-dis" src="imgs/shop7.png" />消息中心</a>
-							</li>
+							<!--电力用户-->
 							<li class="shop-li dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="imgs/shop2.png" />负荷监测<b class="caret"></b>
+									<img class="shop-dis" src="img/shop2.png" />档案管理<b class="caret"></b>
 								</a>
 								<ul class="collapse coll-font">
 									<li class="shop-li2">
-										<a href="#">电能概览</a>
+										<a href="shop-message.html">基本信息</a>
 									</li>
-									<li class="shop-li2">
-										<a href="shop-subsidiary.html">用能明细</a>
-									</li>
-								</ul>
-							</li>
-							<li class="shop-li dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="imgs/shop2.png" />交易管理<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
-									<li class="shop-li2">
-										<a href="shop-declare.html">电量申报</a>
-									</li>
-									<li class="shop-li2">
-										<a href="#">交易结果</a>
-									</li>
-								</ul>
-							</li>
-							<li class="shop-li">
-								<a href="#"><img class="shop-dis" src="imgs/shop8.png" />业务管理</a>
-							</li>
-							<li class="shop-li">
-								<a href="shop-settlement.html"><img class="shop-dis" src="imgs/shop5.png" />结算信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="palm-shopa.html"><img class="shop-dis" src="imgs/shop3.png" />合同信息</a>
-							</li>
-
-							<li class="shop-li dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="imgs/shop2.png" />档案信息<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
 									<li class="shop-li2">
 										<a href="shop-enery.html">生产用电</a>
 									</li>
 									<li class="shop-li2">
 										<a href="shop-electricity.html">用电电价</a>
 									</li>
+								</ul>
+							</li>
+							<li class="shop-li">
+								<a href="palm-shopa.html"><img class="shop-dis" src="img/shop3.png" />合同管理</a>
+							</li>
+
+							<li class="shop-li dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="collapse">
+									<img class="shop-dis" src="img/shop2.png" />交易管理<b class="caret"></b>
+								</a>
+								<ul class="collapse coll-font">
 									<li class="shop-li2">
-										<a href="shop-message.html">档案信息</a>
+										<a href="shop-declare.html">电量申报</a>
+									</li>
+									<li class="shop-li2">
+										<a href="shop-deal.html">交易结果</a>
 									</li>
 								</ul>
 							</li>
+
+							<li class="shop-li">
+								<a href="shop-settlement.html"><img class="shop-dis" src="img/shop3.png" />结算管理</a>
+							</li>
+							<li class="shop-li dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="collapse">
+									<img class="shop-dis" src="img/shop2.png" />负荷监测<b class="caret"></b>
+								</a>
+								<ul class="collapse coll-font">
+									<li class="shop-li2">
+										<a href="shop-subsidiary.html">用能明细</a>
+									</li>
+									<li class="shop-li2">
+										<a href="shop-summarize.html">用能概览</a>
+									</li>
+								</ul>
+							</li>
+							<li class="shop-li">
+								<a href="shop-news.html"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
+							</li>
+							<!--发电企业-->
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />交易信息</a>
+							</li>
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
+							</li>
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
+							</li>
+							<!--售电公司-->
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />交易信息</a>
+							</li>
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
+							</li>
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
+							</li>
+							<!--渠道商-->
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />交易信息</a>
+							</li>
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
+							</li>
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />结算信息</a>
+							</li>
+							<li class="shop-li">
+								<a href="channel_report.html"><img class="shop-dis" src="img/shop3.png" />客户报备</a>
+							</li>
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
+							</li>
+
 						</ul>
 
 					</div>
@@ -157,15 +193,18 @@
 					<div class="shop-right1">
 						<p class="summ-p">日负荷曲线</p>
 						<p class="summ-p1"><span class="orange">今日最大负荷量：4099Kw 时间：2017-07-04</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">昨日最大负荷量：4099Kw 时间：2017-07-04</span></p>
-						<div id="main" style="width: 900px;height:300px;"></div>
+						<div id="main" style="width: 90%;height:400px;"></div>
 					</div>
 
-					<div class="shop-right1 bott">
+					<div class="shop-right1 bott clearfix">
 						<p class="summ-p">历史电量</p>
-						<div id="main" style="width: 900px;height:250px;">
-							<div id="main-1" class="fl" style="width: 300px;height: 250px;"></div>
-							<div id="main-2" class="fr" style="width: 600px;height: 250px;"></div>
+						<div class="col-xs-4 enery" style="width: 30%;height: 250px;">
+							<div class="alls">
+								<div class="tops">过去48小时</div>
+								<div class="foots">过去31天</div>
+							</div>
 						</div>
+						<div id="main-2" class="col-xs-8" style="width: 70%;height: 350px;"></div>
 					</div>
 
 				</div>
@@ -174,123 +213,266 @@
 		</div>
 		<script src="lib/jquery/2.2.4/jquery-2.2.4.js" type="text/javascript" charset="utf-8"></script>
 		<script src="lib/bootstrap/3.3.7/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
-		<script src="lib/echarts/echarts.simple.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/echarts/3.6.2/echarts.common.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function() {
 				$(".dropdown").on('click', function() {
 					$(this).find('.collapse').toggle();
 				});
 			});
-			$(function() {
-				$('#collapseTwo').collapse('show')
-			});
-			$(function() {
-				$('#collapseThree').collapse('toggle')
-			});
-			$(function() {
-				$('#collapseOne').collapse('show')
-			});
-			$(function() {
-				$('#collapseFour').collapse('show')
-			});
 
 			var myChart = echarts.init(document.getElementById('main'));
-			var option = {
-				title: {
-					text: '折线图堆叠'
-				},
+			option = {
 				tooltip: {
-					trigger: 'axis'
+					trigger: 'axis',
+					axisPointer: {
+						type: 'cross'
+					}
 				},
 				legend: {
-					data: ['邮件营销', '联盟广告']
+						data: ['昨日', '今日']
 				},
-				grid: {
-					left: '3%',
-					right: '4%',
-					bottom: '3%',
-					containLabel: true
-				},
+				color: ['rgb(62,189,231)', 'orange'],
 				toolbox: {
+					show: true,
 					feature: {
-						saveAsImage: {}
+						//						saveAsImage: {}
 					}
 				},
 				xAxis: {
 					type: 'category',
 					boundaryGap: false,
-					data: ['0:00', '1:30', '3:30', '4:30', '1:30', '1:30', '1:30', '1:30', '1:30', '1:30', '1:30']
+					data: ['0:00', '1:30', '3:00', '4:30', '6:00', '7:30', '9:00', '10:30', '12:00', '13:30', '15:00', '16:30', '18:00', '19:30', '21:00', '22:30']
 				},
 				yAxis: {
-					type: 'value'
+					type: 'value',
+					name: '(单位)kW',
+					min: 0,
+					//					max: 50000,
+					interval: 10000,
+					axisLabel: {
+						//						formatter: '{value}'
+					},
+					axisPointer: {
+						snap: true
+					}
+				},
+				visualMap: {
+					show: false,
+					dimension: 0
+
 				},
 				series: [{
-						name: '邮件营销',
-						type: 'line',
-						stack: '总量',
-						data: [120, 132, 101, 134, 90, 110, 120, 132, 101, 134, 90, 230, 210]
-					},
-					{
-						name: '联盟广告',
-						type: 'line',
-						stack: '总量',
-						data: [130, 139, 121, 144, 98, 120, 120, 135, 111, 139, 100, 240, 219]
-					},
-				]
+					name: '今日',
+					type: 'line',
+					smooth: true,
+					data: [33300, 32380, 33250, 32260, 34270, 36300, 99999, 34500, 35400, 36390, 34380, 33890, 37400, 34500, 36600, 36780],
+
+				}, {
+					name: '昨日',
+					type: 'line',
+					smooth: true,
+					data: [36300, 35380, 38250, 38260, 37270, 39300, 38550, 35500],
+				}]
 			};
+
 			myChart.setOption(option);
 
-
 			var myChart = echarts.init(document.getElementById('main-2'));
-			var xAxisData = [];
-			var data1 = [];
-			var data2 = [];
-			for(var i = 20; i < 100; i++) {
-				xAxisData.push('2017-06-01' + i);
-				data1.push((Math.sin(i / 5) * (i / 5 - 10) + i / 6) * 5);
-			}
 			option = {
-				title: {
-					text: '柱状图动画延迟'
+				tooltip: {
+					trigger: 'axis'
 				},
-				legend: {
-					data: ['bar'],
-					align: 'left'
-				},
+				//				dataZoom: [{ // 这个dataZoom组件，默认控制x轴。
+				//						type: 'slider', // 这个 dataZoom 组件是 slider 型 dataZoom 组件
+				//						start: 10, // 左边在 10% 的位置。
+				//						end: 60 // 右边在 60% 的位置。
+				//					},
+				//					{ // 这个dataZoom组件，也控制x轴。
+				//						type: 'inside', // 这个 dataZoom 组件是 inside 型 dataZoom 组件
+				//						start: 10, // 左边在 10% 的位置。
+				//						end: 60 // 右边在 60% 的位置。
+				//					}
+				//				],
 				toolbox: {
-					// y: 'bottom',
 					feature: {
-						magicType: {
-							type: ['stack', 'tiled']
+						dataView: {
+							show: false,
+							readOnly: false
 						},
-						dataView: {},
+						magicType: {
+							show: false,
+							type: ['line', 'bar']
+						},
+						restore: {
+							show: false
+						},
 						saveAsImage: {
-							pixelRatio: 2
+							show: false
 						}
 					}
 				},
-				tooltip: {},
-				xAxis: {
-					data: xAxisData,
-					silent: false,
-					splitLine: {
-						show: false
-					}
+				legend: {
+					data: ['Time', 'speed(m/min)']
 				},
-				yAxis: {},
-				series: [{
-					name: 'bar',
-					type: 'bar',
-					data: data1,
-					animationDelay: function(idx) {
-						return idx * 10;
-					}
+				xAxis: [{
+					type: 'category',
+					data: [
+						'2015-08-12 17:35:03',
+						'2015-08-12 17:50:03',
+						'2015-08-12 18:05:03',
+						'2015-08-12 18:20:03',
+						'2015-08-12 18:35:03',
+						'2015-08-12 18:50:03',
+						'2015-08-12 19:05:03',
+						'2015-08-12 19:20:03',
+						'2015-08-12 19:35:03',
+						'2015-08-12 19:50:03',
+						'2015-08-12 20:05:03',
+						'2015-08-12 20:20:03',
+						'2015-08-12 20:35:03',
+						'2015-08-12 20:50:03',
+						'2015-08-12 21:05:03',
+						'2015-08-12 21:20:03',
+						'2015-08-12 21:35:03',
+						'2015-08-12 21:50:03',
+						'2015-08-12 22:05:03',
+						'2015-08-12 22:20:03',
+						'2015-08-12 22:35:03',
+						'2015-08-12 22:50:03',
+						'2015-08-12 23:05:03',
+						'2015-08-12 23:20:03',
+						'2015-08-12 23:35:03',
+						'2015-08-12 23:50:03',
+						'2015-08-13 00:05:03',
+						'2015-08-13 00:20:03',
+						'2015-08-13 00:35:03',
+						'2015-08-13 00:50:03',
+						'2015-08-13 01:05:03',
+						'2015-08-13 01:20:03',
+						'2015-08-13 01:35:03',
+						'2015-08-13 01:50:03',
+						'2015-08-13 02:05:03',
+						'2015-08-13 02:20:03',
+						'2015-08-13 02:35:03',
+						'2015-08-13 02:50:03',
+						'2015-08-13 03:05:03',
+						'2015-08-13 03:20:03',
+						'2015-08-13 03:35:03',
+						'2015-08-13 03:50:03',
+						'2015-08-13 04:05:03',
+						'2015-08-13 04:20:03',
+						'2015-08-13 04:35:03',
+						'2015-08-13 04:50:03',
+						'2015-08-13 05:05:03',
+						'2015-08-13 05:20:03',
+						'2015-08-13 05:35:03',
+						'2015-08-13 05:50:03',
+						'2015-08-13 06:05:03',
+						'2015-08-13 06:20:03',
+						'2015-08-13 06:35:03',
+						'2015-08-13 06:50:03',
+						'2015-08-13 07:05:03',
+						'2015-08-13 07:20:03',
+						'2015-08-13 07:35:03',
+						'2015-08-13 07:50:03',
+						'2015-08-13 08:05:03',
+						'2015-08-13 08:20:03',
+						'2015-08-13 08:35:03',
+						'2015-08-13 08:50:03',
+						'2015-08-13 09:05:03',
+						'2015-08-13 09:20:03',
+						'2015-08-13 09:35:03',
+						'2015-08-13 09:50:03',
+						'2015-08-13 10:05:03',
+						'2015-08-13 10:20:03',
+						'2015-08-13 10:35:03',
+						'2015-08-13 10:50:03',
+						'2015-08-13 11:05:03',
+						'2015-08-13 11:20:03',
+						'2015-08-13 11:35:03',
+						'2015-08-13 11:50:03',
+						'2015-08-13 12:05:03',
+						'2015-08-13 12:20:03',
+						'2015-08-13 12:35:03',
+						'2015-08-13 12:50:03',
+						'2015-08-13 13:05:03',
+						'2015-08-13 13:20:03',
+						'2015-08-13 13:35:03',
+						'2015-08-13 13:50:03',
+						'2015-08-13 14:05:03',
+						'2015-08-13 14:20:03',
+						'2015-08-13 14:35:03',
+						'2015-08-13 14:50:03',
+						'2015-08-13 15:05:03',
+						'2015-08-13 15:20:03',
+						'2015-08-13 15:35:03',
+						'2015-08-13 15:50:03',
+						'2015-08-13 16:05:03',
+						'2015-08-13 16:20:03',
+						'2015-08-13 16:35:03',
+						'2015-08-13 16:50:03',
+						'2015-08-13 17:05:03',
+						'2015-08-13 17:20:03',
+						'2015-08-13 17:35:03',
+						'2015-08-13 17:50:03',
+						'2015-08-13 18:05:03',
+						'2015-08-13 18:20:03',
+						'2015-08-13 18:35:03',
+						'2015-08-13 18:50:03',
+						'2015-08-13 19:05:03',
+						'2015-08-13 19:20:03',
+						'2015-08-13 19:35:03',
+						'2015-08-13 19:50:03',
+						'2015-08-13 20:05:03',
+						'2015-08-13 20:20:03',
+						'2015-08-13 20:35:03',
+						'2015-08-13 20:50:03',
+						'2015-08-13 21:05:03',
+						'2015-08-13 21:20:03',
+						'2015-08-13 21:35:03',
+						'2015-08-13 21:50:03',
+						'2015-08-13 22:05:03',
+						'2015-08-13 22:20:03',
+						'2015-08-13 22:35:03',
+						'2015-08-13 22:50:03',
+						'2015-08-13 23:05:03',
+
+					]
 				}],
-				animationEasing: 'elasticOut',
-				animationDelayUpdate: function(idx) {
-					return idx * 5;
-				}
+				yAxis: [{
+						type: 'value',
+						//						name: 'group',
+						min: 0,
+						//max: 100000,
+						//						interval: 20000,
+						axisLabel: {
+							//							formatter: '{value} '
+						},
+						axisPointer: {
+							snap: true
+						}
+					},
+
+					{
+						show: false,
+						type: 'value',
+						name: 'speed(m/min)',
+						min: 0,
+						max: 5000,
+						axisLabel: {
+							formatter: '{value}m/min '
+						}
+					}
+				],
+				series: [{
+					name: '历史电量',
+					type: 'bar',
+					//					yAxisIndex: 1,
+					data: [3, 3, 3, 3, 7, 5, 5, 5, 8, 7, 9, 9, 9, 9, 1237, 1121, 916, 750, 605, 449, 320, 209, 144, 84, 49, 30, 25, 31, 22, 24, 19, 33, 40, 45, 40, 35, 15, 14, 17, 17, 17, 24, 43, 113, 269, 495, 778, 1122, 1581, 2007, 2477, 2865, 3186, 3478, 3647, 3781, 3875, 3924, 3879, 3888, 3839, 3791, 3740, 3635, 3571, 3488, 3437, 3387, 3308, 3269, 3213, 3157, 3105, 3069, 3028, 2971, 2946, 2931, 2916, 2942, 2922, 2955, 2948, 2988, 3030, 3059, 3061, 3157, 3201, 3294, 3377, 3462, 3554, 3618, 3642, 3626, 3624, 3575, 3516, 3458, 3322, 3233, 3086, 2904, 2702, 2512, 2253, 2032, 1776, 1557, 1313, 1085, 875, 703, 568, 423, 280, 171, 115]
+				}]
 			};
+
 			myChart.setOption(option);
 		</script>
 	</body>

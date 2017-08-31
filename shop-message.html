@@ -22,7 +22,7 @@
 		<div class="wrapper">
 			<!--描述：头部导航条 -->
 			<div class="nav clearfix">
-				<div class="logo"><img src="imgs/logo.png" /></div>
+				<div class="logo"><a href="index.html"><img src="img/logo.png" /></a></div>
 				<div class="nav_link">
 					<ul class="nav-ul flex-wrapper">
 						<li class="nav-item">
@@ -50,67 +50,103 @@
 			<div class="shop-main">
 				<div class="col-xs-3">
 					<div class="shop-bac">
-						<div class="shop-imga"><img src="imgs/shop.png" /></div>
+						<div class="shop-imga"><img src="img/shop.png" /></div>
 						<p class="shop-pa">XXXXX有限公司</p>
-						<p class="shop-p clearfix"><span class="shop-spana">企业代码 </span><span class="aa">|</span><span class="shop-spana"> 修改密码</span></p>
+						<p class="shop-p clearfix"><span class="shop-spana">企业代码 </span><span class="aa">|</span><span class="shop-spana"><a href="change_password.html"> 修改密码</a></span></p>
 					</div>
 					<div class="shop-left">
 						<ul class="shop-ul">
-							<li class="shop-li">
-								<a href="shop-news.html"><img class="shop-dis" src="imgs/shop7.png" />消息中心</a>
-							</li>
+							<!--电力用户-->
 							<li class="shop-li dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="imgs/shop2.png" />负荷监测<b class="caret"></b>
+									<img class="shop-dis" src="img/shop2.png" />档案管理<b class="caret"></b>
 								</a>
 								<ul class="collapse coll-font">
 									<li class="shop-li2">
-										<a href="#">电能概览</a>
+										<a href="shop-message.html">基本信息</a>
 									</li>
-									<li class="shop-li2">
-										<a href="shop-subsidiary.html">用能明细</a>
-									</li>
-								</ul>
-							</li>
-							<li class="shop-li dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="imgs/shop2.png" />交易管理<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
-									<li class="shop-li2">
-										<a href="shop-declare.html">电量申报</a>
-									</li>
-									<li class="shop-li2">
-										<a href="#">交易结果</a>
-									</li>
-								</ul>
-							</li>
-							<li class="shop-li">
-								<a href="#"><img class="shop-dis" src="imgs/shop8.png" />业务管理</a>
-							</li>
-							<li class="shop-li">
-								<a href="shop-settlement.html"><img class="shop-dis" src="imgs/shop5.png" />结算信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="palm-shopa.html"><img class="shop-dis" src="imgs/shop3.png" />合同信息</a>
-							</li>
-
-							<li class="shop-li dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="imgs/shop2.png" />档案信息<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
 									<li class="shop-li2">
 										<a href="shop-enery.html">生产用电</a>
 									</li>
 									<li class="shop-li2">
 										<a href="shop-electricity.html">用电电价</a>
 									</li>
+								</ul>
+							</li>
+							<li class="shop-li">
+								<a href="palm-shopa.html"><img class="shop-dis" src="img/shop3.png" />合同管理</a>
+							</li>
+
+							<li class="shop-li dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="collapse">
+									<img class="shop-dis" src="img/shop2.png" />交易管理<b class="caret"></b>
+								</a>
+								<ul class="collapse coll-font">
 									<li class="shop-li2">
-										<a href="shop-message.html">档案信息</a>
+										<a href="shop-declare.html">电量申报</a>
+									</li>
+									<li class="shop-li2">
+										<a href="shop-deal.html">交易结果</a>
 									</li>
 								</ul>
 							</li>
+
+							<li class="shop-li">
+								<a href="shop-settlement.html"><img class="shop-dis" src="img/shop3.png" />结算管理</a>
+							</li>
+							<li class="shop-li dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="collapse">
+									<img class="shop-dis" src="img/shop2.png" />负荷监测<b class="caret"></b>
+								</a>
+								<ul class="collapse coll-font">
+									<li class="shop-li2">
+										<a href="shop-subsidiary.html">用能明细</a>
+									</li>
+									<li class="shop-li2">
+										<a href="shop-summarize.html">用能概览</a>
+									</li>
+								</ul>
+							</li>
+							<li class="shop-li">
+								<a href="shop-news.html"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
+							</li>
+							<!--发电企业-->
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />交易信息</a>
+							</li>
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
+							</li>
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
+							</li>
+							<!--售电公司-->
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />交易信息</a>
+							</li>
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
+							</li>
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
+							</li>
+							<!--渠道商-->
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />交易信息</a>
+							</li>
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
+							</li>
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />结算信息</a>
+							</li>
+							<li class="shop-li">
+								<a href="channel_report.html"><img class="shop-dis" src="img/shop3.png" />客户报备</a>
+							</li>
+							<li class="shop-li">
+								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
+							</li>
+
 						</ul>
 
 					</div>
@@ -217,7 +253,7 @@
 								</div>
 							</div>
 						</div>
-						<button class="mode">模板下载</button>
+						<!--<button class="mode">模板下载</button>-->
 					</div>
 				</div>
 			</div>
@@ -229,7 +265,13 @@
 			$(function() {
 				$(".dropdown").on('click', function() {
 					$(this).find('.collapse').toggle();
+//					$(this).addClass('addborder').end().removeClass('addborder');
+//					console.log($(this).addClass('addborder').end())
 				});
+//				$(".dropdown").on('click', function() {
+//					$(this).find('.collapse').hide();
+//					$(this).removeClass('addborder')
+//				});
 			});
 			$(function() {
 				$('#collapseTwo').collapse('show')

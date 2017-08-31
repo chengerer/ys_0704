@@ -188,6 +188,7 @@ a {
 	color: #61656B;
 }
 .enery-a, .enery-b {
+	padding: 0 10px;
 	flex: 1;
 }
 .enery-02 {
@@ -245,4 +246,65 @@ a {
 }
 .pp2 a {
 	color: #F66F45 !important;
+}
+.meal-tw, .meal-thr {
+	display: none;
+}
+.marauto {
+	margin: 10px 25%;
+}
+/*轮播*/
+.view .swiper-container {
+	width: 300px;
+	height: 280px;
+}
+
+
+.preview {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 10px;
+	position: relative;
+}
+
+.preview .swiper-container {
+	width: 430px;
+	height: 82px;
+	margin-left: 35px;
+}
+
+
+.preview .slide6 {
+	width: 82px;
+}
+
+.preview .arrow-left {
+	background: url(../img/feel3.png) no-repeat left top;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	margin-top: -17px;
+	width: 9px;
+	height: 18px;
+	z-index: 10;
+}
+
+.preview .arrow-right {
+	background: url(../img/feel4.png) no-repeat left bottom;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -17px;
+	width: 9px;
+	height: 18px;
+	z-index: 10;
+}
+
+.preview img {
+	padding: 1px;
+}
+
+.preview .active-nav img {
+	padding: 0;
+	border: 1px solid #F00;
 }

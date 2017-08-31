@@ -201,3 +201,34 @@ thead > tr > th {
 	width: 100%;
 	height: 300px;
 }
+/*球形*/
+
+.tops {
+	background: rgb(62, 227, 229);
+}
+
+.foots {
+	background: rgb(22, 177, 179);
+}
+
+.alls {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	margin: 100px auto;
+	cursor: pointer;
+}
+
+.tops, .foots {
+	width: 200px;
+	text-align: center;
+	line-height: 100px;
+	
+}
+.service-mains {
+	margin-top: 20px;
+}
+.addborder {
+	border-right: 2px solid rgb(0,172,226);
+}
