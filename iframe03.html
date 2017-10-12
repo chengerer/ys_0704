@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="lib/swiper/3.4.2/css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/palmshop.css" />
+		<title>用电电价</title>
+	</head>
+
+	<body>
+			
+
+					<div class="panel-group shop-right" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+   										用电电价<span class="panel-span fr">^</span>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse in">
+								<div class="panel-body flex-wrapper">
+									<div class="item01">
+										<p>用电分类：两部制电价</p>
+										<p>最大需量电价（元/kWh）：</p>
+										<p>惩罚电价（元/kWh）：</p>
+										<p>峰谷电价（元/kWh）：</p>
+										<p>低谷（元/kWh）：</p>
+										<p>蓄能电价（元/kWh）：</p>
+										<p>合同功率因数：</p>
+									</div>
+									<div class="item01">
+										<p>基本电价（元/kWh）：</p>
+										<p>目录电价（元/kWh）：</p>
+										<p>淘汰类（元/kWh）：</p>
+										<p>高峰（元/kWh）：</p>
+										<p>季节性（元/kWh）：</p>
+										<p>平段电价（元/kWh）：</p>
+									</div>
+									<div class="item01">
+										<p>容量电价（元/kWh）：</p>
+										<p>电量电价（元/kWh）：</p>
+										<p>限制类（元/kWh）：</p>
+										<p>平段（元/kWh）：</p>
+										<p>尖峰电价（元/kWh）：</p>
+										<p>低谷电价（元/kWh）：</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--<button class="mode">模板下载</button>-->
+					</div>
+		<script src="lib/jquery/2.2.4/jquery-2.2.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/bootstrap/3.3.7/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".dropdown").on('click', function() {
+					$(this).find('.collapse').toggle();
+				});
+			});
+			$(function() {
+				$('#collapseTwo').collapse('show')
+			});
+			$(function() {
+				$('#collapseThree').collapse('toggle')
+			});
+			$(function() {
+				$('#collapseOne').collapse('show')
+			});
+			$(function() {
+				$('#collapseFour').collapse('show')
+			});
+		</script>
+	</body>
+
+</html>

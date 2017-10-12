@@ -23,25 +23,25 @@
 
 			<!--描述：头部导航条 -->
 			<div class="nav clearfix">
-				<div class="logo"><a href="index.html"><img src="img/logo.png" /></a></div>
-				<div class="nav_link">
+				<div class="logo col-xs-2"><a href="index.html"><img src="img/logo.png" /></a></div>
+				<div class="nav_link col-xs-10 paddr-ze">
 					<ul class="nav-ul flex-wrapper">
-						<li class="nav-item current">
+						<li class="nav-item col-xs-2 current">
 							<a href="index.html">首页</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item col-xs-2">
 							<a href="message.html">资讯中心</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item col-xs-2">
 							<a href="prodect-l.html">产品套餐</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item col-xs-2">
 							<a href="service-l.html">服务中心</a>
 						</li>
-						<li class="nav-item">
-							<a href="shop-news.html">网上营业厅</a>
+						<li class="nav-item col-xs-2">
+							<a href="shop_index.html">网上营业厅</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item col-xs-2">
 							<a href="about.html">关于我们</a>
 						</li>
 					</ul>
@@ -51,9 +51,9 @@
 			<!--描述：公告的-->
 			<p><a class="ys-a" href="index.html">首页</a> > <a class="ys-a" href="notice-l.html">公告</a> > <a class="ys-a" href="javascript:;">详情</a></p>
 			<h2 class="title">关于售电套餐价格调整公告</h2>
-			<p class="title">晟能售电 <span class="date">2017-7-29&nbsp;&nbsp;&nbsp; 11：05</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span title="加入喜欢" class="glyphicon glyphicon-heart icon-love"></span>&nbsp;&nbsp;&nbsp;<span class="figure">888</span>&nbsp;&nbsp;&nbsp;<span title="分享" class="glyphicon glyphicon-share-alt icon-share"></span></p>
+			<p class="title">晟能售电 <span class="date">2017-7-29&nbsp;&nbsp;&nbsp; 11：05</span><span title="加入喜欢" class="glyphicon glyphicon-heart icon-love"></span><!--<span class="figure">888</span>--> <span title="分享" class="glyphicon glyphicon-share-alt icon-share"></span><span class="share-friend"></span></p>
 			<hr />
-			<dl>
+			<dl class="notice-dl">
 				<dt>第一章 总则</dt>
 				<dd>第一条 为规范绿色电力证书自愿认购交易行为，维护市场秩序，保护认购交易参与人合法权益，根据国家有关法律、法规和国家发展改革委、财政部国家能源局《关于试行可再生能源绿色电力证书核发及自愿认购交易制度的通知》(发改能源[2017]132号)要求，规定本细则。</dd>
 				<dd>第二条 国家绿色电力证书(以下简称“绿证”)核发和志愿认购交易适用本细则。</dd>
@@ -67,10 +67,10 @@
 		<script type="text/javascript">
 			$(function(){
 				$(".icon-love").on('click',function(){
-					var data = $(".figure").html();
-					$(this).css({'color':'red'});
-					data = parseInt(data) + 1;
-					console.log(data)
+					$(this).toggleClass('togglecolor');
+//					var data = $(".figure").html();
+//					data = parseInt(data) + 1;
+//					console.log(data)
 				});
 			});
 		</script>

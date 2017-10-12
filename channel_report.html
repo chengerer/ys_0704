@@ -6,378 +6,114 @@
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/3.3.7/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/palmshop.css" />
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min93e3.css" />
 		<link rel="stylesheet" type="text/css" href="lib/layer/skins/layer.css" />
 		<link rel="stylesheet" type="text/css" href="css/background.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.min862f.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.min862f.css" />
 		<title>客户信息报备</title>
 	</head>
 
 	<body>
-		<div class="top">
-			<div class="wrapper clearfix">
-				<span class="txtLeft fl">您好，欢迎光临晟能售电网上营业厅！</span>
-				<span class="txtRight fr"><a href="sign-up.html" class="register">登录</a><span> | </span>
-				<a href="register.html" class="freecolor">免费注册</a>
-				</span>
-			</div>
+		<div class="commons">
+			<button class="btn btn-col2" onclick="addInfo()">新增</button>
+			<button class="btn btn-col2">修改</button>
+			<button class="btn btn-col2">删除</button>
 		</div>
-		<div class="wrapper">
-			<!--描述：头部导航条 -->
-			<div class="nav clearfix">
-				<div class="logo"><a href="index.html"><img src="img/logo.png" /></a></div>
-				<div class="nav_link">
-					<ul class="nav-ul flex-wrapper">
-						<li class="nav-item">
-							<a href="index.html">首页</a>
-						</li>
-						<li class="nav-item">
-							<a href="message.html">资讯中心</a>
-						</li>
-						<li class="nav-item">
-							<a href="prodect-l.html">产品套餐</a>
-						</li>
-						<li class="nav-item">
-							<a href="service-l.html">服务中心</a>
-						</li>
-						<!--<li class="nav-item current">
-							<a href="shop-news.html">网上营业厅</a>
-						</li>-->
-						<li class="nav-item current">
-							<a href="sign-up.html">网上营业厅</a>
-						</li>
-					</ul>
-				</div>
+
+		<div class="shop-right1">
+			<p class="news-p">客户信息报备查询</p>
+			<div class="row service-main">
+				<form class="form-horizontal">
+					<div class="col-xs-4 form-group">
+						<label class="col-xs-5 control-label">公司名称：</label>
+						<div class="col-xs-7">
+							<input type="text" class="form-control" value="" />
+						</div>
+					</div>
+					<div class="col-xs-4 form-group">
+						<label class="col-xs-5 control-label">电压等级：</label>
+						<div class="col-xs-7">
+							<select class="form-control">
+								<option value="">全部</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-xs-4 form-group">
+						<label class="col-xs-5 control-label">报备信息：</label>
+						<div class="col-xs-7">
+							<select class="form-control">
+								<option value="">全部</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-xs-11 form-group text-right">
+						<input class="btn btn-col2 declar-btn pull-right message1" type="button" value="查询" />
+					</div>
+				</form>
 			</div>
-			<!--描述：中间部分 -->
-			<div class="shop-main clearfix">
-				<div class="col-xs-3">
-					<div class="shop-bac">
-						<div class="shop-imga"><img src="img/shop.png" /></div>
-						<p class="shop-pa">XXXXX有限公司</p>
-						<p class="shop-p clearfix"><span class="shop-spana">企业代码 </span><span class="aa">|</span><span class="shop-spana"> 修改密码</span></p>
-					</div>
-					<div class="shop-left">
-						<ul class="shop-ul">
-							<!--电力用户-->
-							<li class="shop-li dropdown">
-								<a href="javascript:;" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="img/shop2.png" />档案管理<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
-									<li class="shop-li2">
-										<a href="javascript:;">基本信息</a>
-									</li>
-									<li class="shop-li2">
-										<a href="javascript:;">生产用电</a>
-									</li>
-									<li class="shop-li2">
-										<a href="javascript:;">用电电价</a>
-									</li>
-								</ul>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同管理</a>
-							</li>
-							
-							<li class="shop-li dropdown">
-								<a href="javascript:;" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="img/shop2.png" />交易管理<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
-									<li class="shop-li2">
-										<a href="shop-declare.html">电量申报</a>
-									</li>
-									<li class="shop-li2">
-										<a href="javascript:;">交易结果</a>
-									</li>
-								</ul>
-							</li>
-							
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />结算管理</a>
-							</li>
-							<li class="shop-li dropdown">
-								<a href="javascript:;" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="img/shop2.png" />负荷监测<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
-									<li class="shop-li2">
-										<a href="javascript:;">用能明细</a>
-									</li>
-									<li class="shop-li2">
-										<a href="javascript:;">用能概览</a>
-									</li>
-								</ul>
-							</li>
-							<li class="shop-li dropdown">
-								<a href="javascript:;" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="img/shop2.png" />业务办理<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
-									<li class="shop-li2">
-										<a href="javascript:;">业务办理</a>
-									</li>
-									<li class="shop-li2">
-										<a href="javascript:;">业务查询</a>
-									</li>
-								</ul>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
-							</li>
-							<!--发电企业-->
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />交易信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
-							</li>
-							<!--售电公司-->
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />交易信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
-							</li>
-							<!--渠道商-->
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />交易信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />结算信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="channel_report.html"><img class="shop-dis" src="img/shop3.png" />客户报备</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
-							</li>
-							
-							<!--<li class="shop-li dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="img/shop2.png" />电力用户<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
-									<li class="shop-li2">
-										<a href="javascript:;">档案管理</a>
-									</li>
-									<li class="shop-li2">
-										<a href="javascript:;">合同管理</a>
-									</li>
-									<li class="shop-li2">
-										<a href="javascript:;">交易管理</a>
-									</li>
-									<li class="shop-li2">
-										<a href="javascript:;">结算管理</a>
-									</li>
-									<li class="shop-li2">
-										<a href="javascript:;">负荷监测</a>
-									</li>
-								</ul>
-							</li>
-							<li class="shop-li dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="img/shop2.png" />发电企业<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
-									<li class="shop-li2">
-										<a href="javascript:;">电量申报</a>
-									</li>
-									<li class="shop-li2">
-										<a href="javascript:;">交易结果</a>
-									</li>
-								</ul>
-							</li>
-
-							<li class="shop-li dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="img/shop2.png" />售电公司<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
-									<li class="shop-li2">
-										<a href="javascript:;">生产用电</a>
-									</li>
-									<li class="shop-li2">
-										<a href="javascript:;">用电电价</a>
-									</li>
-									<li class="shop-li2">
-										<a href="javascript:;">档案信息</a>
-									</li>
-								</ul>
-							</li>
-							<li class="shop-li dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="img/shop2.png" />渠道商<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
-									<li class="shop-li2">
-										<a href="javascript:;">交易信息</a>
-									</li>
-									<li class="shop-li2">
-										<a href="javascript:;">合同信息</a>
-									</li>
-									<li class="shop-li2">
-										<a href="javascript:;">结算管理</a>
-									</li>
-									<li class="shop-li2">
-										<a href="channel_report.html">客户信息报备</a>
-									</li>
-									<li class="shop-li2">
-										<a href="channel_report.html">业务管理</a>
-									</li>
-									<li class="shop-li2">
-										<a href="javascript:;">消息中心</a>
-									</li>
-								</ul>
-							</li>
-						-->
-						</ul>
-
-					</div>
-				</div>
-				<!--<div class="col-xs-9 gray-bg dashbard-1">
-					<div class="row J_mainContent" id="content-main">
-						<iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="lll.html" frameborder="0" data-id="lll.html" seamless></iframe>
-					</div>
-				</div>-->
-				<div class="col-xs-9">
-					<div class="commons">
-						<!--<p>客户信息报备</p>
-						<hr />-->
-						<button class="btn btn-col2" onclick="addInfo()">新增</button>
-						<button class="btn btn-col2">修改</button>
-						<button class="btn btn-col2">删除</button>
-					</div>
-
-					<div class="shop-right1">
-						<p class="news-p">客户信息报备查询</p>
-						<div class="row service-main">
-							<form class="form-horizontal">
-								<div class="col-xs-4 form-group">
-									<label class="col-xs-5 control-label">公司名称：</label>
-									<div class="col-xs-7">
-										<input type="text" class="form-control" value="" />
-									</div>
-								</div>
-								<div class="col-xs-4 form-group">
-									<label class="col-xs-5 control-label">电压等级：</label>
-									<div class="col-xs-7">
-										<select class="form-control">
-											<option value="">全部</option>
-										</select>
-									</div>
-								</div>
-								<div class="col-xs-4 form-group">
-									<label class="col-xs-5 control-label">报备信息：</label>
-									<div class="col-xs-7">
-										<select class="form-control">
-											<option value="">全部</option>
-										</select>
-									</div>
-								</div>
-								<div class="col-xs-11 form-group text-right">
-									<input class="btn btn-col2 declar-btn pull-right message1" type="button" value="查询" />
-								</div>
-							</form>
-						</div>
-						<p class="news-p">客户信息报备列表</p>
-						<table class="table table-bordered">
-							<thead>
-								<tr>
-									<th><input type="checkbox" class="checkAll" value="" /></th>
-									<th>序号</th>
-									<th>代码</th>
-									<th>公司名称</th>
-									<th>单位地址</th>
-									<th>电压等级(kV)</th>
-									<th>电量规模(万Kwh)</th>
-									<th>状态</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td><input type="checkbox" name="" id="" value="" /></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-							</tbody>
-						</table>
-						<div class="paging-cen">
-							<ul class="pagination">
-								<li>
-									<a class="paging-padd" href="#">&laquo;</a>
-								</li>
-								<li class="active">
-									<a class="paging-padd" href="#">1</a>
-								</li>
-								<li>
-									<a class="paging-padd" href="#">2</a>
-								</li>
-								<li>
-									<a class="paging-padd" href="#">3</a>
-								</li>
-								<li>
-									<a class="paging-padd" href="#">4</a>
-								</li>
-								<li>
-									<a class="paging-padd" href="#">5</a>
-								</li>
-								<li>
-									<a class="paging-padd" href="#">&raquo;</a>
-								</li>
-							</ul>
-						</div>
-
-					</div>
-				</div>
+			<p class="news-p">客户信息报备列表</p>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th><input type="checkbox" class="checkAll" value="" /></th>
+						<th>序号</th>
+						<th>代码</th>
+						<th>公司名称</th>
+						<th>单位地址</th>
+						<th>电压等级(kV)</th>
+						<th>电量规模(万Kwh)</th>
+						<th>状态</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox" name="" id="" value="" /></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="paging-cen">
+				<ul class="pagination">
+					<li>
+						<a class="paging-padd" href="#">&laquo;</a>
+					</li>
+					<li class="active">
+						<a class="paging-padd" href="#">1</a>
+					</li>
+					<li>
+						<a class="paging-padd" href="#">2</a>
+					</li>
+					<li>
+						<a class="paging-padd" href="#">3</a>
+					</li>
+					<li>
+						<a class="paging-padd" href="#">4</a>
+					</li>
+					<li>
+						<a class="paging-padd" href="#">5</a>
+					</li>
+					<li>
+						<a class="paging-padd" href="#">&raquo;</a>
+					</li>
+				</ul>
 			</div>
 
 		</div>
 		<script src="lib/jquery/2.2.4/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="lib/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="lib/layer/layer.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="lib/layer/laydate.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-//			全选
+			//			全选
 			$(function() {
 				$(".checkAll").on('click', function() {
 					$("input[type=checkbox]").prop("checked", this.checked);
 				});
 			});
-//			左侧导航栏
-			$(function() {
-				$(".dropdown").on('click', function() {
-					$(this).find('.collapse').toggle();
-				});
-				$('#collapseTwo').collapse('show')
-				$('#collapseThree').collapse('toggle')
-				$('#collapseOne').collapse('show')
-				$('#collapseFour').collapse('show')
-			});
-//			二级菜单鼠标经过
-//			$(function(){
-//				$(".shop-li2>a").on('mouseover',function(){
-//					$(this).css({'color':'rgb(91,204,231)'});
-//				});
-//			});
 
 			function addInfo() {
 				layer.open({

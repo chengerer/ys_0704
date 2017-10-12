@@ -6,50 +6,69 @@
 		<meta name="renderer" content="webkit">
 		<title>晟能售电首页</title>
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/3.3.7/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="lib/swiper/3.4.2/css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/swiper/3.4.2/css/swiper.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
-		<link rel="stylesheet" type="text/css" href="css/about.css"/>
+		<link rel="stylesheet" type="text/css" href="css/about.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
 
 	<body>
+		<style type="text/css">
+			.box3-ul2 li:nth-of-type(8n) ~ li {
+				display: none;
+			}
+			
+			.box3-ul2 li:nth-of-type(8n) ~ .re {
+				display: block;
+			}
+			
+			.re {
+				position: absolute;
+				right: 0;
+				display: none;
+			}
+		</style>
 		<!--描述：最上面的登录注册-->
+		<div class="all">
 		<div class="top">
 			<div class="wrapper clearfix">
 				<span class="txtLeft fl">您好，欢迎光临晟能售电网上营业厅！</span>
-				<span class="txtRight fr"><a href="sign-up.html" class="register">登录</a><span> | </span>
+				<!--<span class="txtRight fr"><a href="sign-up.html" class="register">登录</a><span> | </span>
 					<a href="register.html" class="freecolor">免费注册</a>
-				</span>
+				</span>-->
 				<!--成功登录后提示-->
-				<span class="txtRight fr init"></span>
+				<a class="glyphicon glyphicon-off fr out" href=""><span>注销账户</span></a>
+				<span class="txtRight fr init">您已成功登录</span>
 			</div>
 		</div>
 		<div class="wrapper">
 
 			<!--描述：头部导航条 -->
 			<div class="nav clearfix">
-				<div class="logo"><a href="index.html"><img src="img/logo.png" /></a></div>
-				<div class="nav_link">
-					<ul class="nav-ul flex-wrapper">
-						<li class="nav-item current">
+				<div class="logo col-xs-2">
+					<a href="index.html"><img src="img/logo.png" /></a>
+				</div>
+				<div class="nav_link col-xs-10 paddr-ze">
+					<ul class="nav-ul">
+						<li class="nav-item col-xs-2 current nava">
 							<a href="index.html">首页</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item col-xs-2 nava">
 							<a href="message.html">资讯中心</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item col-xs-2 nava">
 							<a href="prodect-l.html">产品套餐</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item col-xs-2 nava">
 							<a href="service-l.html">服务中心</a>
 						</li>
-						<li class="nav-item">
-							<a href="shop-news.html">网上营业厅</a>
+						<li class="nav-item col-xs-2 nava">
+							<a href="shop_index.html">网上营业厅</a>
 						</li>
-						<!--<li class="nav-item">
+						<!--<li class="nav-item col-xs-2">
 							<a href="sign-up.html">网上营业厅</a>
 						</li>-->
-						<li class="nav-item">
+						<li class="nav-item col-xs-2 nava">
 							<a href="about.html">关于我们</a>
 						</li>
 					</ul>
@@ -64,133 +83,174 @@
 						<div class="box1 col-xs-2">
 							<ul>
 								<li class="list">
-									<img src="img/eney3.png"/>
-									<a class="enery" href="service-l.html">办服务(推荐)</a>
+									<img src="img/eney3.png" />
+									<a class="enery" href="service-l.html">办服务</a>
 								</li>
 								<li class="list">
-									<img src="img/eney2.png"/>
-									<a class="enery" href="prodect-l.html">选套餐(推荐)</a>
+									<img src="img/eney2.png" />
+									<a class="enery" href="prodect-l.html">选套餐</a>
 								</li>
 								<li class="list">
-									<img src="img/eney1.png"/>
-									<a class="enery" href="sign-up.html">客户中心(推荐)</a>
+									<img src="img/eney1.png" />
+									<a class="enery" href="sign-up.html">客户中心</a>
 								</li>
 							</ul>
 						</div>
 						<div class="box2 col-xs-7">
 							<div class="swiper-container">
 								<div class="swiper-wrapper">
-									<div class="swiper-slide"><img src="img/sow1.png"/></div>
-									<div class="swiper-slide"><img src="img/sow2.png"/></div>
+									<div class="swiper-slide"><img src="img/sow1.png" /></div>
+									<div class="swiper-slide"><img src="img/sow2.png" /></div>
 								</div>
 							</div>
 						</div>
 						<div class="box3 col-xs-3">
 							<ul class="box3-ul1 clearfix">
-								<li class="list3 fl"><a href="javascript:;">公告</a></li>
-								<li class="list3a fl"><a href="javascript:;">新入住会员</a></li>
+								<li class="list3">
+									<a href="javascript:;">公告</a>
+								</li>
+								<!--<li class="list3a fl"><a href="javascript:;">新入住会员</a></li>-->
 							</ul>
 							<!--公告-->
-							<ul class="box3-ul2">
-								<li><a href="notice.html">关于售电调整公告</a><span class="big fr">06-21</span></li>
-								<li><a href="notice.html">关于售电调整公告</a><span class="big fr">06-21</span></li>
-								<li><a href="notice.html">关于售电调整公告</a><span class="big fr">06-21</span></li>
-								<li><a href="notice.html">关于售电调整公告</a><span class="big fr">06-21</span></li>
-								<li><a href="notice.html">关于售电调整公告</a><span class="big fr">06-21</span></li>
-								<li><a href="notice.html">关于售电调整公告</a><span class="big fr">06-21</span></li>
-								<li><a href="notice.html">关于售电调整公告</a><span class="big fr">06-21</span></li>
-								<li><a href="notice.html">关于售电调整公告</a><span class="big fr">06-21</span></li>
-								<li class="fr"><a style="color: #61656b;" href="notice-l.html">更多 <span class="big" style="font-size: 18px;">></span></a></li>
-							</ul>
+							<ol class="box3-ul2">
+								<li>
+									<a href="notice.html">关于售电调整公告</a><span class="big fr">06-21</span></li>
+								<li>
+									<a href="notice.html">关于售电调整公告</a><span class="big fr">06-21</span></li>
+								<li>
+									<a href="notice.html">关于售电调整公告</a><span class="big fr">06-21</span></li>
+								<li>
+									<a href="notice.html">关于售电调整公告</a><span class="big fr">06-21</span></li>
+								<li>
+									<a href="notice.html">关于售电调整公告</a><span class="big fr">06-21</span></li>
+								<li>
+									<a href="notice.html">关于售电调整公告</a><span class="big fr">06-21</span></li>
+								<li>
+									<a href="notice.html">关于售电调整公告</a><span class="big fr">06-21</span></li>
+								<li>
+									<a href="notice.html">关于售电调整公告</a><span class="big fr">06-21</span></li>
+
+								<p class="re">
+									<a style="color: #61656b;" href="notice-l.html">更多 <span class="big" style="font-size: 18px;">></span></a>
+								</p>
+							</ol>
 							<!--新入住会员-->
 							<ul class="box3-ul2a">
-								<li><a href="member.html">关于新入住会员</a><span class="big fr">06-21</span></li>
-								<li><a href="member.html">关于新入住会员</a><span class="big fr">06-21</span></li>
-								<li><a href="member.html">关于新入住会员</a><span class="big fr">06-21</span></li>
-								<li><a href="member.html">关于新入住会员</a><span class="big fr">06-21</span></li>
-								<li><a href="member.html">关于新入住会员</a><span class="big fr">06-21</span></li>
-								<li><a href="member.html">关于新入住会员</a><span class="big fr">06-21</span></li>
-								<li><a href="member.html">关于新入住会员</a><span class="big fr">06-21</span></li>
-								<li><a href="member.html">关于新入住会员</a><span class="big fr">06-21</span></li>
-								<li class="fr"><a style="color: #61656b;" href="notice-l.html">更多 <span class="big" style="font-size: 18px;">></span></a></li>
+								<li>
+									<a href="notice.html">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li>
+									<a href="notice.html">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li>
+									<a href="notice.html">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li>
+									<a href="notice.html">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li>
+									<a href="notice.html">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li>
+									<a href="notice.html">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li>
+									<a href="notice.html">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li>
+									<a href="notice.html">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li class="fr">
+									<a style="color: #61656b;" href="member.html">更多 <span class="big" style="font-size: 18px;">></span></a>
+								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="main_txt flex-wrapper">
-				<div class="hot">
+			<div class="main_txt">
+				<div class="hot col-xs-6">
 					<div class="bac">
-						<span class="hot_txt">热门资讯</span><a href="message.html"><span class="big1 fr">更多 ></span></a>
+						<span class="hot_txt">热门资讯</span>
+						<a href="message.html"><span class="big1 fr">更多 ></span></a>
 					</div>
 					<li class="hot-list">
 						<img style="max-width: 30%;" src="img/hot1.png" />
 						<dl class="fr">
-							<dt class="decript1">财经 | 前五月电力行业投资降幅逐渐收窄</dt>
-							<dd class="decript2"><a href="notice.html">中国电力报 中国新闻网讯记者刘世民报道 近日，国家统计局发布1-5月份固定资产投资情况，全国固定资产投资888888亿元，同比增长8.6%其中占比例为61%……</a></dd>
+							<dt class="decript1">央企成就丨中国能建当好电力能源建设主力军</dt>
+							<dd class="decript2">
+								<a href="090501.html">江苏泰州长江北岸，国家煤电节能减排示范电站———国电泰州二期百万千瓦机组工程巍然屹立。8月初，继获评中国电力优质工程之后，又顺利通过国家优质工程金质奖现场复查。</a>
+							</dd>
 						</dl>
 					</li>
 					<li class="hot-list">
 						<img style="max-width: 30%;" src="img/hot2.png" />
 						<dl class="fr">
-							<dt class="decript1">财经 | 前五月电力行业投资降幅逐渐收窄</dt>
-							<dd class="decript2"><a href="notice.html">中国电力报 中国新闻网讯记者刘世民报道 近日，国家统计局发布1-5月份固定资产投资情况，全国固定资产投资888888亿元，同比增长8.6%其中占比例为61%……</a></dd>
+							<dt class="decript1">充电桩运营遭遇“五重门”</dt>
+							<dd class="decript2">
+								<a href="090502.html">北极星输配电网讯:“用地难、用电难、电价贵、不公平竞争和政策落地难，是最现实的充电业态‘表象’。”中国泰坦能源技术集团有限公司副总裁陈昊近日在中国电动汽车百人会</a>
+							</dd>
 						</dl>
 					</li>
 					<li class="hot-list">
 						<img style="max-width: 30%;" src="img/hot3.png" />
 						<dl class="fr">
-							<dt class="decript1">财经 | 前五月电力行业投资降幅逐渐收窄</dt>
-							<dd class="decript2"><a href="notice.html">中国电力报 中国新闻网讯记者刘世民报道 近日，国家统计局发布1-5月份固定资产投资情况，全国固定资产投资888888亿元，同比增长8.6%其中占比例为61%</a></dd>
+							<dt class="decript1">风电、光伏成本高 但你知道其社会收益是多少吗？</dt>
+							<dd class="decript2">
+								<a href="090503.html">在光伏、风电的发展过程中，大多数人都在关注其成本的下降，特别是何时实现平价上网，但是对于光伏、风电的公共效益往往只是定性描述。针对这个问题，美国劳伦斯伯克利</a>
+							</dd>
 						</dl>
 					</li>
 				</div>
-				<div class="news">
+				<div class="news col-xs-6">
 					<div class="bac">
-						<span class="hot_txt">行业新闻</span><a href="messagea.html"><span class="big1 fr">更多 ></span></a>
+						<span class="hot_txt">行业新闻</span>
+						<a href="messagea.html"><span class="big1 fr">更多 ></span></a>
 					</div>
 					<li class="news-list">
 						<img style="max-width: 30%;" src="img/news1.png" />
 						<dl class="fr">
-							<dt class="decript1">财经 | 前五月电力行业投资降幅逐渐收窄</dt>
-							<dd class="decript2"><a href="notice.html">中国电力报 中国新闻网讯记者刘世民报道 近日，国家统计局发布1-5月份固定资产投资情况，全国固定资产投资888888亿元，同比增长8.6%其中占比例为61%</a></dd>
+							<dt class="decript1">能源互联网迎来风口 万亿市场迷思待解</dt>
+							<dd class="decript2">
+								<a href="090604.html">从“雾里看花”，到前景可期，在制度的保驾护航之下，得益于储能成本的大幅下降，能源互联网的风口已经到来，55个首批示范项目呱呱落地</a>
+							</dd>
 						</dl>
 					</li>
 					<li class="news-list">
 						<img style="max-width: 30%;" src="img/news2.png" />
 						<dl class="fr">
-							<dt class="decript1">财经 | 前五月电力行业投资降幅逐渐收窄</dt>
-							<dd class="decript2"><a href="notice.html">中国电力报 中国新闻网讯记者刘世民报道 近日，国家统计局发布1-5月份固定资产投资情况，全国固定资产投资888888亿元，同比增长8.6%其中占比例为61%</a></dd>
+							<dt class="decript1">风电产业链亟待向“高质量”升级</dt>
+							<dd class="decript2">
+								<a href="090605.html">8月25日，在由南高齿集团和中国可再生能源学会风能专委会联合主办的“质量驱动未来”2017中国风电供应链论坛上，中国可再生能源学会风能</a>
+							</dd>
 						</dl>
 					</li>
 					<li class="news-list">
 						<img style="max-width: 30%;" src="img/news3.png" />
 						<dl class="fr">
-							<dt class="decript1">财经 | 前五月电力行业投资降幅逐渐收窄</dt>
-							<dd class="decript2"><a href="notice.html">中国电力报 中国新闻网讯记者刘世民报道 近日，国家统计局发布1-5月份固定资产投资情况，全国固定资产投资888888亿元，同比增长8.6%其中占比例为61%</a></dd>
+							<dt class="decript1">五大发电 两大电网出海</dt>
+							<dd class="decript2">
+								<a href="090606.html">最近，有消息称，国家电网将收购巴西CPFL 45%的股权。若消息属实就意味着，国家电网接近百分百持股CPF国家电网接近百分百持股CPFLL</a>
+							</dd>
 						</dl>
 					</li>
 				</div>
 			</div>
 			<!--产品套餐-->
-			<div class="package">
+			<div class="package col-xs-12">
 				<div class="background_package">
 					<span class="packagea">产品套餐<a href="prodect-l.html"><span class="big1 fr">更多 ></span></a>
 				</div>
-				<div class="flex-wrapper product-wrapper">
-					<div class="packageimg"><a href="protect.html"><img src="img/package.png" alt=""></a>
+				<div class="product-wrapper">
+					<div class="packageimg col-xs-3">
+						<a href="protect.html"><img src="img/package.png" alt=""></a>
 						<p class="meal">套餐一</p>
 						<p class="money">￥1000000</p>
 					</div>
-					<div class="packageimg"><a href="protect.html"><img src="img/package.png" alt=""></a>
+					<div class="packageimg col-xs-3">
+						<a href="protect.html"><img src="img/package.png" alt=""></a>
 						<p class="meal">套餐二</p>
 						<p class="money">￥1200000</p>
 					</div>
-					<div class="packageimg"><a href="protect.html"><img src="img/package.png" alt=""></a>
+					<div class="packageimg col-xs-3">
+						<a href="protect.html"><img src="img/package.png" alt=""></a>
 						<p class="meal">套餐三</p>
 						<p class="money">￥1600000</p>
 					</div>
-					<div class="packageimg"><a href="protect.html"><img src="img/package.png" alt=""></a>
+					<div class="packageimg col-xs-3">
+						<a href="protect.html"><img src="img/package.png" alt=""></a>
 						<p class="meal">套餐四</p>
 						<p class="money">￥2500000</p>
 					</div>
@@ -198,34 +258,26 @@
 			</div>
 
 			<!--服务中心-->
-			<div class="service">
+			<div class="service col-xs-12">
 				<div class="background_service">
 					<span class="servicea">服务中心<a href="service-l.html"><span class="big1 fr">更多 ></span></a>
 				</div>
-				<div class="flex-wrapper service-wrapper">
-					<div class="packageimg"><a href="service.html"><img src="img/service1.png" alt=""></a></div>
-					<div class="packageimg"><a href="service.html"><img src="img/service2.png" alt=""></a></div>
-					<div class="packageimg"><a href="service.html"><img src="img/service3.png" alt=""></a></div>
-					<div class="packageimg"><a href="service.html"><img src="img/service4.png" alt=""></a></div>
-				</div>
-			</div>
-			
-			<!--描述：关注我们-->
-			<!--<div class="about clearfix">
-				<div class="about-us fl">
-					<p class="about-p">关注我们</p>
-					<div class="about-two">
-						<img style="width: 130px;" src="img/weixin.jpg"/>
-						<p class="about-weixin">扫一扫添加微信</p>
+				<div class="service-wrapper">
+					<div class="packageimg col-xs-3">
+						<a href="service.html"><img src="img/service1.png" alt=""></a>
+					</div>
+					<div class="packageimg col-xs-3">
+						<a href="service.html"><img src="img/service2.png" alt=""></a>
+					</div>
+					<div class="packageimg col-xs-3">
+						<a href="service.html"><img src="img/service3.png" alt=""></a>
+					</div>
+					<div class="packageimg col-xs-3">
+						<a href="service.html"><img src="img/service4.png" alt=""></a>
 					</div>
 				</div>
-				<div class="about-intro fr">
-					<p class="intro-p mar-20">江苏晟能售电有限公司</p>
-					<p class="intro-p">地址：江苏省无锡市新吴区菱湖大道200号中国传感网国际创新园</p>
-					<p class="intro-p">电话：0510-88101258</p>
-					<p class="intro-p">邮件：info@smartwuxi.com</p>
-				</div>
-			</div>-->
+			</div>
+
 			<hr style="border: 1px solid #e6e6e6;" />
 			<div class="footer clearfix">
 				<span class="intro-span fl"><img style="width: 100px;" src="img/weixin.jpg" /> Copyright 2015 - 2017 江苏晟能售电有限公司 保留所有权利 苏ICP备10215701-1号  公司邮箱地址：<a href="#" class="intro-a">mail.smartwuxi.com</a></span><span class="about-span fr">技术支持：江苏晟能售电有限公司</span>
@@ -234,39 +286,60 @@
 				<p class="intro-p1 clearfix"><span class="intro-span fl"> Copyright 2015 - 2017 江苏晟能售电有限公司 保留所有权利 苏ICP备10215701-1号  公司邮箱地址：<a href="#" class="intro-a">mail.smartwuxi.com</a></span><span class="about-span fr">技术支持：江苏晟能售电有限公司</span></p>
 			</div>-->
 		</div>
-
+	</div>
 		<script src="lib/jquery/2.2.4/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="lib/swiper/3.4.2/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			
 			$(function() {
-				$(".list3").first().css({'background':"#fff"})
-				$(".list3").hover(function(){
-					$(this).css({'background':'#fff'});
-					$(".list3").not($(this)).css({'background':'#ececec'})
-				});
-				var mySwiper = new Swiper('.swiper-container',{
-					autoplay:1000,
-					grabCursor:true,
-					parallax:true,
-					watchSlidesProgress : true,
-					watchSlidesVisibility:true,
-					watchSlidesVisibility:true,
-					mousewheelControl:true,
-					paginationClickable: true,  
-					loop:true
-				});
 				
-				$(".box3-ul2a").hide();
-				$(".list3a").hover(function(){
-					$(this).css({'background':'#fff'}).siblings().css({'background':'#ececec'});
-					$(".box3-ul2").hide();
-					$(".box3-ul2a").show();
+				var $width = $(".all").css('width')
+//				console.log($width)
+				if ($width <= '1366px') {
+					$(".all").css({'padding':'0 40px'});
+				} 
+				
+				
+				$(".list3").first().css({
+					'background': "#fff"
+				})
+				$(".list3").hover(function() {
+					$(this).css({
+						'background': '#fff'
+					});
+					$(".list3").not($(this)).css({
+						'background': '#ececec'
+					})
 				});
-				$(".list3").hover(function(){
-					$(this).css({'background':'#fff'}).siblings().css({'background':'#ececec'});
-					$(".box3-ul2a").hide()
-					$(".box3-ul2").show();
+				var mySwiper = new Swiper('.swiper-container', {
+					autoplay: 1000,
+					grabCursor: true,
+					parallax: true,
+					watchSlidesProgress: true,
+					watchSlidesVisibility: true,
+					watchSlidesVisibility: true,
+					mousewheelControl: true,
+					paginationClickable: true,
+					loop: true
 				});
+//				var $li = $(".box3-ul2").find($("li"));
+//				var $re = $(".box3-ul2").find($(".re"));
+//				for(var i = 0; i < $li.length; i++) {
+//					i < 7 ? $li.eq(i).show() : $li.eq(i).hide()
+//				}
+//				$li.length > 7 ? $re.show() : $re.hide();
+
+				//				$(".box3-ul2a").hide();
+				//				$(".list3a").hover(function(){
+				//					$(this).css({'background':'#fff'}).siblings().css({'background':'#ececec'});
+				//					$(".box3-ul2").hide();
+				//					$(".box3-ul2a").show();
+				//				});
+				//				$(".list3").hover(function(){
+				//					$(this).css({'background':'#fff'}).siblings().css({'background':'#ececec'});
+				//					$(".box3-ul2a").hide()
+				//					$(".box3-ul2").show();
+				//				});
 			});
 		</script>
 	</body>

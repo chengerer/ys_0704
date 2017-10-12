@@ -40,9 +40,19 @@ dd {
 	font-size: 14px;
 }
 .icon-share, .icon-love {
+	color: black;
 	cursor: pointer;
+	padding: 0 15px;
 	font-size: 22px;
+}
+.togglecolor {
+	color: red;
 }
 .figure {
 	color: #61656B;
+}
+.share-friend {
+}
+.notice-dl dd {
+	font-size: 18px;
 }

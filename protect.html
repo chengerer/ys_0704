@@ -24,25 +24,25 @@
 
 			<!--描述：头部导航条 -->
 			<div class="nav clearfix">
-				<div class="logo"><a href="index.html"><img src="img/logo.png" /></a></div>
-				<div class="nav_link">
+				<div class="logo col-xs-2"><a href="index.html"><img src="img/logo.png" /></a></div>
+				<div class="nav_link col-xs-10 paddr-ze">
 					<ul class="nav-ul flex-wrapper">
-						<li class="nav-item">
+						<li class="nav-item col-xs-2">
 							<a href="index.html">首页</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item col-xs-2">
 							<a href="message.html">资讯中心</a>
 						</li>
-						<li class="nav-item current">
+						<li class="nav-item col-xs-2 current">
 							<a href="prodect-l.html">产品套餐</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item col-xs-2">
 							<a href="service-l.html">服务中心</a>
 						</li>
-						<li class="nav-item">
-							<a href="shop-news.html">网上营业厅</a>
+						<li class="nav-item col-xs-2">
+							<a href="shop_index.html">网上营业厅</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item col-xs-2">
 							<a href="about.html">关于我们</a>
 						</li>
 					</ul>
@@ -123,7 +123,7 @@
 						<p class="enery-p">
 							<span class="opation">
 								<input type="radio" name="page" class="abs_clip" id="pageA" value="A" checked />
-								<label for="pageA" class="pack-name" style="font-weight: 500;">1000元包2000度</label>
+								<label for="pageA" class="pack-name clickcolor" style="font-weight: 500;">1000元包2000度</label>
 							</span>
 							<span class="opation">
 								<input type="radio" name="page" class="abs_clip" id="pageB" value="B" />
@@ -168,6 +168,11 @@
 		<script src="lib/swiper/3.4.2/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="lib/swiper/3.4.2/js/idangerous.swiper.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			$(function(){
+				$(".opation").on('click',function(){
+					$(this).find('.pack-name').addClass('clickcolor').parent().siblings().find('.pack-name').removeClass('clickcolor')
+				});
+			});
 			$(function() {
 				var viewSwiper = new Swiper('.view .swiper-container', {
 					onSlideChangeStart: function() {

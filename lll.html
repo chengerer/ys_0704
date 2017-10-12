@@ -1,145 +1,265 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="lib/bootstrap/3.3.7/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/common.css" />
-		<link rel="stylesheet" type="text/css" href="css/palmshop.css" />
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min93e3.css" />
-		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
-		<link rel="stylesheet" type="text/css" href="lib/layer/skins/layer.css" />
-		<link rel="stylesheet" type="text/css" href="css/background.css" />
-		<!--<link rel="stylesheet" type="text/css" href="css/style.min862f.css"/>-->
+		<meta name="renderer" content="webkit">
+		<title>晟能售电首页</title>
+		<link rel="stylesheet" type="text/css" href="<%=basePath%>lib/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="<%=basePath%>lib/swiper/3.4.2/css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="<%=basePath%>css/common.css" />
+		<link rel="stylesheet" type="text/css" href="<%=basePath%>css/about.css"/>
+		<link rel="stylesheet" type="text/css" href="<%=basePath%>css/index.css" />
 	</head>
 
-	<body class="fixed-sidebar full-height-layout gray-bg">
-
-			<div class="commons">
-				<p>客户信息报备</p>
-				<hr />
-				<button class="btn btn-col2" onclick="addInfo()">新增</button>
-				<button class="btn btn-col2">修改</button>
-				<button class="btn btn-col2">删除</button>
+	<body>
+		<!--描述：最上面的登录注册-->
+		<div class="top">
+			<div class="wrapper clearfix">
+				<span class="txtLeft fl">您好，欢迎光临晟能售电网上营业厅！</span>
+				<span class="txtRight fr"><a href="<%=basePath%>powerIndex/sign_up.do" class="register">登录</a><span> | </span>
+					<a onclick="registerOn()" class="freecolor">免费注册</a>
+				</span>
+				<!--成功登录后提示-->
+				<span class="txtRight fr init"></span>
 			</div>
+		</div>
+		<div class="wrapper">
 
-			<div class="shop-right1">
-				<p class="news-p">客户信息报备查询</p>
-				<div class="row service-main">
-					<form class="form-horizontal">
-						<div class="col-xs-4 form-group">
-							<label class="col-xs-5 control-label">公司名称：</label>
-							<div class="col-xs-7">
-								<input type="text" class="form-control" value="" />
-							</div>
-						</div>
-						<div class="col-xs-4 form-group">
-							<label class="col-xs-5 control-label">电压等级：</label>
-							<div class="col-xs-7">
-								<select class="form-control">
-									<option value="">全部</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-xs-4 form-group">
-							<label class="col-xs-5 control-label">报备信息：</label>
-							<div class="col-xs-7">
-								<select class="form-control">
-									<option value="">全部</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-xs-11 form-group text-right">
-							<input class="btn btn-col2 declar-btn pull-right message1" type="button" value="查询" />
-						</div>
-					</form>
-				</div>
-				<p class="news-p">客户信息报备列表</p>
-				<table class="table table-bordered">
-					<thead>
-						<tr>
-							<th><input type="checkbox" class="checkAll" value="" /></th>
-							<th>序号</th>
-							<th>代码</th>
-							<th>公司名称</th>
-							<th>单位地址</th>
-							<th>电压等级(kV)</th>
-							<th>电量规模(万Kwh)</th>
-							<th>状态</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><input type="checkbox" name="" id="" value="" /></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-					</tbody>
-				</table>
-				<div class="paging-cen">
-					<ul class="pagination">
-						<li>
-							<a class="paging-padd" href="#">&laquo;</a>
+			<!--描述：头部导航条 -->
+			<div class="nav clearfix">
+				<div class="logo col-xs-2"><a href="<%=basePath%>jsp/powerIndex/index.jsp"><img src="<%=basePath%>img/logo.png" /></a></div>
+				<div class="nav_link col-xs-10 paddr-ze">
+					<ul class="nav-ul flex-wrapper">
+						<li class="nav-item col-xs-2 current">
+							<a href="<%=basePath%>jsp/powerIndex/index.jsp">首页</a>
 						</li>
-						<li class="active">
-							<a class="paging-padd" href="#">1</a>
+						<li class="nav-item col-xs-2">
+							<a href="<%=basePath%>jsp/message/message.jsp">资讯中心</a>
 						</li>
-						<li>
-							<a class="paging-padd" href="#">2</a>
+						<li class="nav-item col-xs-2">
+							<a href="<%=basePath%>jsp/prodect/prodect-l.jsp">产品套餐</a>
 						</li>
-						<li>
-							<a class="paging-padd" href="#">3</a>
+						<li class="nav-item col-xs-2">
+							<a href="<%=basePath%>jsp/service/service-l.jsp">服务中心</a>
 						</li>
-						<li>
-							<a class="paging-padd" href="#">4</a>
+						<li class="nav-item col-xs-2">
+							<a href="<%=basePath%>jsp/eleUser/shop_index.jsp">网上营业厅</a>
 						</li>
-						<li>
-							<a class="paging-padd" href="#">5</a>
-						</li>
-						<li>
-							<a class="paging-padd" href="#">&raquo;</a>
+						<!--<li class="nav-item col-xs-2">
+							<a href="<%=basePath%>powerIndex/sign_up.do">网上营业厅</a>
+						</li>-->
+						<li class="nav-item col-xs-2">
+							<a href="<%=basePath%>jsp/about/about.jsp">关于我们</a>
 						</li>
 					</ul>
 				</div>
-
 			</div>
+			<!--描述：中间部分-->
+			<!--描述：轮播-->
+			<div class="container">
+				<div class="row">
+					<div class="carouse clearfix">
+						<div class="box1 col-xs-2">
+							<ul>
+								<li class="list">
+									<img src="<%=basePath%>img/eney3.png"/>
+									<a class="enery" href="<%=basePath%>jsp/service/service-l.jsp">办服务</a>
+								</li>
+								<li class="list">
+									<img src="<%=basePath%>img/eney2.png"/>
+									<a class="enery" href="<%=basePath%>jsp/prodect/prodect-l.jsp">选套餐</a>
+								</li>
+								<li class="list">
+									<img src="<%=basePath%>img/eney1.png"/>
+									<a class="enery" href="<%=basePath%>powerIndex/sign_up.do">客户中心</a>
+								</li>
+							</ul>
+						</div>
+						<div class="box2 col-xs-7">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="<%=basePath%>img/sow1.png"/></div>
+									<div class="swiper-slide"><img src="<%=basePath%>img/sow2.png"/></div>
+								</div>
+							</div>
+						</div>
+						<div class="box3 col-xs-3">
+							<ul class="box3-ul1 clearfix">
+								<li class="list3 fl"><a href="javascript:;">公告</a></li>
+								<li class="list3a fl"><a href="javascript:;">新入住会员</a></li>
+							</ul>
+							<!--公告-->
+							<ul class="box3-ul2">
+								<li><a href="<%=basePath%>jsp/notice/notice.jsp">关于售电调整公告</a><span class="big fr">06-21</span></li>
+								<li><a href="<%=basePath%>jsp/notice/notice.jsp">关于售电调整公告</a><span class="big fr">06-21</span></li>
+								<li><a href="<%=basePath%>jsp/notice/notice.jsp">关于售电调整公告</a><span class="big fr">06-21</span></li>
+								<li><a href="<%=basePath%>jsp/notice/notice.jsp">关于售电调整公告</a><span class="big fr">06-21</span></li>
+								<li><a href="<%=basePath%>jsp/notice/notice.jsp">关于售电调整公告</a><span class="big fr">06-21</span></li>
+								<li><a href="<%=basePath%>jsp/notice/notice.jsp">关于售电调整公告</a><span class="big fr">06-21</span></li>
+								<li><a href="<%=basePath%>jsp/notice/notice.jsp">关于售电调整公告</a><span class="big fr">06-21</span></li>
+								<li><a href="<%=basePath%>jsp/notice/notice.jsp">关于售电调整公告</a><span class="big fr">06-21</span></li>
+								<li class="fr"><a style="color: #61656b;" href="notice-l.html">更多 <span class="big" style="font-size: 18px;">></span></a></li>
+							</ul>
+							<!--新入住会员-->
+							<ul class="box3-ul2a">
+								<li><a href="<%=basePath%>jsp/notice/notice.jsp">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li><a href="<%=basePath%>jsp/notice/notice.jsp">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li><a href="<%=basePath%>jsp/notice/notice.jsp">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li><a href="<%=basePath%>jsp/notice/notice.jsp">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li><a href="<%=basePath%>jsp/notice/notice.jsp">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li><a href="<%=basePath%>jsp/notice/notice.jsp">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li><a href="<%=basePath%>jsp/notice/notice.jsp">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li><a href="<%=basePath%>jsp/notice/notice.jsp">关于新入住会员</a><span class="big fr">06-21</span></li>
+								<li class="fr"><a style="color: #61656b;" href="member.html">更多 <span class="big" style="font-size: 18px;">></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main_txt flex-wrapper">
+				<div class="hot">
+					<div class="bac">
+						<span class="hot_txt">热门资讯</span><a href="<%=basePath%>jsp/message/message.jsp"><span class="big1 fr">更多 ></span></a>
+					</div>
+					<li class="hot-list">
+						<img style="max-width: 30%;" src="<%=basePath%>img/hot1.png" />
+						<dl class="fr">
+							<dt class="decript1">央企成就丨中国能建当好电力能源建设主力军</dt>
+							<dd class="decript2"><a href="<%=basePath%>jsp/message/0915.jsp">江苏泰州长江北岸，国家煤电节能减排示范电站———国电泰州二期百万千瓦机组工程巍然屹立。8月初，继获评中国电力优质工程之后，又顺利通过国家优质工程金质奖现场复查。</a></dd>
+						</dl>
+					</li>
+					<li class="hot-list">
+						<img style="max-width: 30%;" src="<%=basePath%>img/hot2.png" />
+						<dl class="fr">
+							<dt class="decript1">充电桩运营遭遇“五重门”</dt>
+							<dd class="decript2"><a href="<%=basePath%>jsp/message/0915.jsp">北极星输配电网讯:“用地难、用电难、电价贵、不公平竞争和政策落地难，是最现实的充电业态‘表象’。”中国泰坦能源技术集团有限公司副总裁陈昊近日在中国电动汽车百人会</a></dd>
+						</dl>
+					</li>
+					<li class="hot-list">
+						<img style="max-width: 30%;" src="<%=basePath%>img/hot3.png" />
+						<dl class="fr">
+							<dt class="decript1">风电、光伏成本高 但你知道其社会收益是多少吗？</dt>
+							<dd class="decript2"><a href="<%=basePath%>jsp/message/0915.jsp">在光伏、风电的发展过程中，大多数人都在关注其成本的下降，特别是何时实现平价上网，但是对于光伏、风电的公共效益往往只是定性描述。针对这个问题，美国劳伦斯伯克利</a></dd>
+						</dl>
+					</li>
+				</div>
+				<div class="news">
+					<div class="bac">
+						<span class="hot_txt">行业新闻</span><a href="<%=basePath%>jsp/message/messagea.jsp"><span class="big1 fr">更多 ></span></a>
+					</div>
+					<li class="news-list">
+						<img style="max-width: 30%;" src="<%=basePath%>img/news1.png" />
+						<dl class="fr">
+							<dt class="decript1">能源互联网迎来风口 万亿市场迷思待解</dt>
+							<dd class="decript2"><a href="<%=basePath%>jsp/message/0916.jsp">从“雾里看花”，到前景可期，在制度的保驾护航之下，得益于储能成本的大幅下降，能源互联网的风口已经到来，55个首批示范项目呱呱落地</a></dd>
+						</dl>
+					</li>
+					<li class="news-list">
+						<img style="max-width: 30%;" src="<%=basePath%>img/news2.png" />
+						<dl class="fr">
+							<dt class="decript1">风电产业链亟待向“高质量”升级</dt>
+							<dd class="decript2"><a href="<%=basePath%>jsp/message/0916.jsp">8月25日，在由南高齿集团和中国可再生能源学会风能专委会联合主办的“质量驱动未来”2017中国风电供应链论坛上，中国可再生能源学会风能</a></dd>
+						</dl>
+					</li>
+					<li class="news-list">
+						<img style="max-width: 30%;" src="<%=basePath%>img/news3.png" />
+						<dl class="fr">
+							<dt class="decript1">五大发电 两大电网出海</dt>
+							<dd class="decript2"><a href="<%=basePath%>jsp/message/0916.jsp">最近，有消息称，国家电网将收购巴西CPFL 45%的股权。若消息属实就意味着，国家电网接近百分百持股CPFL</a></dd>
+						</dl>
+					</li>
+				</div>
+			</div>
+			<!--产品套餐-->
+			<div class="package">
+				<div class="background_package">
+					<span class="packagea">产品套餐<a href="<%=basePath%>jsp/prodect/prodect-l.jsp"><span class="big1 fr">更多 ></span></a>
+				</div>
+				<div class="flex-wrapper product-wrapper">
+					<div class="packageimg"><a href="<%=basePath%>jsp/prodect/prodect.jsp"><img src="<%=basePath%>img/package.png" alt=""></a>
+						<p class="meal">套餐一</p>
+						<p class="money">￥1000000</p>
+					</div>
+					<div class="packageimg"><a href="<%=basePath%>jsp/prodect/prodect.jsp"><img src="<%=basePath%>img/package.png" alt=""></a>
+						<p class="meal">套餐二</p>
+						<p class="money">￥1200000</p>
+					</div>
+					<div class="packageimg"><a href="<%=basePath%>jsp/prodect/prodect.jsp"><img src="<%=basePath%>img/package.png" alt=""></a>
+						<p class="meal">套餐三</p>
+						<p class="money">￥1600000</p>
+					</div>
+					<div class="packageimg"><a href="<%=basePath%>jsp/prodect/prodect.jsp"><img src="<%=basePath%>img/package.png" alt=""></a>
+						<p class="meal">套餐四</p>
+						<p class="money">￥2500000</p>
+					</div>
+				</div>
+			</div>
+
+			<!--服务中心-->
+			<div class="service">
+				<div class="background_service">
+					<span class="servicea">服务中心<a href="<%=basePath%>jsp/service/service-l.jsp"><span class="big1 fr">更多 ></span></a>
+				</div>
+				<div class="flex-wrapper service-wrapper">
+					<div class="packageimg"><a href="<%=basePath%>jsp/service/service.jsp"><img src="<%=basePath%>img/service1.png" alt=""></a></div>
+					<div class="packageimg"><a href="<%=basePath%>jsp/service/service.jsp"><img src="<%=basePath%>img/service2.png" alt=""></a></div>
+					<div class="packageimg"><a href="<%=basePath%>jsp/service/service.jsp"><img src="<%=basePath%>img/service3.png" alt=""></a></div>
+					<div class="packageimg"><a href="<%=basePath%>jsp/service/service.jsp"><img src="<%=basePath%>img/service4.png" alt=""></a></div>
+				</div>
+			</div>
+			
+			<hr style="border: 1px solid #e6e6e6;" />
+			<div class="footer clearfix">
+				<span class="intro-span fl"><img style="width: 100px;" src="<%=basePath%>img/weixin.jpg" /> Copyright 2015 - 2017 江苏晟能售电有限公司 保留所有权利 苏ICP备10215701-1号  公司邮箱地址：<a href="#" class="intro-a">mail.smartwuxi.com</a></span><span class="about-span fr">技术支持：江苏晟能售电有限公司</span>
+			</div>
+			<!--<div class="footer">
+				<p class="intro-p1 clearfix"><span class="intro-span fl"> Copyright 2015 - 2017 江苏晟能售电有限公司 保留所有权利 苏ICP备10215701-1号  公司邮箱地址：<a href="#" class="intro-a">mail.smartwuxi.com</a></span><span class="about-span fr">技术支持：江苏晟能售电有限公司</span></p>
+			</div>-->
 		</div>
-		<script src="lib/jquery/2.2.4/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="lib/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-		<!--<script src="lib/layer/contabs.min.js" type="text/javascript" charset="utf-8"></script>-->
-		<script src="lib/layer/layer.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="lib/layer/laydate.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="<%=basePath%>lib/jquery/2.2.4/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="<%=basePath%>lib/swiper/3.4.2/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function() {
-				$(".dropdown").on('click', function() {
-					$(this).find('.collapse').toggle();
+				$(".list3").first().css({'background':"#fff"})
+				$(".list3").hover(function(){
+					$(this).css({'background':'#fff'});
+					$(".list3").not($(this)).css({'background':'#ececec'})
 				});
-				$('#collapseTwo').collapse('show')
-				$('#collapseThree').collapse('toggle')
-				$('#collapseOne').collapse('show')
-				$('#collapseFour').collapse('show')
+				var mySwiper = new Swiper('.swiper-container',{
+					autoplay:1000,
+					grabCursor:true,
+					parallax:true,
+					watchSlidesProgress : true,
+					watchSlidesVisibility:true,
+					watchSlidesVisibility:true,
+					mousewheelControl:true,
+					paginationClickable: true,  
+					loop:true
+				});
+				
+				$(".box3-ul2a").hide();
+				$(".list3a").hover(function(){
+					$(this).css({'background':'#fff'}).siblings().css({'background':'#ececec'});
+					$(".box3-ul2").hide();
+					$(".box3-ul2a").show();
+				});
+				$(".list3").hover(function(){
+					$(this).css({'background':'#fff'}).siblings().css({'background':'#ececec'});
+					$(".box3-ul2a").hide()
+					$(".box3-ul2").show();
+				});
 			});
-		
-			function addInfo() {
-				layer.open({
-					type: 2,
-					title: '客户信息报备新增',
-					skin: 'demo-class',
-					maxmin: true,
-					shade: [0.3, '#393D49'],
-					shadeClose: false,
-					id: '1',
-					area: ['900px', '400px'],
-					content: 'channel_reportMask.html'
-				});
-			}
 		</script>
 	</body>
-
+	
 </html>

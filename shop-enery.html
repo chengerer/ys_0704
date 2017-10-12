@@ -4,267 +4,112 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/3.3.7/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="lib/swiper/3.4.2/css/swiper.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/palmshop.css" />
 		<title>生产用电</title>
 	</head>
 
 	<body>
-		<div class="top">
-			<div class="wrapper clearfix">
-				<span class="txtLeft fl">您好，欢迎光临晟能售电网上营业厅！</span>
-				<span class="txtRight fr"><a href="sign-up.html" class="register">登录</a><span> | </span>
-				<a href="register.html" class="freecolor">免费注册</a>
-				</span>
-			</div>
-		</div>
-		<div class="wrapper">
-			<!--描述：头部导航条 -->
-			<div class="nav clearfix">
-				<div class="logo"><a href="index.html"><img src="img/logo.png" /></a></div>
-				<div class="nav_link">
-					<ul class="nav-ul flex-wrapper">
-						<li class="nav-item">
-							<a href="index.html">首页</a>
-						</li>
-						<li class="nav-item">
-							<a href="message.html">资讯中心</a>
-						</li>
-						<li class="nav-item">
-							<a href="prodect-l.html">产品套餐</a>
-						</li>
-						<li class="nav-item">
-							<a href="service-l.html">服务中心</a>
-						</li>
-						<li class="nav-item current">
-							<a href="shop-news.html">网上营业厅</a>
-						</li>
-						<li class="nav-item">
-							<a href="about.html">关于我们</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!--描述：中间部分 -->
-			<div class="shop-main">
-				<div class="col-xs-3">
-					<div class="shop-bac">
-						<div class="shop-imga"><img src="img/shop.png" /></div>
-						<p class="shop-pa">XXXXX有限公司</p>
-						<p class="shop-p clearfix"><span class="shop-spana">企业代码 </span><span class="aa">|</span><span class="shop-spana"><a href="change_password.html"> 修改密码</a></span></p>
-					</div>
-					<div class="shop-left">
-						<ul class="shop-ul">
-							<!--电力用户-->
-							<li class="shop-li dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="img/shop2.png" />档案管理<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
-									<li class="shop-li2">
-										<a href="shop-message.html">基本信息</a>
-									</li>
-									<li class="shop-li2">
-										<a href="shop-enery.html">生产用电</a>
-									</li>
-									<li class="shop-li2">
-										<a href="shop-electricity.html">用电电价</a>
-									</li>
-								</ul>
-							</li>
-							<li class="shop-li">
-								<a href="palm-shopa.html"><img class="shop-dis" src="img/shop3.png" />合同管理</a>
-							</li>
-
-							<li class="shop-li dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="img/shop2.png" />交易管理<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
-									<li class="shop-li2">
-										<a href="shop-declare.html">电量申报</a>
-									</li>
-									<li class="shop-li2">
-										<a href="shop-deal.html">交易结果</a>
-									</li>
-								</ul>
-							</li>
-
-							<li class="shop-li">
-								<a href="shop-settlement.html"><img class="shop-dis" src="img/shop3.png" />结算管理</a>
-							</li>
-							<li class="shop-li dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="img/shop2.png" />负荷监测<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
-									<li class="shop-li2">
-										<a href="shop-subsidiary.html">用能明细</a>
-									</li>
-									<li class="shop-li2">
-										<a href="shop-summarize.html">用能概览</a>
-									</li>
-								</ul>
-							</li>
-							<li class="shop-li">
-								<a href="shop-news.html"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
-							</li>
-							<!--发电企业-->
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />交易信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
-							</li>
-							<!--售电公司-->
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />交易信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
-							</li>
-							<!--渠道商-->
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />交易信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />结算信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="channel_report.html"><img class="shop-dis" src="img/shop3.png" />客户报备</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
-							</li>
-
-						</ul>
-
-					</div>
-				</div>
-				<div class="col-xs-9">
-					<div class="panel-group shop-right" id="accordion">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
+		<div class="panel-group shop-right" id="accordion">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
    										生产方式<span class="panel-span fr">^</span>
 									</a>
 								</h4>
-							</div>
-							<div id="collapseOne" class="panel-collapse collapse in">
-								<div class="panel-body flex-wrapper">
-									<div class="item01">
-										<p>代码：0101</p>
-										<p>地区：无锡</p>
-										<p>公司地址：XXXX公司</p>
-										<p>单位地址：无锡市新吴区XXX路XX街道</p>
-									</div>
-									<div class="item01">
-										<p>省市：0101</p>
-										<p>单位门类：0101</p>
-										<p>法人代表：0101</p>
-									</div>
-									<div class="item01">
-										<p>地市：0101</p>
-										<p>单位大类：0101</p>
-										<p>用电规模：0101</p>
-									</div>
-								</div>
-							</div>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse in">
+					<div class="panel-body flex-wrapper">
+						<div class="item01">
+							<p>厂休日：</p>
+							<p>日班次：</p>
 						</div>
-						<div class="panel panel-success">
-							<div class="panel-heading">
-								<h4 class="panel-title">
+						<div class="item01">
+							<p>生产方式：</p>
+							<p>订单：</p>
+						</div>
+						<div class="item01">
+							<p>淡旺季：</p>
+							<p>峰谷差：</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-success">
+				<div class="panel-heading">
+					<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 										 自备电厂<span class="panel-span fr">^</span>
 									</a>
 								</h4>
-							</div>
-							<div id="collapseTwo" class="panel-collapse collapse">
-								<div class="panel-body flex-wrapper">
-									<div class="item01">
-										<p>代码：0101</p>
-										<p>公司地址：XXXX公司</p>
-									</div>
-									<div class="item01">
-										<p>单位门类：0101</p>
-										<p>法人代表：0101</p>
-									</div>
-									<div class="item01">
-										<p>单位大类：0101</p>
-										<p>用电规模：0101</p>
-									</div>
-								</div>
-							</div>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse">
+					<div class="panel-body flex-wrapper">
+						<div class="item01">
+							<p>性质：</p>
+							<p>检修、停用时间：</p>
 						</div>
-						<div class="panel panel-info">
-							<div class="panel-heading">
-								<h4 class="panel-title">
+						<div class="item01">
+							<p>容量（kVa）：</p>
+						</div>
+						<div class="item01">
+							<p>月发电量（Mwh）：</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion"  href="#collapseThree">
 										储能系统<span class="panel-span fr">^</span>
 									</a>
 								</h4>
-							</div>
-							<div id="collapseThree" class="panel-collapse collapse">
-								<div class="panel-body flex-wrapper">
-									<div class="item01">
-										<p>公司地址：XXXX公司</p>
-									</div>
-									<div class="item01">
-										<p>法人代表：0101</p>
-									</div>
-									<div class="item01">
-										<p>用电规模：0101</p>
-									</div>
-								</div>
-							</div>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse">
+					<div class="panel-body flex-wrapper">
+						<div class="item01">
+							<p>性质：</p>
+							<p>月放电量（Mwh）：</p>
 						</div>
-						<div class="panel panel-warning">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-										分布式光伏<span class="panel-span fr">^</span>
-									</a>
-								</h4>
-							</div>
-							<div id="collapseFour" class="panel-collapse collapse">
-								<div class="panel-body flex-wrapper">
-									<div class="item01">
-										<p>公司地址：XXXX公司</p>
-									</div>
-									<div class="item01">
-										<p>法人代表：0101</p>
-									</div>
-									<div class="item01">
-										<p>用电规模：0101</p>
-									</div>
-								</div>
-							</div>
+						<div class="item01">
+							<p>容量（kVa）：</p>
 						</div>
-						<button class="mode">模板下载</button>
+						<div class="item01">
+							<p>月充电量（Mwh）：</p>
+						</div>
 					</div>
 				</div>
 			</div>
-
+			<div class="panel panel-warning">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+							分布式光伏<span class="panel-span fr">^</span>
+						</a>
+					</h4>
+				</div>
+				<div id="collapseFour" class="panel-collapse collapse">
+					<div class="panel-body flex-wrapper">
+						<div class="item01">
+							<p>资产：</p>
+							<p>月发电量（Mwh）：</p>
+						</div>
+						<div class="item01">
+							<p>性质：</p>
+						</div>
+						<div class="item01">
+							<p>容量（kVa）：</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--<button class="mode">模板下载</button>-->
 		</div>
-		<script src="lib/jquery/2.2.4/jquery-2.2.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/jquery/2.2.4/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="lib/bootstrap/3.3.7/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$(function() {
-				$(".dropdown").on('click', function() {
-					$(this).find('.collapse').toggle();
-				});
-			});
 			$(function() {
 				$('#collapseTwo').collapse('show')
 			});

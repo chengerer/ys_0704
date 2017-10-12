@@ -23,9 +23,16 @@ a {
 	line-height: 40px;
 	background: rgb(236,236,236);
 }
-.more {
+.more, .mores {
 	margin-top: 40px;
 	margin-bottom: 20px;
+}
+
+.mores {
+	display: none;
+}
+.more-news, .more-hot {
+	cursor: pointer;
 }
 .more p{
 	padding-left: 20px;
@@ -79,7 +86,7 @@ a {
 .more-ol {
 	font-size: 18px;
 }
-.more-ol li, .combo-ol li {
+.combo-ol li {
 	list-style: decimal;
 	list-style-position: inside;
 }
@@ -161,7 +168,10 @@ a {
 .abs_clip:checked + .pack-name {
 	border: 1px solid #F66F45;
 }
-.abs_clip:checked  + .pack-name:after {
+.clickcolor {
+	background: url(../img/check.png) no-repeat bottom right;
+}
+/*.abs_clip:checked  + .pack-name:after {
 	background: #F66F45;
 	content: "√";
 	padding: 10px 1px 0 15px;
@@ -173,7 +183,7 @@ a {
 	bottom: 0;
 	-webkit-clip-path: polygon(100% 0,100% 100%,0 100%);
 	clip-path: polygon(100% 0,100% 100%,0 100%);
-}
+}*/
 
 
 

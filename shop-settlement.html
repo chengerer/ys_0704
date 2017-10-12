@@ -4,308 +4,123 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/3.3.7/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="lib/swiper/3.4.2/css/swiper.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/palmshop.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.min862f.css" />
+		<link rel="stylesheet" type="text/css" href="css/background.css" />
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap-datepicker/bootstrap-datepicker.min.css" />
 		<title>结算管理</title>
 	</head>
 
 	<body>
-		<div class="top">
-			<div class="wrapper clearfix">
-				<span class="txtLeft fl">您好，欢迎光临晟能售电网上营业厅！</span>
-				<span class="txtRight fr"><a href="sign-up.html" class="register">登录</a><span> | </span>
-				<a href="register.html" class="freecolor">免费注册</a>
-				</span>
+		<div class="shop-right1">
+			<p class="news-p">交易消息</p>
+			<div class="row service-main">
+				<form class="form-horizontal">
+					<div class="col-xs-6 form-group">
+						<label class="col-xs-4 control-label">月份查询：</label>
+						<div class="col-xs-8">
+							<div class="input-group date" id="datetimepicker2">
+								<input type="text" class="form-control">
+								<div class="input-group-addon">
+									<span class="glyphicon glyphicon-th"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-2 form-group">
+						<input class="btn btn-col2 declar-btn pull-right" type="button" value="查询" />
+					</div>
+				</form>
 			</div>
 		</div>
-		<div class="wrapper">
-			<!--描述：头部导航条 -->
-			<div class="nav clearfix">
-				<div class="logo"><a href="index.html"><img src="img/logo.png" /></a></div>
-				<div class="nav_link">
-					<ul class="nav-ul flex-wrapper">
-						<li class="nav-item">
-							<a href="index.html">首页</a>
-						</li>
-						<li class="nav-item">
-							<a href="message.html">资讯中心</a>
-						</li>
-						<li class="nav-item">
-							<a href="prodect-l.html">产品套餐</a>
-						</li>
-						<li class="nav-item">
-							<a href="service-l.html">服务中心</a>
-						</li>
-						<li class="nav-item current">
-							<a href="shop-news.html">网上营业厅</a>
-						</li>
-						<li class="nav-item">
-							<a href="about.html">关于我们</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!--描述：中间部分 -->
-			<div class="shop-main">
-				<div class="col-xs-3">
-					<div class="shop-bac">
-						<div class="shop-imga"><img src="img/shop.png" /></div>
-						<p class="shop-pa">XXXXX有限公司</p>
-						<p class="shop-p clearfix"><span class="shop-spana">企业代码 </span><span class="aa">|</span><span class="shop-spana"><a href="change_password.html"> 修改密码</a></span></p>
-					</div>
-					<div class="shop-left">
-						<ul class="shop-ul">
-							<!--电力用户-->
-							<li class="shop-li dropdown">
-								<a href="javascript:;" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="img/shop2.png" />档案管理<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
-									<li class="shop-li2">
-										<a href="shop-message.html">基本信息</a>
-									</li>
-									<li class="shop-li2">
-										<a href="shop-enery.html">生产用电</a>
-									</li>
-									<li class="shop-li2">
-										<a href="shop-electricity.html">用电电价</a>
-									</li>
-								</ul>
-							</li>
-							<li class="shop-li">
-								<a href="palm-shopa.html"><img class="shop-dis" src="img/shop3.png" />合同管理</a>
-							</li>
 
-							<li class="shop-li dropdown">
-								<a href="javascript:;" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="img/shop2.png" />交易管理<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
-									<li class="shop-li2">
-										<a href="shop-declare.html">电量申报</a>
-									</li>
-									<li class="shop-li2">
-										<a href="shop-deal.html">交易结果</a>
-									</li>
-								</ul>
-							</li>
+		<div class="shop-right1">
+			<p class="news-p">双边协商结算列表</p>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>固定价差（元/kWh）</th>
+						<th>固定收益（万元）</th>
+						<th>长协价差（元/kWh）</th>
+						<th>长协分成</th>
+						<th>长协收益（万元）</th>
+						<th>年度</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>560001</td>
+						<td>560001</td>
+						<td>560001</td>
+						<td>560001</td>
+						<td>560001</td>
+						<td>560001</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="shop-right1">
+			<p class="news-p">月度竞价结算列表</p>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>竞价价差（元/kWh）</th>
+						<th>竞价分成（%）</th>
+						<th>竞价分成</th>
+						<th>委托偏差（%）</th>
+						<th>偏差电量（万kWh）</th>
+						<th>偏差考核</th>
+						<th>竞价收益（万元）</th>
+						<th>月份</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>560001</td>
+						<td>560001</td>
+						<td>560001</td>
+						<td>560001</td>
+						<td>560001</td>
+						<td>560001</td>
+						<td>560001</td>
+						<td>560001</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 
-							<li class="shop-li">
-								<a href="shop-settlement.html"><img class="shop-dis" src="img/shop3.png" />结算管理</a>
-							</li>
-							<li class="shop-li dropdown">
-								<a href="javascript:;" class="dropdown-toggle" data-toggle="collapse">
-									<img class="shop-dis" src="img/shop2.png" />负荷监测<b class="caret"></b>
-								</a>
-								<ul class="collapse coll-font">
-									<li class="shop-li2">
-										<a href="shop-subsidiary.html">用能明细</a>
-									</li>
-									<li class="shop-li2">
-										<a href="shop-summarize.html">用能概览</a>
-									</li>
-								</ul>
-							</li>
-							<li class="shop-li">
-								<a href="shop-news.html"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
-							</li>
-							<!--发电企业-->
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />交易信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
-							</li>
-							<!--售电公司-->
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />交易信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
-							</li>
-							<!--渠道商-->
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />交易信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />结算信息</a>
-							</li>
-							<li class="shop-li">
-								<a href="channel_report.html"><img class="shop-dis" src="img/shop3.png" />客户报备</a>
-							</li>
-							<li class="shop-li">
-								<a href="javascript:;"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
-							</li>
-
-						</ul>
-
-					</div>
-				</div>
-			<div class="col-xs-9">
-					<div class="commons">
-						<p>结算管理</p>
-						<hr />
-					</div>
-					
-
-					<div class="shop-right1">
-						<p class="news-p">交易消息</p>
-						<form class="declar-form" action="" method="post">
-							起止月份：<input class="declar-txt" type="text" />
-							 至 <input class="declar-txt" type="text" /> 
-							<input class="btn-col2 declar-btn" type="submit" value="查询" />
-						</form>
-					</div>
-					<!--电量申报记录-->
-					<div class="shop-right1">
-						<p class="news-p">结算列表</p>
-						<table class="table table-bordered">
-							<thead>
-								<tr>
-									<th>序号</th>
-									<th>电报电量</th>
-									<th>实际电量(Mwh)</th>
-									<th>正负偏差</th>
-									<th>偏差电量</th>
-									<th>考核电量</th>
-									<th>电量优惠</th>
-									<th>理论考核费用</th>
-									<th>实际考核分担<br />费用</th>
-									<th>考核时间</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Tanmay</td>
-									<td>Bangalore</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-								</tr>
-								<tr>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Mumbai</td>
-									<td>560001</td>
-									<td>400003</td>
-								</tr>
-								<tr>
-									<td>Tanmay</td>
-									<td>Bangalore</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-								</tr>
-								<tr>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Mumbai</td>
-									<td>560001</td>
-									<td>400003</td>
-								</tr>
-								<tr>
-									<td>Tanmay</td>
-									<td>Bangalore</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-									<td>560001</td>
-								</tr>
-								<tr>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Mumbai</td>
-									<td>560001</td>
-									<td>400003</td>
-								</tr>
-								<tr>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Sachin</td>
-									<td>Uma</td>
-									<td>Pune</td>
-									<td>560001</td>
-									<td>411027</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					
-				
-				</div>
-				<!--翻页-->
-			<div class="paging-cen">
-				<ul class="pagination">
-					<li>
-						<a class="paging-padd" href="#">&laquo;</a>
-					</li>
-					<li class="active">
-						<a class="paging-padd" href="#">1</a>
-					</li>
-					<li>
-						<a class="paging-padd" href="#">2</a>
-					</li>
-					<li>
-						<a class="paging-padd" href="#">3</a>
-					</li>
-					<li>
-						<a class="paging-padd" href="#">4</a>
-					</li> 
-					<li>
-						<a class="paging-padd" href="#">5</a>
-					</li>
-					<li>
-						<a class="paging-padd" href="#">&raquo;</a>
-					</li>
-				</ul>
-			</div>
-			</div>
-
+		</div>
+		<!--翻页-->
+		<div class="paging-cen">
+			<ul class="pagination">
+				<li>
+					<a class="paging-padd" href="#">&laquo;</a>
+				</li>
+				<li class="active">
+					<a class="paging-padd" href="#">1</a>
+				</li>
+				<li>
+					<a class="paging-padd" href="#">2</a>
+				</li>
+				<li>
+					<a class="paging-padd" href="#">3</a>
+				</li>
+				<li>
+					<a class="paging-padd" href="#">4</a>
+				</li>
+				<li>
+					<a class="paging-padd" href="#">5</a>
+				</li>
+				<li>
+					<a class="paging-padd" href="#">&raquo;</a>
+				</li>
+			</ul>
 		</div>
 		<script src="lib/jquery/2.2.4/jquery-2.2.4.js" type="text/javascript" charset="utf-8"></script>
 		<script src="lib/bootstrap/3.3.7/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/plum/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/plum/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function() {
 				$(".dropdown").on('click', function() {
@@ -323,6 +138,19 @@
 			});
 			$(function() {
 				$('#collapseFour').collapse('show')
+			});
+			//			时间控件
+			$(function() {
+				$('#datetimepicker, #datetimepicker1, #datetimepicker2').datepicker({
+					format: "yyyy-mm-dd",
+					calendarWeeks: true,
+					autoclose: true,
+					startView: 1,
+					minViewMode: 1,
+					maxViewMode: 2,
+					language: "zh-CN",
+					orientation: "bottom left"
+				});
 			});
 		</script>
 	</body>

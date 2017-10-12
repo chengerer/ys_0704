@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="lib/swiper/3.4.2/css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/palmshop.css" />
+		<link rel="stylesheet" type="text/css" href="css/background.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.min862f.css" />
+		<title>发电企业</title>
+	</head>
+
+	<body>
+		<div class="top">
+			<div class="wrapper clearfix">
+				<span class="txtLeft fl">您好，欢迎光临晟能售电网上营业厅！</span>
+				<span class="txtRight fr"><a href="sign-up.html" class="register">登录</a><span> | </span>
+				<a href="register.html" class="freecolor">免费注册</a>
+				</span>
+			</div>
+		</div>
+		<div class="wrapper">
+			<!--描述：头部导航条 -->
+			<div class="nav clearfix">
+				<div class="logo col-xs-2"><a href="index.html"><img src="img/logo.png" /></a></div>
+				<div class="nav_link col-xs-10 paddr-ze">
+					<ul class="nav-ul flex-wrapper">
+						<li class="nav-item col-xs-2">
+							<a href="index.html">首页</a>
+						</li>
+						<li class="nav-item col-xs-2">
+							<a href="message.html">资讯中心</a>
+						</li>
+						<li class="nav-item col-xs-2">
+							<a href="prodect-l.html">产品套餐</a>
+						</li>
+						<li class="nav-item col-xs-2">
+							<a href="service-l.html">服务中心</a>
+						</li>
+						<li class="nav-item col-xs-2 current">
+							<a href="#">网上营业厅</a>
+						</li>
+						<li class="nav-item col-xs-2">
+							<a href="about.html">关于我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--描述：中间部分 -->
+			<div class="shop-main">
+				<div class="col-xs-3">
+					<div class="shop-bac">
+						<div class="shop-imga"><img src="img/shop.png" /></div>
+						<p class="shop-pa">XXXXX有限公司</p>
+						<p class="shop-p clearfix"><span class="shop-spana">企业代码 </span><span class="aa">|</span><span class="shop-spana"> 修改密码</span></p>
+					</div>
+					<div class="shop-left">
+						<ul class="shop-ul">
+							<!--发电企业-->
+							<li class="shop-li">
+								<a target="main" href="power_deal.html"><img class="shop-dis" src="img/shop3.png" />交易信息</a>
+							</li>
+							<li class="shop-li">
+								<a target="main" href="power_contract.html"><img class="shop-dis" src="img/shop3.png" />合同信息</a>
+							</li>
+							<li class="shop-li">
+								<a target="main" href="power_message.html"><img class="shop-dis" src="img/shop3.png" />消息中心</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="col-xs-9">
+					<iframe name="main" id="test" onload="this.height=100" width="100%" src="power_deal.html" scrolling="no" frameborder="0"></iframe>
+				</div>
+			</div>
+
+		</div>
+		<script src="lib/jquery/2.2.4/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var requestAnimationFrame = requestAnimationFrame || webkitRequestAnimationFrame || mozRequestAnimationFrame;
+			var count = 0;
+			function reinitIframe() {
+				if(count % 10 == 0){
+					var iframe = document.getElementById("test");
+				try {
+					var bHeight = iframe.contentWindow.document.body.scrollHeight;
+					var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+					var height = Math.max(bHeight, dHeight);
+					iframe.height = height;
+				} catch(ex) {}
+			}
+			count++;
+			requestAnimationFrame(reinitIframe);
+//			window.setInterval("reinitIframe()", 200);
+		}
+			requestAnimationFrame(reinitIframe);
+		</script>
+	</body>
+
+</html>
